@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/* ================================================================================================
+   JUICE -> INITIALIZE
+   ============================================================================================= */
+
+// Import
+@import "just-add-juice/sass/initialize/all";
+
+
+/* ================================================================================================
+   JUICE -> ADD -> BREAKPOINTS
+   ============================================================================================= */
+
+// Custom breakpoints
+$custom-breakpoints: ();
+
+// Merge custom breakpoints with juices breakpoints
+$breakpoints: map-merge($breakpoints, $custom-breakpoints);
+
+
+/* ================================================================================================
+   JUICE -> ADD -> COLORS
+   ============================================================================================= */
+
+// Custom base colors
+$custom-base-colors: ();
+
+// Merge custom base colors with juices base colors
+$base-colors: map-merge($base-colors, $custom-base-colors);
+
+
+/* ================================================================================================
+   JUICE -> CUSTOMIZE
+   ============================================================================================= */
+
+    // Customize any variable values here before importing the framework and components
+
+
+/* ================================================================================================
+   JUICE -> FRAMEWORK & COMPONENTS
+   ============================================================================================= */
+
+// Import
+@import "just-add-juice/sass/framework/all";
+@import "just-add-juice/sass/components/all";
