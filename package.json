@@ -1,6 +1,5 @@
 {
     "devDependencies": {
-        "just-add-juice": "^0.1.0-beta",
         "babel-core": "^6.26.3",
         "babel-loader": "^7.1.4",
         "babel-preset-env": "^1.7.0",
@@ -12,6 +11,7 @@
         "gulp-connect-php7": "^1.0.1",
         "gulp-rename": "^1.4.0",
         "gulp-sass": "^4.0.1",
-        "gulp-uglify": "^3.0.0"
+        "gulp-uglify": "^3.0.0",
+        "just-add-juice": "^0.1.0-beta"
     }
 }
