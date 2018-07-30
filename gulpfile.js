@@ -22,7 +22,7 @@ const uglify = require('gulp-uglify');
  * Localhost proxy server and port for php connect
  * @const {string}
  */
-const hostname = 'localhost/github/juice-starter';
+const hostname = 'localhost/github/justaddjuice/boilerplate';
 const port = 3001;
 
 /**
