@@ -1,5 +1,9 @@
 ![Juice Boilerplate](./screenshot.png)
 
+<p align="center">Take what you need, leave what you don't.<br />Just remember, when you start your next project... just add Juice!</p>
+
+<br />
+
 ## Documentation
 
 Documentation for the stable release of [Juice](https://github.com/justaddjuice/juice) is currently being written and will explain how to use this boilerplate.
