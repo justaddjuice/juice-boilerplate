@@ -1,4 +1,4 @@
-![Juice](./screenshot.png)
+![Juice Boilerplate](./screenshot.png)
 
 ## Documentation
 
@@ -10,7 +10,7 @@ Documentation for the stable release of [Juice](https://github.com/justaddjuice/
 |:-------------------------------------------------------------------------------------------------------------:|
 | [Joe Mottershaw](https://github.com/joemottershaw)                                                            |
 
-Along with the help from these [fine people](https://github.com/justaddjuice/juice/graphs/contributors)!
+Along with the help from these [fine people](https://github.com/justaddjuice/juice-boilerplate/graphs/contributors)!
 
 ## Contributing
 
