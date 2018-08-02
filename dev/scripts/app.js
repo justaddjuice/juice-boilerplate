@@ -4,7 +4,7 @@
    APPLICATION -> JUICE COMPONENTS
    ============================================================================================= */
 
-    // Here is a good place to instantiate the rucksack components you wish to use...
+    // Here is a good place to instantiate the Juice components you wish to use...
 
 
 /* =============================================================================================
