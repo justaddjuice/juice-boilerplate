@@ -43,4 +43,5 @@ $base-colors: map-merge($base-colors, $custom-base-colors);
 
 // Import
 @import "just-add-juice/sass/framework/all";
+@import "just-add-juice/sass/elements/all";
 @import "just-add-juice/sass/components/all";
