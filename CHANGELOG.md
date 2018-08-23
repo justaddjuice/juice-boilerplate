@@ -1,3 +1,22 @@
+# August 23, 2018 (Juice v0.5.1-beta)
+
+### Updated
+- Update package.json
+    - Update devDependencies just-add-juice version to 0.5.1-beta
+
+### Bug fix
+- Fix gulpfile dev task ending on compile error
+    - Add gulp-plumber to devDependencies
+    - Add gulp-notifier to devDependencies
+    - Update build:css task
+        - Add gulp-plumber with gulp-notifier error handler
+    - Update build:scripts task
+        - Add gulp-plumber with gulp-notifier error handler
+
+
+-----
+
+
 # August 23, 2018 (Juice v0.5.0-beta)
 
 ### Updated
