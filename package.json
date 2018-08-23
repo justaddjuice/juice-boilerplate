@@ -12,6 +12,6 @@
         "gulp-rename": "^1.4.0",
         "gulp-sass": "^4.0.1",
         "gulp-uglify": "^3.0.0",
-        "just-add-juice": "^0.4.1-beta"
+        "just-add-juice": "^0.5.0-beta"
     }
 }
