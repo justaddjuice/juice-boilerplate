@@ -1,3 +1,14 @@
+# August 23, 2018 (Juice v0.5.0-beta)
+
+### Updated
+- Update build directory
+- Update package.json
+    - Update devDependencies just-add-juice version to 0.5.0-beta
+
+
+-----
+
+
 # August 17, 2018 (Juice v0.4.1-beta)
 
 ### Updated
