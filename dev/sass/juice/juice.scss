@@ -1,40 +1,48 @@
 @charset "utf-8";
 
+
+/* ================================================================================================
+   JUICE -> CUSTOM
+   ============================================================================================= */
+
+// Import
+@import "custom/breakpoints";
+@import "custom/colors";
+
+
 /* ================================================================================================
    JUICE -> INITIALIZE
    ============================================================================================= */
 
 // Import
-@import "just-add-juice/sass/initialize/all";
+@import "just-add-juice/sass/initialize/settings/all";
 
 
 /* ================================================================================================
-   JUICE -> ADD -> BREAKPOINTS
+   JUICE -> MERGE
    ============================================================================================= */
 
-// Custom breakpoints
-$custom-breakpoints: ();
-
-// Merge custom breakpoints with juices breakpoints
+// Merge the custom breakpoints with juices breakpoints
 $breakpoints: map-merge($breakpoints, $custom-breakpoints);
 
-
-/* ================================================================================================
-   JUICE -> ADD -> COLORS
-   ============================================================================================= */
-
-// Custom base colors
-$custom-base-colors: ();
-
-// Merge custom base colors with juices base colors
+// Merge the custom base colors with juices base colors
 $base-colors: map-merge($base-colors, $custom-base-colors);
 
 
 /* ================================================================================================
-   JUICE -> CUSTOMIZE
+   JUICE -> UTILITIES
    ============================================================================================= */
 
-    // Customize any variable values here before importing the framework and components
+// Import
+@import "just-add-juice/sass/initialize/utilities/all";
+
+
+/* ================================================================================================
+   JUICE -> VARIABLES
+   ============================================================================================= */
+
+// Import
+@import "custom/variables";
 
 
 /* ================================================================================================
