@@ -1,3 +1,13 @@
+# November 14, 2018 (Juice v0.9.0-beta)
+
+### Updated
+- Update sass juice directories/import ordering
+- Update package lock
+
+
+-----
+
+
 # November 9, 2018 (Juice v0.9.0-beta)
 
 ### Updated
