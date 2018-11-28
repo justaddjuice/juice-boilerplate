@@ -1,8 +1,9 @@
 # November 28, 2018 (Juice v0.11.0-beta)
 
 ### Updated
+- Updated html template
 - Updated build directory
-- Updated package.json
+- Updated package
     - Updated devDependencies just-add-juice version to 0.11.0-beta
 
 
@@ -14,7 +15,7 @@
 ### Updated
 - Updated juice import settings and utilities
 - Updated build directory
-- Updated package.json
+- Updated package
     - Updated devDependencies just-add-juice version to 0.10.0-beta
 
 
@@ -35,7 +36,7 @@
 
 ### Updated
 - Updated build directory
-- Updated package.json
+- Updated package
     - Updated devDependencies just-add-juice version to 0.9.0-beta
 
 
@@ -46,7 +47,7 @@
 
 ### Updated
 - Updated build directory
-- Updated package.json
+- Updated package
     - Updated devDependencies just-add-juice version to 0.8.0-beta
 
 
@@ -57,7 +58,7 @@
 
 ### Updated
 - Updated build directory
-- Updated package.json
+- Updated package
     - Updated devDependencies just-add-juice version to 0.7.0-beta
 
 
@@ -66,7 +67,7 @@
 
 ### Updated
 - Updated build directory
-- Updated package.json
+- Updated package
     - Updated devDependencies just-add-juice version to 0.6.0-beta
 
 
@@ -77,7 +78,7 @@
 
 ### Updated
 - Updated build directory
-- Updated package.json
+- Updated package
     - Updated devDependencies just-add-juice version to 0.5.1-beta
 
 ### Bug fix
@@ -97,7 +98,7 @@
 
 ### Updated
 - Updated build directory
-- Updated package.json
+- Updated package
     - Updated devDependencies just-add-juice version to 0.5.0-beta
 
 
@@ -108,7 +109,7 @@
 
 ### Updated
 - Updated build directory
-- Updated package.json
+- Updated package
     - Updated devDependencies just-add-juice version to 0.4.1-beta
 
 ### Bug Fixes
@@ -124,7 +125,7 @@
 
 ### Updated
 - Updated build directory
-- Updated package.json
+- Updated package
     - Updated devDependencies just-add-juice version to 0.4.0-beta
 
 
@@ -138,7 +139,7 @@
 
 ### Updated
 - Updated build directory
-- Updated package.json
+- Updated package
     - Updated devDependencies just-add-juice version to 0.3.0-beta
 
 
@@ -149,5 +150,5 @@
 
 ### Updated
 - Updated build directory
-- Updated package.json
+- Updated package
     - Updated devDependencies just-add-juice version to 0.2.0-beta
