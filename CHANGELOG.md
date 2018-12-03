@@ -1,11 +1,22 @@
-# December 3, 2018 (Juice v0.12.0-beta)
+# December 3, 2018 #2 (Juice v0.13.0-beta)
+
+### Updated
+- Updated build directory
+- Updated package
+    - Updated devDependencies just-add-juice version to 0.13.0-beta
+
+
+-----
+
+
+# December 3, 2018 #1 (Juice v0.12.0-beta)
 
 ### Updated
 - Updated html template
 - Update gulpfile hostname
 - Updated build directory
 - Updated package
-    - Updated devDependencies just-add-juice version to 0.11.0-beta
+    - Updated devDependencies just-add-juice version to 0.12.0-beta
 
 
 -----
