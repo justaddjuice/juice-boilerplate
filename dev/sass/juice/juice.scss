@@ -1,12 +1,12 @@
-@charset "utf-8";
+@charset 'utf-8';
 
 /*  ========================================================================
     JUICE -> CUSTOM
     ========================================================================  */
 
 // Import
-@import "custom/breakpoints";
-@import "custom/colors";
+@import 'custom/breakpoints';
+@import 'custom/colors';
 
 
 /*  ========================================================================
@@ -14,7 +14,7 @@
     ========================================================================  */
 
 // Import
-@import "just-add-juice/sass/initialize/all";
+@import 'just-add-juice/sass/initialize/all';
 
 
 /*  ========================================================================
@@ -33,7 +33,7 @@ $base-colors: map-merge($base-colors, $custom-base-colors);
     ========================================================================  */
 
 // Import
-@import "just-add-juice/sass/utilities/all";
+@import 'just-add-juice/sass/utilities/all';
 
 
 /*  ========================================================================
@@ -41,7 +41,7 @@ $base-colors: map-merge($base-colors, $custom-base-colors);
     ========================================================================  */
 
 // Import
-@import "custom/variables";
+@import 'custom/variables';
 
 
 /*  ========================================================================
@@ -49,6 +49,6 @@ $base-colors: map-merge($base-colors, $custom-base-colors);
     ========================================================================  */
 
 // Import
-@import "just-add-juice/sass/framework/all";
-@import "just-add-juice/sass/elements/all";
-@import "just-add-juice/sass/components/all";
+@import 'just-add-juice/sass/framework/all';
+@import 'just-add-juice/sass/elements/all';
+@import 'just-add-juice/sass/components/all';
