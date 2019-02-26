@@ -1,11 +1,11 @@
 'use strict';
 
-/* =============================================================================================
-   GULP -> CONSTANTS
-   ============================================================================================= */
+/*  =========================================================================
+    GULP -> CONSTANTS
+    ========================================================================= */
 
 /**
- * Required dependency modules
+ * Required dependency modules.
  * @const {module}
  */
 const autoprefixer = require('gulp-autoprefixer');
@@ -21,14 +21,14 @@ const sass = require('gulp-sass');
 const uglify = require('gulp-uglify');
 
 /**
- * Localhost proxy server and port for php connect
+ * Localhost proxy server and port for php connect.
  * @const {string}
  */
 const hostname = 'localhost:8888/github/justaddjuice/juice-boilerplate';
 const port = 3001;
 
 /**
- * Resource development files
+ * Resource development files.
  * @const {array}
  */
 const resource = {
@@ -40,7 +40,7 @@ const resource = {
 };
 
 /**
- * Output file names
+ * Output file names.
  * @const {array}
  */
 const filename = {
@@ -49,7 +49,7 @@ const filename = {
 };
 
 /**
- * Output build directories
+ * Output build directories.
  * @const {array}
  */
 const build = {
@@ -58,7 +58,7 @@ const build = {
 };
 
 /**
- * Watch these file types for changes
+ * Watch these file types for changes.
  * @const {array}
  */
 const watch = {
@@ -70,19 +70,21 @@ const watch = {
 };
 
 
-/* =============================================================================================
-   GULP -> TASKS
-   ============================================================================================= */
+/*  =========================================================================
+    GULP -> TASKS
+    ========================================================================= */
 
 /**
- * Compile SASS to CSS, autoprefix, minimize, rename and reload browsersync
+ * Compile sass to css, autoprefix, minimize, rename and reload browsersync.
  * @module gulp-sass
  * @module gulp-autoprefixer
  * @module browser-sync
  */
 gulp.task('build:css', () => {
     gulp.src(resource.sass)
-        .pipe(plumber({ errorHandler: notifier.error }))
+        .pipe(plumber({
+            errorHandler: notifier.error
+        }))
         .pipe(sass({
             outputStyle: 'compressed',
             includePaths: [
@@ -90,7 +92,9 @@ gulp.task('build:css', () => {
             ]
         }))
         .pipe(autoprefixer({
-            browsers: ['last 2 versions']
+            browsers: [
+                'last 2 versions'
+            ]
         }))
         .pipe(rename(filename.css))
         .pipe(gulp.dest(build.css))
@@ -100,7 +104,7 @@ gulp.task('build:css', () => {
 });
 
 /**
- * Concat all JavaScript files, strip comments, compile ES6 to ES5, minimize and reload browsersync
+ * Concat all javascript files, strip comments, compile es6 to es5, minimize and reload browsersync.
  * @module gulp-concat
  * @module gulp-babel
  * @module gulp-uglify
@@ -108,9 +112,13 @@ gulp.task('build:css', () => {
  */
 gulp.task('build:scripts', () => {
     gulp.src(resource.scripts)
-        .pipe(plumber({ errorHandler: notifier.error }))
+        .pipe(plumber({
+            errorHandler: notifier.error
+        }))
         .pipe(babel({
-            presets: ['env']
+            presets: [
+                'env'
+            ]
         }))
 		.pipe(concat(filename.scripts))
         .pipe(uglify())
@@ -121,7 +129,7 @@ gulp.task('build:scripts', () => {
 });
 
 /**
- * Run all individual build tasks
+ * Run all individual build tasks.
  */
 gulp.task('build', () => {
     // Start the gulp css and scripts tasks
@@ -130,7 +138,7 @@ gulp.task('build', () => {
 });
 
 /**
- * Start a development server, watch for file changes, run specific tasks and reload browsersync
+ * Start a development server, watch for file changes, run specific tasks and reload browsersync.
  * @module gulp-connect-php7
  * @module browser-sync
  */
