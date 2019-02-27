@@ -16,7 +16,7 @@ const connect = require('gulp-connect-php7');
 const gulp = require('gulp');
 const notifier = require('gulp-notifier');
 const plumber = require('gulp-plumber');
-const rename = require("gulp-rename");
+const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 const uglify = require('gulp-uglify');
 
