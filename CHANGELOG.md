@@ -1,3 +1,17 @@
+# March 1, 2019 (Juice v0.17.0-beta)
+
+### Updated
+- Update directory structure
+    - Update directory dev to resources
+    - Update custom variable files to a theme directory structure
+- Updated build directory
+- Updated package
+    - Updated devDependencies just-add-juice version to 0.17.0-beta
+
+
+-----
+
+
 # February 26, 2019 (Juice v0.16.2-beta)
 
 ### Updated
