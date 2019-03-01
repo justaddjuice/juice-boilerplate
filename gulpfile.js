@@ -32,10 +32,10 @@ const port = 3001;
  * @const {array}
  */
 const resource = {
-    sass: 'dev/sass/app.scss',
+    sass: 'resources/sass/app.scss',
     scripts: [
         'node_modules/just-add-juice/scripts/**/*.js',
-        'dev/scripts/app.js'
+        'resources/scripts/app.js'
     ]
 };
 
@@ -76,8 +76,10 @@ const watch = {
 
 /**
  * Compile sass to css, autoprefix, minimize, rename and reload browsersync.
+ * @module gulp-plumber
  * @module gulp-sass
  * @module gulp-autoprefixer
+ * @module gulp-rename
  * @module browser-sync
  */
 gulp.task('build:css', () => {
@@ -105,8 +107,9 @@ gulp.task('build:css', () => {
 
 /**
  * Concat all javascript files, strip comments, compile es6 to es5, minimize and reload browsersync.
- * @module gulp-concat
+ * @module gulp-plumber
  * @module gulp-babel
+ * @module gulp-concat
  * @module gulp-uglify
  * @module browser-sync
  */
