@@ -62,8 +62,8 @@ const build = {
  * @const {array}
  */
 const watch = {
-    sass: 'dev/sass/**/*.scss',
-    scripts: 'dev/scripts/**/*.js',
+    sass: 'resources/sass/**/*.scss',
+    scripts: 'resources/scripts/**/*.js',
     html: '**/*.html',
     twig: '**/*.twig',
     php: '**/*.php'
