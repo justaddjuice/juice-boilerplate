@@ -1,0 +1,52 @@
+@charset 'utf-8';
+
+/*  ========================================================================
+    JUICE -> THEMES -> CUSTOM -> ELEMENTS -> FORM -> LABEL
+    ========================================================================  */
+
+label {
+    // Variables
+    --element-spacing: var(--default-element-spacing) / 2;
+    --font-color: inherit;
+    --font-family: var(--primary-typeface);
+    --font-size: var(--default-font-size);
+
+    // Check if the label size modifiers should be declared
+    @if $label-size-modifiers {
+        // Cycle through all of the sizes
+        @each $size in $sizes {
+            // Modifiers: Sizes
+            &.is-#{$size} {
+                // Variables
+                --font-size: var(--default-font-size-#{$size});
+            }
+
+            // Check if the label size modifier breakpoints should be declared
+            @if $label-size-modifier-breakpoints {
+                // Cycle through all of the breakpoints
+                @each $breakpoint-name, $breakpoint in $breakpoints {
+                    // Breakpoint
+                    @include breakpoint($breakpoint-name) {
+                        // Modifiers: Size
+                        &.is-#{$size}\@#{$breakpoint-name} {
+                            // Variables
+                            --font-size: var(--default-font-size-#{$size});
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Check if the label feedback modifiers should be declared
+    @if $label-feedback-modifiers {
+        // Cycle through all of the feedback colors
+        @each $feedback-name, $color in $feedback-colors {
+            // Modifiers: Feedback colors
+            &.has-#{$feedback-name} {
+                // Variables
+                --font-color: var(--feedback-color-#{$feedback-name});
+            }
+        }
+    }
+}

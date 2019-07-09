@@ -1,0 +1,37 @@
+@charset 'utf-8';
+
+/*  ========================================================================
+    JUICE -> THEMES -> CUSTOM -> ELEMENTS -> MEDIA -> IMAGE
+    ========================================================================  */
+
+img {
+    // Variables
+    --element-spacing: var(--default-element-spacing);
+
+    // Check if the image size modifiers should be declared
+    @if $image-size-modifiers {
+        // Cycle through all of the sizes
+        @each $size in $sizes {
+            // Modifiers: Sizes
+            &.is-#{$size} {
+                // Variables
+                --element-spacing: var(--default-element-spacing-#{$size});
+            }
+
+            // Check if the image size modifier breakpoints should be declared
+            @if $image-size-modifier-breakpoints {
+                // Cycle through all of the breakpoints
+                @each $breakpoint-name, $breakpoint in $breakpoints {
+                    // Breakpoint
+                    @include breakpoint($breakpoint-name) {
+                        // Modifiers: Size
+                        &.is-#{$size}\@#{$breakpoint-name} {
+                            // Variables
+                            --element-spacing: var(--default-element-spacing-#{$size});
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

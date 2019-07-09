@@ -1,45 +1,81 @@
 @charset 'utf-8';
 
 /*  ========================================================================
-    JUICE -> CUSTOM THEME
+    JUICE -> UTILITIES
     ========================================================================  */
 
 // Import
-@import 'themes/custom/variables';
+@import 'just-add-juice/resources/sass/utilities/all';
+@import 'themes/custom/utilities/all';
 
 
 /*  ========================================================================
-    JUICE -> INITIALIZE
+    JUICE -> VARIABLES
     ========================================================================  */
 
 // Import
-@import 'just-add-juice/sass/initialize/all';
+@import 'just-add-juice/resources/sass/variables/all';
+@import 'themes/custom/variables/all';
 
 
 /*  ========================================================================
     JUICE -> MERGE
     ========================================================================  */
 
-// Merge the custom breakpoints with the juices breakpoints
+// Merge the custom breakpoints with the juice breakpoints
 $breakpoints: map-merge($breakpoints, $custom-breakpoints);
 
-// Merge the custom base colors with the juices base colors
-$base-colors: map-merge($base-colors, $custom-base-colors);
+// Merge the custom colors with the juice colors
+$colors: map-merge($colors, $custom-colors);
+
+// Merge the custom font colors with the juice font colors
+$font-colors: map-merge($font-colors, $custom-font-colors);
+
+// Merge the custom feedback colors with the juice feedback colors
+$feedback-colors: map-merge($feedback-colors, $custom-feedback-colors);
+
+// Merge the custom stack indexes with the juice stack indexes
+$stack-indexes: map-merge($stack-indexes, $custom-stack-indexes);
+
+// Merge the custom easings with the juice easings
+$custom-easings: map-merge($easings, $custom-easings);
 
 
 /*  ========================================================================
-    JUICE -> UTILITIES
+    JUICE -> FRAMEWORK
     ========================================================================  */
 
 // Import
-@import 'just-add-juice/sass/utilities/all';
+@import 'just-add-juice/resources/sass/framework/all';
+@import 'themes/custom/framework/all';
 
 
 /*  ========================================================================
-    JUICE -> FRAMEWORK, ELEMENTS AND COMPONENTS
+    JUICE -> ELEMENTS
     ========================================================================  */
 
-// Import
-@import 'just-add-juice/sass/framework/all';
-@import 'just-add-juice/sass/elements/all';
-@import 'just-add-juice/sass/components/all';
+@import 'just-add-juice/resources/sass/elements/all';
+@import 'themes/custom/elements/all';
+
+
+/*  ========================================================================
+    JUICE -> COMPONENTS
+    ========================================================================  */
+
+@import 'just-add-juice/resources/sass/components/all';
+@import 'themes/custom/components/all';
+
+
+/*  ========================================================================
+    JUICE -> ANIMATIONS
+    ========================================================================  */
+
+@import 'just-add-juice/resources/sass/animations/all';
+@import 'themes/custom/animations/all';
+
+
+/*  ========================================================================
+    JUICE -> HELPERS
+    ========================================================================  */
+
+@import 'just-add-juice/resources/sass/helpers/all';

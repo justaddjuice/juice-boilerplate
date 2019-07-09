@@ -1,0 +1,13 @@
+@charset 'utf-8';
+
+/*  ========================================================================
+    JUICE -> THEMES -> CUSTOM -> ANIMATIONS -> FADE -> EXIT -> FADE OUT RIGHT
+    ========================================================================  */
+
+.fade-out-right {
+    // Variables
+    --animation-delay: var(--default-animation-fade-out-delay);
+    --animation-distance: var(--default-animation-fade-out-distance);
+    --animation-duration: var(--default-animation-fade-out-duration);
+    --animation-easing: var(--default-animation-fade-out-easing);
+}

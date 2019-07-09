@@ -1,0 +1,13 @@
+@charset 'utf-8';
+
+/*  ========================================================================
+    JUICE -> THEMES -> CUSTOM -> ANIMATIONS -> ZOOM -> ENTRANCE -> ZOOM IN
+    ========================================================================  */
+
+.zoom-in {
+    // Variables
+    --animation-delay: var(--default-animation-zoom-in-delay);
+    --animation-duration: var(--default-animation-zoom-in-duration);
+    --animation-easing: var(--default-animation-zoom-in-easing);
+    --animation-scale: var(--default-animation-zoom-in-scale);
+}

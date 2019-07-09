@@ -1,0 +1,195 @@
+@charset 'utf-8';
+
+/*  ========================================================================
+    JUICE -> THEMES -> CUSTOM -> ELEMENTS -> BUTTON -> BUTTON
+    ========================================================================  */
+
+#{$button} {
+    // Variables
+    --accessibility-focus-width: var(--default-accessibility-focus-width);
+    --accessibility-focus-color: var(--color-primary-accessibility-focus);
+    --background-color: var(--color-primary);
+    --border-color: var(--color-primary-darken-3);
+    --border-radius-bottom-left: var(--default-border-radius-bottom-left);
+    --border-radius-bottom-right: var(--default-border-radius-bottom-right);
+    --border-radius-top-left: var(--default-border-radius-top-left);
+    --border-radius-top-right: var(--default-border-radius-top-right);
+    --border-style: var(--default-border-style);
+    --border-width-bottom: var(--default-border-width-bottom);
+    --border-width-left: var(--default-border-width-left);
+    --border-width-right: var(--default-border-width-right);
+    --border-width-top: var(--default-border-width-top);
+    --border-width-divider: var(--default-border-width-divider);
+    --content-spacing: calc(var(--default-content-spacing) / 1.5);
+    --element-spacing: var(--default-element-spacing);
+    --font-color: var(--color-primary-inverted-text);
+    --font-family: var(--secondary-typeface);
+    --font-size: var(--default-font-size);
+    --font-variant: normal;
+    --font-weight: 300;
+    --height: var(--default-element-height);
+    --letter-spacing: 0;
+    --text-transform: uppercase;
+
+    // Pseudo classes
+    &:hover {
+        // Variables
+        --background-color: var(--color-primary-lighten-1);
+        --border-color: var(--color-primary-darken-6);
+        --font-color: var(--color-primary-inverted-text);
+    }
+
+    &:focus {
+        // Variables
+        --background-color: var(--color-primary-lighten-1);
+        --border-color: var(--color-primary-darken-6);
+        --font-color: var(--color-primary-inverted-text);
+    }
+
+    &:active {
+        // Variables
+        --background-color: var(--color-primary-darken-1);
+        --border-color: var(--color-primary-darken-8);
+        --font-color: var(--color-primary-inverted-text);
+    }
+
+    // Check if the button size modifiers should be declared
+    @if $button-size-modifiers {
+        // Cycle through all of the sizes
+        @each $size in $sizes {
+            // Modifiers: Sizes
+            &.is-#{$size} {
+                // Variables
+                --font-size: var(--default-font-size-#{$size});
+                --height: var(--default-element-height-#{$size});
+                --content-spacing: calc(var(--default-content-spacing-#{$size}) / 1.5);
+            }
+
+            // Check if the button size modifier breakpoints should be declared
+            @if $button-size-modifier-breakpoints {
+                // Cycle through all of the breakpoints
+                @each $breakpoint-name, $breakpoint in $breakpoints {
+                    // Breakpoint
+                    @include breakpoint($breakpoint-name) {
+                        // Modifiers: Size
+                        &.is-#{$size}\@#{$breakpoint-name} {
+                            // Variables
+                            --font-size: var(--default-font-size-#{$size});
+                            --content-spacing: calc(var(--default-content-spacing-#{$size}) / 1.5);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Check if the button color modifiers should be declared
+    @if $button-color-modifiers {
+        // Cycle through all of the colors
+        @each $color-name, $color in $colors {
+            // Modifiers: Colors
+            &.is-#{$color-name} {
+                // Variables
+                --accessibility-focus-color: var(--color-#{$color-name}-accessibility-focus);
+                --background-color: var(--color-#{$color-name});
+                --border-color: var(--color-#{$color-name}-darken-3);
+                --font-color: var(--color-#{$color-name}-inverted-text);
+
+                // Pseudo classes
+                &:hover {
+                    // Variables
+                    --background-color: var(--color-#{$color-name}-lighten-1);
+                    --border-color: var(--color-#{$color-name}-darken-6);
+                    --font-color: var(--color-#{$color-name}-inverted-text);
+                }
+
+                &:active {
+                    // Variables
+                    --background-color: var(--color-#{$color-name}-darken-1);
+                    --border-color: var(--color-#{$color-name}-darken-8);
+                    --font-color: var(--color-#{$color-name}-inverted-text);
+                }
+            }
+        }
+    }
+
+    // Check if the button feedback modifiers should be declared
+    @if $button-feedback-modifiers {
+        // Cycle through all of the feedback colors
+        @each $feedback-name, $color in $feedback-colors {
+            // Modifiers: Feedback colors
+            &.has-#{$feedback-name} {
+                // Variables
+                --accessibility-focus-color: var(--feedback-color-#{$feedback-name}-accessibility-focus);
+                --background-color: var(--feedback-color-#{$feedback-name});
+                --border-color: var(--feedback-color-#{$feedback-name}-darken-3);
+                --font-color: var(--feedback-color-#{$feedback-name}-inverted-text);
+
+                // Pseudo classes
+                &:hover {
+                    // Variables
+                    --background-color: var(--feedback-color-#{$feedback-name}-lighten-1);
+                    --border-color: var(--feedback-color-#{$feedback-name}-darken-6);
+                    --font-color: var(--feedback-color-#{$feedback-name}-inverted-text);
+                }
+
+                &:active {
+                    // Variables
+                    --background-color: var(--feedback-color-#{$feedback-name}-darken-1);
+                    --border-color: var(--feedback-color-#{$feedback-name}-darken-8);
+                    --font-color: var(--feedback-color-#{$feedback-name}-inverted-text);
+                }
+            }
+        }
+    }
+
+    // Check if the button component modifier should be declared
+    @if $button-component-modifier {
+        // Modifiers
+        &.button--component {
+            // Variables
+            --background-color: transparent;
+            --border-color: transparent;
+            --font-color: inherit;
+            --opacity: 0.3;
+
+            // Pseudo classes
+            &:hover {
+                // Variables
+                --background-color: hsla(0, 0, 0, 0.08);
+                --border-color: transparent;
+                --font-color: inherit;
+                --opacity: 0.6;
+            }
+
+            &:focus {
+                // Variables
+                --background-color: hsla(0, 0, 0, 0.04);
+                --border-color: transparent;
+                --font-color: inherit;
+                --opacity: 0.6;
+            }
+
+            &:active {
+                // Variables
+                --background-color: hsla(0, 0, 0, 0.12);
+                --border-color:  transparent;
+                --font-color: inherit;
+                --opacity: 0.9;
+            }
+        }
+    }
+
+    // Check if the button flat modifier should be declared
+    @if $button-flat-modifier {
+        &.button--flat {
+            // Variables
+            --font-color: var(--background-color);
+
+            &:hover {
+                // Variables
+                --font-color: var(--background-color);
+            }
+        }
+    }
+}

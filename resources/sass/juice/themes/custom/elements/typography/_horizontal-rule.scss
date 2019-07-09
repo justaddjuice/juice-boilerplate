@@ -1,0 +1,13 @@
+@charset 'utf-8';
+
+/*  ========================================================================
+    JUICE -> THEMES -> CUSTOM -> ELEMENTS -> TYPOGRAPHY -> HORIZONTAL RULE
+    ========================================================================  */
+
+hr {
+    // Variables
+    --border-color: hsla(0, 0%, 50%, .15);
+    --border-style: var(--default-border-style);
+    --border-width: var(--default-border-width-divider);
+    --element-spacing: var(--default-element-spacing);
+}

@@ -1,0 +1,38 @@
+@charset 'utf-8';
+
+/*  ========================================================================
+    JUICE -> THEMES -> CUSTOM -> ELEMENTS -> TYPOGRAPHY -> PARAGRAPH
+    ========================================================================  */
+
+p {
+    // Variables
+    --element-spacing: var(--default-element-spacing);
+    --font-size: var(--default-font-size);
+
+    // Check if the paragraph size modifiers should be declared
+    @if $paragraph-size-modifiers {
+        // Cycle through all of the sizes
+        @each $size in $sizes {
+            // Modifiers: Sizes
+            &.is-#{$size} {
+                // Variables
+                --font-size: var(--default-font-size-#{$size});
+            }
+
+            // Check if the paragraph size modifier breakpoints should be declared
+            @if $paragraph-size-modifier-breakpoints {
+                // Cycle through all of the breakpoints
+                @each $breakpoint-name, $breakpoint in $breakpoints {
+                    // Breakpoint
+                    @include breakpoint($breakpoint-name) {
+                        // Modifiers: Size
+                        &.is-#{$size}\@#{$breakpoint-name} {
+                            // Variables
+                            --font-size: var(--default-font-size-#{$size});
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

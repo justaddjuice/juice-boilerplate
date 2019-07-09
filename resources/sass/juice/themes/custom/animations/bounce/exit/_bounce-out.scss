@@ -1,0 +1,12 @@
+@charset 'utf-8';
+
+/*  ========================================================================
+    JUICE -> THEMES -> CUSTOM -> ANIMATIONS -> BOUNCE -> EXIT -> BOUNCE OUT
+    ========================================================================  */
+
+.bounce-out {
+    // Variables
+    --animation-delay: var(--default-animation-bounce-out-delay);
+    --animation-duration: var(--default-animation-bounce-out-duration);
+    --animation-easing: var(--default-animation-bounce-out-easing);
+}

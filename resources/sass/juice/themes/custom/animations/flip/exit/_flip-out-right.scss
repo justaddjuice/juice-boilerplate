@@ -1,0 +1,13 @@
+@charset 'utf-8';
+
+/*  ========================================================================
+    JUICE -> THEMES -> CUSTOM -> ANIMATIONS -> FLIP -> EXIT -> FLIP OUT RIGHT
+    ========================================================================  */
+
+.flip-out-right {
+    // Variables
+    --animation-delay: var(--default-animation-flip-out-delay);
+    --animation-duration: var(--default-animation-flip-out-duration);
+    --animation-easing: var(--default-animation-flip-out-easing);
+    --animation-perspective: var(--default-animation-flip-in-perspective);
+}

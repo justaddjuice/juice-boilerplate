@@ -1,0 +1,13 @@
+@charset 'utf-8';
+
+/*  ========================================================================
+    JUICE -> THEMES -> CUSTOM -> ANIMATIONS -> BOUNCE -> ENTRANCE -> BOUNCE IN RIGHT
+    ========================================================================  */
+
+.bounce-in-right {
+    // Variables
+    --animation-delay: var(--default-animation-bounce-in-delay);
+    --animation-distance: var(--default-animation-bounce-in-distance);
+    --animation-duration: var(--default-animation-bounce-in-duration);
+    --animation-easing: var(--default-animation-bounce-in-easing);
+}

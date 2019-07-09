@@ -1,0 +1,15 @@
+@charset 'utf-8';
+
+/*  ========================================================================
+    JUICE -> THEMES -> CUSTOM -> ELEMENTS -> LAYOUT -> OVERLAY
+    ========================================================================  */
+
+.has-overlay {
+    // Nested selectors
+    .overlay {
+        // Variables
+        --animation-duration: 200ms;
+        --background-color: hsla(0, 0%, 0%, 0.75);
+        --font-color: var(--color-black-inverted-text);
+    }
+}

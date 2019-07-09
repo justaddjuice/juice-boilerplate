@@ -1,0 +1,39 @@
+@charset 'utf-8';
+
+/*  ========================================================================
+    JUICE -> THEMES -> CUSTOM -> ELEMENTS -> NAVIGATION -> BREADCRUMB
+    ========================================================================  */
+
+.breadcrumb {
+    // Variables
+    --content-spacing: calc(var(--default-content-spacing) / 2);
+    --element-spacing: var(--default-element-spacing);
+    --font-color: inherit;
+    --font-size: var(--default-font-size);
+    --separator: '\203A';
+
+    // Nested selectors
+    li {
+        // Nested selectors
+        a {
+            // Variables
+            --font-color: var(--default-link-color);
+
+            // Pseudo classes
+            &:hover {
+                // Variables
+                --font-color: var(--default-link-color-hover);
+            }
+
+            &:focus {
+                // Variables
+                --font-color: var(--default-link-color-focus);
+            }
+
+            &:active {
+                // Variables
+                --font-color: var(--default-link-color-active);
+            }
+        }
+    }
+}

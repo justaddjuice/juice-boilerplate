@@ -1,0 +1,13 @@
+@charset 'utf-8';
+
+/*  ========================================================================
+    JUICE -> THEMES -> CUSTOM -> ANIMATIONS -> SLIDE -> ENTRANCE -> SLIDE IN RIGHT
+    ========================================================================  */
+
+.slide-in-right {
+    // Variables
+    --animation-delay: var(--default-animation-slide-in-delay);
+    --animation-distance: calc(0px - var(--default-animation-slide-in-distance));
+    --animation-duration: var(--default-animation-slide-in-duration);
+    --animation-easing: var(--default-animation-slide-in-easing);
+}

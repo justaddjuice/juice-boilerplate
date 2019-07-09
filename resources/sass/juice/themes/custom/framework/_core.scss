@@ -1,0 +1,13 @@
+@charset 'utf-8';
+
+/*  ========================================================================
+    JUICE -> THEMES -> CUSTOM -> FRAMEWORK -> CORE
+    ========================================================================  */
+
+body {
+    // Variables
+    --background-color: hsla(0, 0%, 99%, 1);
+    --selection-background-color: var(--color-primary);
+    --selection-font-color: var(--color-white);
+    --selection-text-shadow: var(--color-black);
+}

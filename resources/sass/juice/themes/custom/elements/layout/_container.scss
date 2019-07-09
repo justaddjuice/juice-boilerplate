@@ -1,0 +1,11 @@
+@charset 'utf-8';
+
+/*  ========================================================================
+    JUICE -> THEMES -> CUSTOM -> ELEMENTS -> LAYOUT -> CONTAINER
+    ========================================================================  */
+
+.container {
+    // Variables
+    --gutter: var(--default-content-spacing);
+    --max-width: 1200px;
+}

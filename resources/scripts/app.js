@@ -1,10 +1,10 @@
 'use strict';
 
 /*  ========================================================================
-    APPLICATION -> JUICE COMPONENTS
+    APPLICATION -> JUICE
     ========================================================================  */
 
-// Here is a good place to instantiate the Juice components you wish to use...
+// Here is a good place to instantiate the juice components/plugins...
 
 
 /*  ========================================================================

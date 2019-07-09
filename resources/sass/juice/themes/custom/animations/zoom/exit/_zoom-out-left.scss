@@ -1,0 +1,14 @@
+@charset 'utf-8';
+
+/*  ========================================================================
+    JUICE -> THEMES -> CUSTOM -> ANIMATIONS -> ZOOM -> ENTRANCE -> ZOOM OUT LEFT
+    ========================================================================  */
+
+.zoom-out-left {
+    // Variables
+    --animation-delay: var(--default-animation-zoom-out-delay);
+    --animation-distance: calc(0px - var(--default-animation-zoom-out-distance));
+    --animation-duration: var(--default-animation-zoom-out-duration);
+    --animation-easing: var(--default-animation-zoom-out-easing);
+    --animation-scale: var(--default-animation-zoom-out-scale);
+}

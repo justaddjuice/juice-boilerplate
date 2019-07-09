@@ -1,0 +1,17 @@
+@charset 'utf-8';
+
+/*  ========================================================================
+    JUICE -> THEMES -> CUSTOM -> ELEMENTS -> SPINNER -> SWOOSH
+    ========================================================================  */
+
+.spinner {
+    // Modifiers
+    &.spinner--swoosh {
+        // Modifiers: Colors
+        @each $color-name, $color in $colors {
+            &.is-#{$color-name} {
+                --color: var(--color-#{$color-name});
+            }
+        }
+    }
+}
