@@ -1,19 +1,21 @@
 {
     "devDependencies": {
-        "babel-core": "^6.26.3",
-        "babel-loader": "^7.1.4",
-        "babel-preset-env": "^1.7.0",
-        "browser-sync": "^2.26.3",
-        "gulp": "^3.9.1",
-        "gulp-autoprefixer": "^5.0.0",
-        "gulp-babel": "^7.0.1",
+        "@babel/core": "^7.3.4",
+        "@babel/preset-env": "^7.3.4",
+        "browser-sync": "^2.26.7",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^6.1.0",
+        "gulp-babel": "^8.0.0",
         "gulp-concat": "^2.6.1",
         "gulp-connect-php7": "^1.0.1",
-        "gulp-notifier": "^1.0.5",
-        "gulp-plumber": "^1.2.0",
+        "gulp-notify": "^3.2.0",
+        "gulp-plumber": "^1.2.1",
         "gulp-rename": "^1.4.0",
-        "gulp-sass": "^4.0.1",
-        "gulp-uglify": "^3.0.0",
-        "just-add-juice": "^0.17.1-beta"
+        "gulp-sass": "^4.0.2",
+        "gulp-uglify": "^3.0.2",
+        "just-add-juice": "^0.19.2-beta"
+    },
+    "dependencies": {
+        "velocity-animate": "^1.5.2"
     }
 }
