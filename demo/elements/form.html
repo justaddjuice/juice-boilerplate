@@ -1,0 +1,253 @@
+<!doctype html>
+<html class="has-no-js has-no-touch" lang="en">
+<head>
+    <!-- Meta data -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <!-- Page title -->
+    <title>Juice - Elements: Form</title>
+
+    <!-- Webfonts and icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Oswald">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="../../public/css/app.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <p>&nbsp;</p>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <div class="container">
+            <h1>Form</h1>
+            <hr />
+            <ul class="breadcrumb">
+                <li><a href="../../index.html">Juice</a></li>
+                <li><a href="../elements/index.html">Elements</a></li>
+                <li>Form</li>
+            </ul>
+            <hr class="has-huge-element-spacing" />
+
+            <div class="box">
+                <form>
+                    <div class="grid">
+                        <div class="grid__item grid__item--span-12 grid__item--span-6@desktop-up">
+                            <label for="input">Input</label>
+                            <input type="text" id="input" placeholder="Input..." />
+                        </div>
+
+                        <div class="grid__item grid__item--span-12 grid__item--span-6@desktop-up">
+                            <label for="select">Select</label>
+                            <select id="select" placeholder="Select">
+                                <option value="">Option 1</option>
+                                <option value="">Option 2</option>
+                                <option value="">Option 3</option>
+                                <option value="">Option 4</option>
+                                <option value="">Option 5</option>
+                                <option value="">Option 6</option>
+                                <option value="">Option 7</option>
+                                <option value="">Option 8</option>
+                                <option value="">Option 9</option>
+                                <option value="">Option 10</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <label for="textarea">Textarea</label>
+                    <textarea id="textarea" rows="6" placeholder="Textarea..." ></textarea>
+
+                    <div class="grid">
+                        <div class="grid__item grid__item--span-12 grid__item--span-4@desktop-up">
+                            <label for="file">File</label>
+                            <input type="file" id="file" />
+
+                            <hr />
+
+                            <label class="custom-file" data-custom-file-text="No file selected">
+                                <input type="file" multiple />
+                                <div class="custom-file__button">Browse</div>
+                                <div class="custom-file__text">No file selected</div>
+                            </label>
+                        </div>
+
+                        <div class="grid__item grid__item--span-12 grid__item--span-4@desktop-up">
+                            <label for="color">Color</label>
+                            <input type="color" id="color" />
+                        </div>
+
+                        <div class="grid__item grid__item--span-12 grid__item--span-4@desktop-up">
+                            <label for="range">Range</label>
+                            <input type="range" id="range" />
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="grid">
+                        <div class="grid__item grid__item--span-12 grid__item--span-6@desktop-up">
+                            <div class="media-object media-object--seamless has-no-element-spacing">
+                                <div class="media-object__badge">
+                                    <input type="checkbox" id="checkbox-1" />
+                                </div>
+                                <div class="media-object__content">
+                                    <label for="checkbox-1" class="label--inline">Checkbox 1</label>
+                                </div>
+                            </div>
+
+                            <div class="media-object media-object--seamless has-no-element-spacing">
+                                <div class="media-object__badge">
+                                    <input type="checkbox" id="checkbox-2" />
+                                </div>
+                                <div class="media-object__content">
+                                    <label for="checkbox-2" class="label--inline">Checkbox 2</label>
+                                </div>
+                            </div>
+
+                            <div class="media-object media-object--seamless">
+                                <div class="media-object__badge">
+                                    <input type="checkbox" id="checkbox-3" />
+                                </div>
+                                <div class="media-object__content">
+                                    <label for="checkbox-3" class="label--inline">Checkbox 3</label>
+                                </div>
+                            </div>
+
+                            <hr />
+
+                            <label class="custom-checkbox has-small-element-spacing">
+                                <input type="checkbox" />
+                                <div>Custom Checkbox 1</div>
+                            </label>
+
+                            <label class="custom-checkbox has-small-element-spacing">
+                                <input type="checkbox" />
+                                <div>Custom Checkbox 2</div>
+                            </label>
+
+                            <label class="custom-checkbox">
+                                <input type="checkbox" />
+                                <div>Custom Checkbox 3</div>
+                            </label>
+                        </div>
+                        <div class="grid__item grid__item--span-12 grid__item--span-6@desktop-up">
+                            <div class="media-object media-object--seamless has-no-element-spacing">
+                                <div class="media-object__badge">
+                                    <input type="radio" id="radio-1" name="radio" />
+                                </div>
+                                <div class="media-object__content">
+                                    <label for="radio-1" class="label--inline">Radio 1</label>
+                                </div>
+                            </div>
+
+                            <div class="media-object media-object--seamless has-no-element-spacing">
+                                <div class="media-object__badge">
+                                    <input type="radio" id="radio-2" name="radio" />
+                                </div>
+                                <div class="media-object__content">
+                                    <label for="radio-2" class="label--inline">Radio 2</label>
+                                </div>
+                            </div>
+
+                            <div class="media-object media-object--seamless">
+                                <div class="media-object__badge">
+                                    <input type="radio" id="radio-3" name="radio" />
+                                </div>
+                                <div class="media-object__content">
+                                    <label for="radio-3" class="label--inline">Radio 3</label>
+                                </div>
+                            </div>
+
+                            <hr />
+
+                            <label class="custom-radio has-small-element-spacing">
+                                <input type="radio" name="custom-radio" />
+                                <div>Custom Radio 1</div>
+                            </label>
+
+                            <label class="custom-radio has-small-element-spacing">
+                                <input type="radio" name="custom-radio" />
+                                <div>Custom Radio 2</div>
+                            </label>
+
+                            <label class="custom-radio">
+                                <input type="radio" name="custom-radio" />
+                                <div>Custom Radio 3</div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="grid">
+                        <div class="grid__item grid__item--span-12 grid__item--span-6@desktop-up">
+
+                            <label for="form-control-input-addon-left">Left</label>
+                            <div class="form-control">
+                                <button type="button" class="button--icon is-white is-static js-prevent-default"><i class="fas fa-user"></i></button>
+                                <input type="text" id="form-control-input-addon-left" class="form-control__spotlight" placeholder="Username" />
+                            </div>
+                        </div>
+
+                        <div class="grid__item grid__item--span-12 grid__item--span-6@desktop-up">
+                            <label for="form-control-input-addon-right">Right</label>
+                            <div class="form-control">
+                                <input type="text" id="form-control-input-addon-right" class="form-control__spotlight" placeholder="Search for a product..." />
+                                <button type="button" class="is-primary js-prevent-default">Go</button>
+                            </div>
+                        </div>
+
+                        <div class="grid__item grid__item--span-12 grid__item--span-6@desktop-up">
+                            <label for="form-control-input-addon-both">Both</label>
+                            <div class="form-control">
+                                <select>
+                                    <option>£</option>
+                                    <option>$</option>
+                                </select>
+                                <input type="text" id="form-control-input-addon-both" class="form-control__spotlight" placeholder="Amount..." />
+                                <button type="button" class="is-primary js-prevent-default">Deposit</button>
+                            </div>
+                        </div>
+
+                        <div class="grid__item grid__item--span-12 grid__item--span-6@desktop-up">
+                            <label for="form-control-password-toggle">Password</label>
+                            <div class="form-control has-password-reveal">
+                                <input type="password" id="password-form-control" class="form-control__spotlight" placeholder="Password..." />
+                                <button type="button" class="button--icon is-white js-password-reveal-trigger">
+                                    <i class="password-reveal__icon far fa-eye fa-fw"></i>
+                                    <i class="password-reveal__icon far fa-eye-slash fa-fw"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p class="is-center-aligned"><a href="#" class="js-smooth-scroll-top">Top</a></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="//unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="../../public/scripts/app.min.js"></script>
+
+    <!-- Juice components -->
+    <script>
+        var smooth_scroll = new SmoothScroll;
+        var custom_file = new CustomFile('.custom-file');
+        var password_reveal = new PasswordReveal('.has-password-reveal');
+    </script>
+</body>
+</html>

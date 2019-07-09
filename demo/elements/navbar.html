@@ -1,0 +1,130 @@
+<!doctype html>
+<html class="has-no-js has-no-touch" lang="en">
+<head>
+    <!-- Meta data -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <!-- Page title -->
+    <title>Juice - Elements: Navbar</title>
+
+    <!-- Webfonts and icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Oswald">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="../../public/css/app.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <p>&nbsp;</p>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <div class="container">
+            <h1>Navbar</h1>
+            <hr />
+            <ul class="breadcrumb">
+                <li><a href="../../index.html">Juice</a></li>
+                <li><a href="../elements/index.html">Elements</a></li>
+                <li>Navbar</li>
+            </ul>
+            <hr class="has-huge-element-spacing" />
+
+            <nav class="navbar">
+                <div class="navbar__logo">
+                    <a href="#" class="js-prevent-default"><img src="//acmelogos.com/images/logo-8.svg" /></a>
+                </div>
+
+                <div class="navbar__links">
+                    <ul role="navbar">
+                        <li><a href="#" class="js-prevent-default">Link</a></li>
+                        <li class="has-dropdown">
+                            <a href="#" class="js-prevent-default js-dropdown-trigger">Dropdown</a>
+
+                            <div class="dropdown dropdown--center is-hoverable">
+                                <div class="dropdown__content">
+                                    <p class="dropdown__item has-no-element-spacing">Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit...</p>
+                                    <div class="dropdown__divider"></div>
+                                    <a href="#" class="dropdown__item js-prevent-default">Dropdown item 1</a>
+                                    <a href="#" class="dropdown__item js-prevent-default">Dropdown item 2</a>
+                                    <a href="#" class="dropdown__item js-prevent-default">Dropdown item 3</a>
+                                    <div class="dropdown__divider"></div>
+                                    <a href="#" class="dropdown__item js-prevent-default">More...</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="has-dropdown has-dropdown--megamenu">
+                            <a href="#" class="js-prevent-default js-dropdown-trigger">Megamenu</a>
+
+                            <div class="dropdown dropdown--megamenu is-hoverable">
+                                <div class="dropdown__content">
+                                    <div class="grid">
+                                        <div class="grid__item grid__item--span-3">
+                                            <h6>Column</h6>
+                                            <hr />
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+                                        </div>
+                                        <div class="grid__item grid__item--span-3">
+                                            <h6>Column</h6>
+                                            <hr />
+                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
+                                        </div>
+                                        <div class="grid__item grid__item--span-3">
+                                            <h6>Column</h6>
+                                            <hr />
+                                            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+                                        </div>
+                                        <div class="grid__item grid__item--span-3">
+                                            <h6>Column</h6>
+                                            <hr />
+                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#" class="js-prevent-default">Link</a></li>
+                    </ul>
+                </div>
+
+                <div class="navbar__icons">
+                    <button class="button--component has-toggable" data-toggler-targets="#navbar__revealer" data-toggler-slide="true"><i class="fas fa-bars fa-fw"></i></button>
+                </div>
+
+                <div id="navbar__revealer" class="navbar__revealer">
+                    <ul role="navigation">
+                        <li><a href="#" class="js-prevent-default">Mobile Link 1</a></li>
+                        <li><a href="#" class="js-prevent-default">Mobile Link 2</a></li>
+                        <li><a href="#" class="js-prevent-default">Mobile Link 3</a></li>
+                        <li><a href="#" class="js-prevent-default">Mobile Link 4</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p class="is-center-aligned"><a href="#" class="js-smooth-scroll-top">Top</a></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="//unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="../../public/scripts/app.min.js"></script>
+
+    <!-- Juice components -->
+    <script>
+        var smooth_scroll = new SmoothScroll;
+        var dropdown = new Dropdown('.has-dropdown');
+        var toggler = new Toggler('.has-toggable');
+    </script>
+</body>
+</html>

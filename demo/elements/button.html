@@ -1,0 +1,245 @@
+<!doctype html>
+<html class="has-no-js has-no-touch" lang="en">
+<head>
+    <!-- Meta data -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <!-- Page title -->
+    <title>Juice - Elements: Button</title>
+
+    <!-- Webfonts and icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Oswald">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="../../public/css/app.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <p>&nbsp;</p>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <div class="container">
+            <h1>Button</h1>
+            <hr />
+            <ul class="breadcrumb">
+                <li><a href="../../index.html">Juice</a></li>
+                <li><a href="../elements/index.html">Elements</a></li>
+                <li>Button</li>
+            </ul>
+            <hr class="has-huge-element-spacing" />
+
+            <div class="grid">
+                <div class="grid__item grid__item--span-12 grid__item--span-6@desktop-up">
+                    <div class="box is-center-aligned">
+                        <div class="has-element-spacing">
+                            <h6>Standard</h6>
+                            <button type="button">Default</button>
+                            <button type="button" class="button--outline">Outline</button>
+                            <button type="button" class="button--flat">Flat</button>
+                        </div>
+
+                        <hr />
+
+                        <div class="has-element-spacing">
+                            <h6>Disabled</h6>
+                            <button type="button" disabled>Default</button>
+                            <button type="button" class="button--outline" disabled>Outline</button>
+                            <button type="button" class="button--flat" disabled>Flat</button>
+                        </div>
+
+                        <hr />
+
+                        <div class="has-element-spacing">
+                            <h6>Color</h6>
+                            <button type="button" class="is-emerald">Emerald</button>
+                            <button type="button" class="button--outline is-emerald">Outline</button>
+                            <button type="button" class="button--flat is-emerald">Flat</button>
+                        </div>
+
+                        <hr />
+
+                        <div class="has-element-spacing">
+                            <h6>Disabled Color</h6>
+                            <button type="button" class="is-emerald" disabled>Emerald</button>
+                            <button type="button" class="button--outline is-emerald" disabled>Outline</button>
+                            <button type="button" class="button--flat is-emerald" disabled>Flat</button>
+                        </div>
+
+                        <hr />
+
+                        <h6>Group</h6>
+
+                        <div class="button-group">
+                            <button type="button">Button</button>
+                            <button type="button">Button</button>
+                            <button type="button">Button</button>
+                        </div>
+
+                        <div class="button-group button-group--outline">
+                            <button type="button">Button</button>
+                            <button type="button">Button</button>
+                            <button type="button">Button</button>
+                        </div>
+
+                        <div class="button-group button-group--flat">
+                            <button type="button">Button</button>
+                            <button type="button">Button</button>
+                            <button type="button">Button</button>
+                        </div>
+
+                        <hr />
+
+                        <h6>With Icons</h6>
+                        <button type="button">
+                            <span class="button__icon">
+                                <i class="fas fa-user fa-fw"></i>
+                            </span>
+                            <span class="button__text">
+                                Button
+                            </span>
+                        </button>
+                        <button type="button" class="button--outline">
+                            <span class="button__icon">
+                                <i class="fas fa-user fa-fw"></i>
+                            </span>
+                            <span class="button__text">
+                                Button
+                            </span>
+                        </button>
+                        <button type="button" class="button--flat">
+                            <span class="button__icon">
+                                <i class="fas fa-user fa-fw"></i>
+                            </span>
+                            <span class="button__text">
+                                Button
+                            </span>
+                        </button>
+
+                        <hr />
+
+                        <h6>Icon Standard and Rounded</h6>
+                        <button type="button" class="button--icon">
+                            <i class="fas fa-user fa-fw"></i>
+                        </button>
+
+                        <button type="button" class="button--icon button--round">
+                            <i class="fas fa-user fa-fw"></i>
+                        </button>
+
+                        <button type="button" class="button--icon button--outline">
+                            <i class="fas fa-user fa-fw"></i>
+                        </button>
+
+                        <button type="button" class="button--icon button--round button--outline">
+                            <i class="fas fa-user fa-fw"></i>
+                        </button>
+
+                        <button type="button" class="button--icon button--flat">
+                            <i class="fas fa-user fa-fw"></i>
+                        </button>
+
+                        <button type="button" class="button--icon button--round button--flat">
+                            <i class="fas fa-user fa-fw"></i>
+                        </button>
+
+                        <button type="button" class="button--icon button--component">
+                            <i class="fas fa-user fa-fw"></i>
+                        </button>
+
+                        <button type="button" class="button--icon button--round button--component">
+                            <i class="fas fa-user fa-fw"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="grid__item grid__item--span-12 grid__item--span-6@desktop-up">
+                    <div class="box is-center-aligned">
+                        <h6>Feedback</h6>
+
+                        <p>
+                            <button type="button" class="has-success">Success</button>
+                            <button type="button" class="button--outline has-success">Outline</button>
+                            <button type="button" class="button--flat has-success">Flat</button>
+                        </p>
+
+                        <p>
+                            <button type="button" class="has-info">Info</button>
+                            <button type="button" class="button--outline has-info">Outline</button>
+                            <button type="button" class="button--flat has-info">Flat</button>
+                        </p>
+
+                        <p>
+                            <button type="button" class="has-warning">Warning</button>
+                            <button type="button" class="button--outline has-warning">Outline</button>
+                            <button type="button" class="button--flat has-warning">Flat</button>
+                        </p>
+
+                        <p>
+                            <button type="button" class="has-error">Error</button>
+                            <button type="button" class="button--outline has-error">Outline</button>
+                            <button type="button" class="button--flat has-error">Flat</button>
+                        </p>
+
+                        <hr />
+
+                        <h6>Disabled Feedback</h6>
+
+                        <p>
+                            <button type="button" class="has-success" disabled>Success</button>
+                            <button type="button" class="button--outline has-success" disabled>Outline</button>
+                            <button type="button" class="button--flat has-success" disabled>Flat</button>
+                        </p>
+
+                        <p>
+                            <button type="button" class="has-info" disabled>Info</button>
+                            <button type="button" class="button--outline has-info" disabled>Outline</button>
+                            <button type="button" class="button--flat has-info" disabled>Flat</button>
+                        </p>
+
+                        <p>
+                            <button type="button" class="has-warning" disabled>Warning</button>
+                            <button type="button" class="button--outline has-warning" disabled>Outline</button>
+                            <button type="button" class="button--flat has-warning" disabled>Flat</button>
+                        </p>
+
+                        <p>
+                            <button type="button" class="has-error" disabled>Error</button>
+                            <button type="button" class="button--outline has-error" disabled>Outline</button>
+                            <button type="button" class="button--flat has-error" disabled>Flat</button>
+                        </p>
+
+                        <hr />
+
+                        <h6>Pill</h6>
+                        <button type="button" class="button--pill">Pill</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p class="is-center-aligned"><a href="#" class="js-smooth-scroll-top">Top</a></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="//unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="../../public/scripts/app.min.js"></script>
+
+    <!-- Juice components -->
+    <script>
+        var smooth_scroll = new SmoothScroll;
+    </script>
+</body>
+</html>

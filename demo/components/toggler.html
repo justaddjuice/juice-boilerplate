@@ -1,0 +1,84 @@
+<!doctype html>
+<html class="has-no-js has-no-touch" lang="en">
+<head>
+    <!-- Meta data -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <!-- Page title -->
+    <title>Juice - Components: Toggler</title>
+
+    <!-- Webfonts and icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Oswald">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="../../public/css/app.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <p>&nbsp;</p>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <div class="container">
+            <h1>Toggler</h1>
+            <hr />
+            <ul class="breadcrumb">
+                <li><a href="../../index.html">Juice</a></li>
+                <li><a href="../components/index.html">Components</a></li>
+                <li>Toggler</li>
+            </ul>
+            <hr class="has-huge-element-spacing" />
+
+            <div class="grid">
+                <div class="grid__item grid__item--span-12 grid__item--span-6@tablet-up">
+                    <button class="button--block has-toggable" data-toggler-targets="#toggable-item-1">
+                        Animated Toggle
+                    </button>
+
+                    <div id="toggable-item-1" class="box" style="display: none;">
+                        <h6>Heading</h6>
+                        <hr />
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                </div>
+
+                <div class="grid__item grid__item--span-12 grid__item--span-6@tablet-up">
+                    <button class="button--block has-toggable" data-toggler-targets="#toggable-item-2" data-toggler-slide="true">
+                        Slide Toggle
+                    </button>
+
+                    <div id="toggable-item-2" class="box">
+                        <h6>Heading</h6>
+                        <hr />
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p class="is-center-aligned"><a href="#" class="js-smooth-scroll-top">Top</a></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="//unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="../../public/scripts/app.min.js"></script>
+
+    <!-- Juice components -->
+    <script>
+        var smooth_scroll = new SmoothScroll;
+        var toggler = new Toggler('.has-toggable');
+    </script>
+</body>
+</html>

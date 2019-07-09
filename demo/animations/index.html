@@ -1,0 +1,154 @@
+<!doctype html>
+<html class="has-no-js has-no-touch" lang="en">
+<head>
+    <!-- Meta data -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <!-- Page title -->
+    <title>Juice - Animations</title>
+
+    <!-- Webfonts and icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Oswald">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="../../public/css/app.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <p>&nbsp;</p>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <div class="container">
+            <h1>Animations</h1>
+            <hr />
+            <ul class="breadcrumb">
+                <li><a href="../../index.html">Juice</a></li>
+                <li>Animations</li>
+            </ul>
+            <hr class="has-huge-element-spacing" />
+
+            <div class="grid">
+                <div class="grid__item grid__item--span-12 grid__item--span-4@tablet-up grid__item--offset-4@tablet-up">
+                    <button id="animate-watch" class="button is-fullwidth is-huge has-huge-element-spacing has-animation">Watch Me</button>
+                    <div class="form-control">
+                        <select id="animate-select" class="form-control__spotlight">
+                            <optgroup label="Attractors">
+                                <option value="flash">Flash</option>
+                                <option value="pulse">Pulse</option>
+                                <option value="shake">Shake</option>
+                                <option value="vibrate">Vibrate</option>
+                            </optgroup>
+
+                            <optgroup label="Bounce Entrance">
+                                <option value="bounce-in">Bounce In</option>
+                                <option value="bounce-in-down">Bounce In Down</option>
+                                <option value="bounce-in-left">Bounce In Left</option>
+                                <option value="bounce-in-right">Bounce In Right</option>
+                                <option value="bounce-in-up">Bounce In Up</option>
+                            </optgroup>
+                            <optgroup label="Bounce Exit">
+                                <option value="bounce-out">Bounce Out</option>
+                                <option value="bounce-out-down">Bounce Out Down</option>
+                                <option value="bounce-out-left">Bounce Out Left</option>
+                                <option value="bounce-out-right">Bounce Out Right</option>
+                                <option value="bounce-out-up">Bounce Out Up</option>
+                            </optgroup>
+
+                            <optgroup label="Fade Entrance">
+                                <option value="fade-in">Fade In</option>
+                                <option value="fade-in-down">Fade In Down</option>
+                                <option value="fade-in-left">Fade In Left</option>
+                                <option value="fade-in-right">Fade In Right</option>
+                                <option value="fade-in-up">Fade In Up</option>
+                            </optgroup>
+                            <optgroup label="Fade Exit">
+                                <option value="fade-out">Fade Out</option>
+                                <option value="fade-out-down">Fade Out Down</option>
+                                <option value="fade-out-left">Fade Out Left</option>
+                                <option value="fade-out-right">Fade Out Right</option>
+                                <option value="fade-out-up">Fade Out Up</option>
+                            </optgroup>
+
+                            <optgroup label="Flip Entrance">
+                                <option value="flip-in-down">Flip In Down</option>
+                                <option value="flip-in-left">Flip In Left</option>
+                                <option value="flip-in-right">Flip In Right</option>
+                                <option value="flip-in-up">Flip In Up</option>
+                            </optgroup>
+                            <optgroup label="Flip Exit">
+                                <option value="flip-out-down">Flip Out Down</option>
+                                <option value="flip-out-left">Flip Out Left</option>
+                                <option value="flip-out-right">Flip Out Right</option>
+                                <option value="flip-out-up">Flip Out Up</option>
+                            </optgroup>
+
+                            <optgroup label="Slide Entrance">
+                                <option value="slide-in-down">Slide In Down</option>
+                                <option value="slide-in-left">Slide In Left</option>
+                                <option value="slide-in-right">Slide In Right</option>
+                                <option value="slide-in-up">Slide In Up</option>
+                            </optgroup>
+                            <optgroup label="Slide Exit">
+                                <option value="slide-out-down">Slide Out Down</option>
+                                <option value="slide-out-left">Slide Out Left</option>
+                                <option value="slide-out-right">Slide Out Right</option>
+                                <option value="slide-out-up">Slide Out Up</option>
+                            </optgroup>
+
+                            <optgroup label="Zoom Entrance">
+                                <option value="zoom-in">Zoom In</option>
+                                <option value="zoom-in-down">Zoom In Down</option>
+                                <option value="zoom-in-left">Zoom In Left</option>
+                                <option value="zoom-in-right">Zoom In Right</option>
+                                <option value="zoom-in-up">Zoom In Up</option>
+                            </optgroup>
+                            <optgroup label="Zoom Exit">
+                                <option value="zoom-out">Zoom Out</option>
+                                <option value="zoom-out-down">Zoom Out Down</option>
+                                <option value="zoom-out-left">Zoom Out Left</option>
+                                <option value="zoom-out-right">Zoom Out Right</option>
+                                <option value="zoom-out-up">Zoom Out Up</option>
+                            </optgroup>
+                        </select>
+                        <button type="button" id="animate-action" class="is-white">GO</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p class="is-center-aligned"><a href="#" class="js-smooth-scroll-top">Top</a></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="//unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="../../public/scripts/app.min.js"></script>
+    <script>
+        const $watch = document.querySelector('#animate-watch');
+        const $select = document.querySelector('#animate-select');
+        const $action = document.querySelector('#animate-action');
+
+        $action.addEventListener('click', function() {
+            const animation = $select.value;
+            $watch.classList.add(animation);
+            $watch.addEventListener('animationend', function() {
+                setTimeout(function() {
+                    $watch.classList.remove(animation);
+                }, 250);
+            })
+        });
+    </script>
+</body>
+</html>

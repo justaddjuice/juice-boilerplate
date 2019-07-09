@@ -1,0 +1,204 @@
+<!doctype html>
+<html class="has-no-js has-no-touch" lang="en">
+<head>
+    <!-- Meta data -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <!-- Page title -->
+    <title>Juice - Components: Accordion</title>
+
+    <!-- Webfonts and icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Oswald">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="../../public/css/app.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <p>&nbsp;</p>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <div class="container">
+            <h1>Accordion</h1>
+            <hr />
+            <ul class="breadcrumb">
+                <li><a href="../../index.html">Juice</a></li>
+                <li><a href="../components/index.html">Components</a></li>
+                <li>Accordion</li>
+            </ul>
+            <hr class="has-huge-element-spacing" />
+
+            <div class="grid">
+                <div class="grid__item grid__item--span-12 grid__item--span-6@tablet-up">
+                    <h3>Single</h3>
+
+                    <div class="accordion">
+                        <div class="accordion__item is-expanded">
+                            <div class="accordion__head js-accordion-toggle">
+                                <div class="accordion__heading">
+                                    <h4>Heading 1</h4>
+                                </div>
+
+                                <div class="accordion__action">
+                                    <button type="button" class="button--icon button--component button--round">
+                                        <i class="accordion__expand fas fa-minus"></i>
+                                        <i class="accordion__collapse fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="accordion__body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
+
+                        <div class="accordion__item is-expanded">
+                            <div class="accordion__head js-accordion-toggle">
+                                <div class="accordion__heading">
+                                    <h4>Heading 2</h4>
+                                </div>
+
+                                <div class="accordion__action">
+                                    <button type="button" class="button--icon button--component button--round">
+                                        <i class="accordion__expand fas fa-minus"></i>
+                                        <i class="accordion__collapse fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="accordion__body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
+
+                        <div class="accordion__item">
+                            <div class="accordion__head js-accordion-toggle">
+                                <div class="accordion__heading">
+                                    <h4>Heading 3</h4>
+                                </div>
+
+                                <div class="accordion__action">
+                                    <button type="button" class="button--icon button--component button--round">
+                                        <i class="accordion__expand fas fa-minus"></i>
+                                        <i class="accordion__collapse fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="accordion__body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid__item grid__item--span-12 grid__item--span-6@tablet-up">
+                    <h3>Multiple (Spaced and Color)</h3>
+
+                    <div class="accordion accordion--spaced is-primary" data-accordion-open-multiple-items="true">
+                        <div class="accordion__item">
+                            <div class="accordion__head js-accordion-toggle">
+                                <div class="accordion__heading">
+                                    <h4>Heading 1</h4>
+                                </div>
+
+                                <div class="accordion__action">
+                                    <button type="button" class="button--icon button--component button--round">
+                                        <i class="accordion__expand fas fa-minus"></i>
+                                        <i class="accordion__collapse fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="accordion__body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
+
+                        <div class="accordion__item">
+                            <div class="accordion__head js-accordion-toggle">
+                                <div class="accordion__heading">
+                                    <h4>Heading 2</h4>
+                                </div>
+
+                                <div class="accordion__action">
+                                    <button type="button" class="button--icon button--component button--round">
+                                        <i class="accordion__expand fas fa-minus"></i>
+                                        <i class="accordion__collapse fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="accordion__body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
+
+                        <div class="accordion__item">
+                            <div class="accordion__head js-accordion-toggle">
+                                <div class="accordion__heading">
+                                    <h4>Heading 3</h4>
+                                </div>
+
+                                <div class="accordion__action">
+                                    <button type="button" class="button--icon button--component button--round">
+                                        <i class="accordion__expand fas fa-minus"></i>
+                                        <i class="accordion__collapse fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="accordion__body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p class="is-center-aligned"><a href="#" class="js-smooth-scroll-top">Top</a></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="//unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="../../public/scripts/app.min.js"></script>
+
+    <!-- Juice components -->
+    <script>
+        var smooth_scroll = new SmoothScroll;
+        var accordion = new Accordion('.accordion');
+    </script>
+</body>
+</html>
