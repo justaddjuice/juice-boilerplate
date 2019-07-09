@@ -1,3 +1,29 @@
+# July 9, 2019 (Juice v0.19.2-beta)
+
+### Updated
+- Added demo pages
+- Updated build directory
+- Updated theme file and directory structure to match latest version of juice
+- Updated package
+    - Updated dependencies to latest versions
+    - Updated devDependencies just-add-juice version to 0.19.2-beta
+- Updated gulpfile
+    - Added custom notifications
+    - Updated tasks inline with gulp 4 syntax
+        - Updated tasks with gulp series and parallel functions
+    - Updated task names
+        - Added watch task
+        - Updated build:css task to css
+        - Updated build:scripts task to scripts
+        - Updated dev task to serve
+    - Updated variable names
+    - Updated resource paths
+    - Updated build paths
+
+
+-----
+
+
 # March 1, 2019 #2 (Juice v0.17.1-beta)
 
 ### Updated
@@ -38,7 +64,7 @@
 
 ### Updated
 - Updated build directory
-- Update demo template
+- Updated demo template
 - Updated package
     - Updated devDependencies just-add-juice version to 0.16.1-beta
 
@@ -72,7 +98,7 @@
 
 ### Updated
 - Updated html template
-- Update gulpfile hostname
+- Updated gulpfile hostname
 - Updated build directory
 - Updated package
     - Updated devDependencies just-add-juice version to 0.12.0-beta
