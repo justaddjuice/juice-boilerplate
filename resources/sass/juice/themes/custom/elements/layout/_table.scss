@@ -4,87 +4,87 @@
     JUICE -> THEMES -> CUSTOM -> ELEMENTS -> LAYOUT -> TABLE
     ========================================================================  */
 
-table {
-    // Variables
-    --border-style: var(--default-border-style);
-    --content-spacing: var(--default-content-spacing);
-    --element-spacing: var(--default-element-spacing);
-    --font-size: var(--default-font-size);
-
-    // Check if the table size modifiers should be declared
-    @if $table-size-modifiers {
-        // Cycle through all of the sizes
-        @each $size in $sizes {
-            // Modifiers: Sizes
-            &.is-#{$size} {
-                // Variables
-                --content-spacing: var(--default-content-spacing-#{$size});
-                --font-size: var(--default-font-size-#{$size});
-            }
-
-            // Check if the table size modifier breakpoints should be declared
-            @if $table-size-modifier-breakpoints {
-                // Cycle through all of the breakpoints
-                @each $breakpoint-name, $breakpoint in $breakpoints {
-                    // Breakpoint
-                    @include breakpoint($breakpoint-name) {
-                        // Modifiers: Size
-                        &.is-#{$size}\@#{$breakpoint-name} {
-                            // Variables
-                            --content-spacing: var(--default-content-spacing-#{$size});
-                            --font-size: var(--default-font-size-#{$size});
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    // Check if the table stripe modifier should be declared
-    @if $table-stripe-modifier {
-        // Modifiers
-        &.table--stripe {
-            // Nested selectors
-            tbody {
-                // Nested selectors
-                tr {
-                    // Pseudo classes
-                    &:nth-child(odd) {
-                        // Variables
-                        --background-color: var(--color-white);
-                        --font-color: var(--font-color-default);
-                    }
-
-                    &:nth-child(even) {
-                        // Variables
-                        --background-color: var(--color-white-darken-1);
-                        --font-color: var(--font-color-default);
-                    }
-                }
-            }
-        }
-    }
-
-    thead {
-        // Variables
-        --background-color: var(--color-charcoal);
-        --border-color: var(--color-charcoal-darken-3);
-        --border-width-bottom: calc(var(--default-border-width-bottom) * 2);
-        --border-width-left: var(--default-border-width-left);
-        --border-width-right: var(--default-border-width-right);
-        --border-width-top: var(--default-border-width-top);
-        --font-color: var(--color-charcoal-inverted-text);
-    }
-
-    tbody {
-        // Variables
-        --background-color: var(--color-white);
-        --border-color: var(--color-white-darken-3);
-        --border-width-bottom: var(--default-border-width-bottom);
-        --border-width-left: var(--default-border-width-left);
-        --border-width-right: var(--default-border-width-right);
-        --border-width-top: var(--default-border-width-top);
-        --border-width-divider: var(--default-border-width-divider);
-        --font-color: var(--font-color-default);
-    }
-}
+// table {
+//     // Variables
+//     --border-style: var(--default-border-style);
+//     --content-spacing: var(--default-content-spacing);
+//     --element-spacing: var(--default-element-spacing);
+//     --font-size: var(--default-font-size);
+//
+//     // Check if the table size modifiers should be declared
+//     @if $table-size-modifiers {
+//         // Cycle through all of the sizes
+//         @each $size in $sizes {
+//             // Modifiers: Sizes
+//             &.is-#{$size} {
+//                 // Variables
+//                 --content-spacing: var(--default-content-spacing-#{$size});
+//                 --font-size: var(--default-font-size-#{$size});
+//             }
+//
+//             // Check if the table size modifier breakpoints should be declared
+//             @if $table-size-modifier-breakpoints {
+//                 // Cycle through all of the breakpoints
+//                 @each $breakpoint-name, $breakpoint in $breakpoints {
+//                     // Breakpoint
+//                     @include breakpoint($breakpoint-name) {
+//                         // Modifiers: Size
+//                         &.is-#{$size}\@#{$breakpoint-name} {
+//                             // Variables
+//                             --content-spacing: var(--default-content-spacing-#{$size});
+//                             --font-size: var(--default-font-size-#{$size});
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//
+//     // Check if the table stripe modifier should be declared
+//     @if $table-stripe-modifier {
+//         // Modifiers
+//         &.table--stripe {
+//             // Nested selectors
+//             tbody {
+//                 // Nested selectors
+//                 tr {
+//                     // Pseudo classes
+//                     &:nth-child(odd) {
+//                         // Variables
+//                         --background-color: var(--color-white);
+//                         --font-color: var(--font-color-default);
+//                     }
+//
+//                     &:nth-child(even) {
+//                         // Variables
+//                         --background-color: var(--color-white-darken-1);
+//                         --font-color: var(--font-color-default);
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//
+//     thead {
+//         // Variables
+//         --background-color: var(--color-charcoal);
+//         --border-color: var(--color-charcoal-darken-3);
+//         --border-width-bottom: calc(var(--default-border-width-bottom) * 2);
+//         --border-width-left: var(--default-border-width-left);
+//         --border-width-right: var(--default-border-width-right);
+//         --border-width-top: var(--default-border-width-top);
+//         --font-color: var(--color-charcoal-inverted-text);
+//     }
+//
+//     tbody {
+//         // Variables
+//         --background-color: var(--color-white);
+//         --border-color: var(--color-white-darken-3);
+//         --border-width-bottom: var(--default-border-width-bottom);
+//         --border-width-left: var(--default-border-width-left);
+//         --border-width-right: var(--default-border-width-right);
+//         --border-width-top: var(--default-border-width-top);
+//         --border-width-divider: var(--default-border-width-divider);
+//         --font-color: var(--font-color-default);
+//     }
+// }

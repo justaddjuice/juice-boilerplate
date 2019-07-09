@@ -4,127 +4,127 @@
     JUICE -> THEMES -> CUSTOM -> ELEMENTS -> BUTTON -> BUTTON GROUP
     ========================================================================  */
 
-.button-group {
-    // Variables
-    --element-spacing: var(--default-element-spacing);
-
-    // Check if the button group size modifiers should be declared
-    @if $button-group-size-modifiers {
-        // Cycle through all of the sizes
-        @each $size in $sizes {
-            // Modifiers: Sizes
-            &.is-#{$size} {
-                // Nested selectors
-                #{$button} {
-                    // Variables
-                    --font-size: var(--default-font-size-#{$size});
-                    --height: var(--default-element-height-#{$size});
-                    --content-spacing: calc(var(--default-content-spacing-#{$size}) / 1.5);
-                }
-            }
-
-            // Check if the button size modifier breakpoints should be declared
-            @if $button-size-modifier-breakpoints {
-                // Cycle through all of the breakpoints
-                @each $breakpoint-name, $breakpoint in $breakpoints {
-                    // Breakpoint
-                    @include breakpoint($breakpoint-name) {
-                        // Modifiers: Size
-                        &.is-#{$size}\@#{$breakpoint-name} {
-                            // Nested selectors
-                            #{$button} {
-                                // Variables
-                                --font-size: var(--default-font-size-#{$size});
-                                --height: var(--default-element-height-#{$size});
-                                --content-spacing: calc(var(--default-content-spacing-#{$size}) / 1.5);
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    // Check if the button group color modifiers should be declared
-    @if $button-group-color-modifiers {
-        // Cycle through all of the colors
-        @each $color-name, $color in $colors {
-            // Modifiers: Colors
-            &.is-#{$color-name} {
-                // Nested selectors
-                #{$button} {
-                    // Variables
-                    --accessibility-focus-color: var(--color-#{$color-name}-accessibility-focus);
-                    --background-color: var(--color-#{$color-name});
-                    --border-color: var(--color-#{$color-name}-darken-3);
-                    --font-color: var(--color-#{$color-name}-inverted-text);
-
-                    // Pseudo classes
-                    &:hover {
-                        // Variables
-                        --background-color: var(--color-#{$color-name}-lighten-1);
-                        --border-color: var(--color-#{$color-name}-darken-6);
-                        --font-color: var(--color-#{$color-name}-inverted-text);
-                    }
-
-                    &:active {
-                        // Variables
-                        --background-color: var(--color-#{$color-name}-darken-1);
-                        --border-color: var(--color-#{$color-name}-darken-8);
-                        --font-color: var(--color-#{$color-name}-inverted-text);
-                    }
-                }
-            }
-        }
-    }
-
-    // Check if the button feedback modifiers should be declared
-    @if $button-group-feedback-modifiers {
-        // Cycle through all of the feedback colors
-        @each $feedback-name, $color in $feedback-colors {
-            // Modifiers: Feedback colors
-            &.has-#{$feedback-name} {
-                // Nested selectors
-                #{$button} {
-                    // Variables
-                    --accessibility-focus-color: var(--feedback-color-#{$feedback-name}-accessibility-focus);
-                    --background-color: var(--feedback-color-#{$feedback-name});
-                    --border-color: var(--feedback-color-#{$feedback-name}-darken-3);
-                    --font-color: var(--feedback-color-#{$feedback-name}-inverted-text);
-
-                    // Pseudo classes
-                    &:hover {
-                        // Variables
-                        --background-color: var(--feedback-color-#{$feedback-name}-lighten-1);
-                        --border-color: var(--feedback-color-#{$feedback-name}-darken-6);
-                        --font-color: var(--feedback-color-#{$feedback-name}-inverted-text);
-                    }
-
-                    &:active {
-                        // Variables
-                        --background-color: var(--feedback-color-#{$feedback-name}-darken-1);
-                        --border-color: var(--feedback-color-#{$feedback-name}-darken-8);
-                        --font-color: var(--feedback-color-#{$feedback-name}-inverted-text);
-                    }
-                }
-            }
-        }
-    }
-
-    // Check if the button group flat modifier should be declared
-    @if $button-group-flat-modifier {
-        // Modifiers
-        &.button-group--flat {
-            // Nested selectors
-            #{$button} {
-                // Variables
-                --font-color: var(--background-color);
-
-                &:hover {
-                    // Variables
-                    --font-color: var(--background-color);
-                }
-            }
-        }
-    }
-}
+// .button-group {
+//     // Variables
+//     --element-spacing: var(--default-element-spacing);
+//
+//     // Check if the button group size modifiers should be declared
+//     @if $button-group-size-modifiers {
+//         // Cycle through all of the sizes
+//         @each $size in $sizes {
+//             // Modifiers: Sizes
+//             &.is-#{$size} {
+//                 // Nested selectors
+//                 #{$button} {
+//                     // Variables
+//                     --font-size: var(--default-font-size-#{$size});
+//                     --height: var(--default-element-height-#{$size});
+//                     --content-spacing: calc(var(--default-content-spacing-#{$size}) / 1.5);
+//                 }
+//             }
+//
+//             // Check if the button size modifier breakpoints should be declared
+//             @if $button-size-modifier-breakpoints {
+//                 // Cycle through all of the breakpoints
+//                 @each $breakpoint-name, $breakpoint in $breakpoints {
+//                     // Breakpoint
+//                     @include breakpoint($breakpoint-name) {
+//                         // Modifiers: Size
+//                         &.is-#{$size}\@#{$breakpoint-name} {
+//                             // Nested selectors
+//                             #{$button} {
+//                                 // Variables
+//                                 --font-size: var(--default-font-size-#{$size});
+//                                 --height: var(--default-element-height-#{$size});
+//                                 --content-spacing: calc(var(--default-content-spacing-#{$size}) / 1.5);
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//
+//     // Check if the button group color modifiers should be declared
+//     @if $button-group-color-modifiers {
+//         // Cycle through all of the colors
+//         @each $color-name, $color in $colors {
+//             // Modifiers: Colors
+//             &.is-#{$color-name} {
+//                 // Nested selectors
+//                 #{$button} {
+//                     // Variables
+//                     --accessibility-focus-color: var(--color-#{$color-name}-accessibility-focus);
+//                     --background-color: var(--color-#{$color-name});
+//                     --border-color: var(--color-#{$color-name}-darken-3);
+//                     --font-color: var(--color-#{$color-name}-inverted-text);
+//
+//                     // Pseudo classes
+//                     &:hover {
+//                         // Variables
+//                         --background-color: var(--color-#{$color-name}-lighten-1);
+//                         --border-color: var(--color-#{$color-name}-darken-6);
+//                         --font-color: var(--color-#{$color-name}-inverted-text);
+//                     }
+//
+//                     &:active {
+//                         // Variables
+//                         --background-color: var(--color-#{$color-name}-darken-1);
+//                         --border-color: var(--color-#{$color-name}-darken-8);
+//                         --font-color: var(--color-#{$color-name}-inverted-text);
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//
+//     // Check if the button feedback modifiers should be declared
+//     @if $button-group-feedback-modifiers {
+//         // Cycle through all of the feedback colors
+//         @each $feedback-name, $color in $feedback-colors {
+//             // Modifiers: Feedback colors
+//             &.has-#{$feedback-name} {
+//                 // Nested selectors
+//                 #{$button} {
+//                     // Variables
+//                     --accessibility-focus-color: var(--feedback-color-#{$feedback-name}-accessibility-focus);
+//                     --background-color: var(--feedback-color-#{$feedback-name});
+//                     --border-color: var(--feedback-color-#{$feedback-name}-darken-3);
+//                     --font-color: var(--feedback-color-#{$feedback-name}-inverted-text);
+//
+//                     // Pseudo classes
+//                     &:hover {
+//                         // Variables
+//                         --background-color: var(--feedback-color-#{$feedback-name}-lighten-1);
+//                         --border-color: var(--feedback-color-#{$feedback-name}-darken-6);
+//                         --font-color: var(--feedback-color-#{$feedback-name}-inverted-text);
+//                     }
+//
+//                     &:active {
+//                         // Variables
+//                         --background-color: var(--feedback-color-#{$feedback-name}-darken-1);
+//                         --border-color: var(--feedback-color-#{$feedback-name}-darken-8);
+//                         --font-color: var(--feedback-color-#{$feedback-name}-inverted-text);
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//
+//     // Check if the button group flat modifier should be declared
+//     @if $button-group-flat-modifier {
+//         // Modifiers
+//         &.button-group--flat {
+//             // Nested selectors
+//             #{$button} {
+//                 // Variables
+//                 --font-color: var(--background-color);
+//
+//                 &:hover {
+//                     // Variables
+//                     --font-color: var(--background-color);
+//                 }
+//             }
+//         }
+//     }
+// }

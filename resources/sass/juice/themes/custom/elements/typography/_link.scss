@@ -4,23 +4,23 @@
     JUICE -> THEMES -> CUSTOM -> ELEMENTS -> TYPOGRAPHY -> LINK
     ========================================================================  */
 
-a {
-    // Variables
-    --font-color: var(--default-link-color);
-
-    // Pseudo classes
-    &:hover {
-        // Variables
-        --font-color: var(--default-link-color-hover);
-    }
-
-    &:focus {
-        // Variables
-        --font-color: var(--default-link-color-focus);
-    }
-
-    &:active {
-        // Variables
-        --font-color: var(--default-link-color-active);
-    }
-}
+// a {
+//     // Variables
+//     --font-color: var(--default-link-color);
+//
+//     // Pseudo classes
+//     &:hover {
+//         // Variables
+//         --font-color: var(--default-link-color-hover);
+//     }
+//
+//     &:focus {
+//         // Variables
+//         --font-color: var(--default-link-color-focus);
+//     }
+//
+//     &:active {
+//         // Variables
+//         --font-color: var(--default-link-color-active);
+//     }
+// }

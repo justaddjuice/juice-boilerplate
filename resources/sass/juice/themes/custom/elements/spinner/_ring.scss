@@ -4,17 +4,17 @@
     JUICE -> THEMES -> CUSTOM -> ELEMENTS -> SPINNER -> RING
     ========================================================================  */
 
-.spinner {
-    // Modifiers
-    &.spinner--ring {
-        // Cycle through all of the colors
-        @each $color-name, $color in $colors {
-            // Modifiers: Colors
-            &.is-#{$color-name} {
-                // Variables
-                --color: var(--color-#{$color-name});
-                --color-alt: var(--color-#{$color-name}-lighten-10);
-            }
-        }
-    }
-}
+// .spinner {
+//     // Modifiers
+//     &.spinner--ring {
+//         // Cycle through all of the colors
+//         @each $color-name, $color in $colors {
+//             // Modifiers: Colors
+//             &.is-#{$color-name} {
+//                 // Variables
+//                 --color: var(--color-#{$color-name});
+//                 --color-alt: var(--color-#{$color-name}-lighten-10);
+//             }
+//         }
+//     }
+// }

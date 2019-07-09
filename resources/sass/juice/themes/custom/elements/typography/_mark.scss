@@ -4,47 +4,47 @@
     JUICE -> THEMES -> CUSTOM -> ELEMENTS -> TYPOGRAPHY -> MARK
     ========================================================================  */
 
-mark {
-    // Variables
-    --background-color: var(--color-yellow-lighten-2);
-    --border-color: transparent;
-    --border-radius-bottom-left: 0;
-    --border-radius-bottom-right: 0;
-    --border-radius-top-left: 0;
-    --border-radius-top-right: 0;
-    --border-style: var(--default-border-style);
-    --border-width-bottom: 0;
-    --border-width-left: 0 ;
-    --border-width-right: 0;
-    --border-width-top: 0;
-    --content-spacing: 4px;
-    --font-color: var(--font-color-default);
-    --font-size: var(--default-font-size);
-
-    // Check if the mark size modifiers should be declared
-    @if $mark-size-modifiers {
-        // Cycle through all of the sizes
-        @each $size in $sizes {
-            // Modifiers: Sizes
-            &.is-#{$size} {
-                // Variables
-                --font-size: var(--default-font-size-#{$size});
-            }
-
-            // Check if the mark size modifier breakpoints should be declared
-            @if $mark-size-modifier-breakpoints {
-                // Cycle through all of the breakpoints
-                @each $breakpoint-name, $breakpoint in $breakpoints {
-                    // Breakpoint
-                    @include breakpoint($breakpoint-name) {
-                        // Modifiers: Size
-                        &.is-#{$size}\@#{$breakpoint-name} {
-                            // Variables
-                            --font-size: var(--default-font-size-#{$size});
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+// mark {
+//     // Variables
+//     --background-color: var(--color-yellow-lighten-2);
+//     --border-color: transparent;
+//     --border-radius-bottom-left: 0;
+//     --border-radius-bottom-right: 0;
+//     --border-radius-top-left: 0;
+//     --border-radius-top-right: 0;
+//     --border-style: var(--default-border-style);
+//     --border-width-bottom: 0;
+//     --border-width-left: 0 ;
+//     --border-width-right: 0;
+//     --border-width-top: 0;
+//     --content-spacing: 4px;
+//     --font-color: var(--font-color-default);
+//     --font-size: var(--default-font-size);
+//
+//     // Check if the mark size modifiers should be declared
+//     @if $mark-size-modifiers {
+//         // Cycle through all of the sizes
+//         @each $size in $sizes {
+//             // Modifiers: Sizes
+//             &.is-#{$size} {
+//                 // Variables
+//                 --font-size: var(--default-font-size-#{$size});
+//             }
+//
+//             // Check if the mark size modifier breakpoints should be declared
+//             @if $mark-size-modifier-breakpoints {
+//                 // Cycle through all of the breakpoints
+//                 @each $breakpoint-name, $breakpoint in $breakpoints {
+//                     // Breakpoint
+//                     @include breakpoint($breakpoint-name) {
+//                         // Modifiers: Size
+//                         &.is-#{$size}\@#{$breakpoint-name} {
+//                             // Variables
+//                             --font-size: var(--default-font-size-#{$size});
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

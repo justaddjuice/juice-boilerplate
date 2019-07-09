@@ -4,16 +4,16 @@
     JUICE -> THEMES -> CUSTOM -> ELEMENTS -> SPINNER -> DIAL
     ========================================================================  */
 
-.spinner {
-    // Modifiers
-    &.spinner--dial {
-        // Cycle through all of the colors
-        @each $color-name, $color in $colors {
-            // Modifiers: Colors
-            &.is-#{$color-name} {
-                // Variables
-                --color: var(--color-#{$color-name});
-            }
-        }
-    }
-}
+// .spinner {
+//     // Modifiers
+//     &.spinner--dial {
+//         // Cycle through all of the colors
+//         @each $color-name, $color in $colors {
+//             // Modifiers: Colors
+//             &.is-#{$color-name} {
+//                 // Variables
+//                 --color: var(--color-#{$color-name});
+//             }
+//         }
+//     }
+// }
