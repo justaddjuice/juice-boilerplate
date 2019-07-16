@@ -1,0 +1,323 @@
+<!doctype html>
+<html class="has-no-js has-no-touch" lang="en">
+<head>
+    <!-- Meta data -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <!-- Page title -->
+    <title>Juice - Components: Modal</title>
+
+    <!-- Webfonts and icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Oswald">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="../../public/css/app.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <p>&nbsp;</p>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <div class="container">
+            <h1>Modal</h1>
+            <hr />
+            <ul class="breadcrumb">
+                <li><a href="../../index.html">Juice</a></li>
+                <li><a href="../components/index.html">Components</a></li>
+                <li>Modal</li>
+            </ul>
+            <hr class="has-huge-element-spacing" />
+
+            <div class="grid is-center-aligned">
+                <div class="grid__item grid__item--span-3">
+                    <button class="button--block is-huge is-fullwidth has-modal" data-modal-target="#modal-1">Default</button>
+
+                    <div id="modal-1" class="hide">
+                        <div class="modal__content">
+                            <div class="modal__card">
+                                <div class="modal__head">
+                                    <div class="modal__headings">
+                                        <h4>Default</h4>
+                                    </div>
+
+                                    <div class="modal__actions">
+                                        <button type="button" class="button--component js-modal-close"><i class="fas fa-times"></i></button>
+                                    </div>
+                                </div>
+
+                                <div class="modal__body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </div>
+
+                                <div class="modal__foot">
+                                    <div class="modal__buttons">
+                                        <button class="button--flat js-modal-cancel">Cancel</button>
+                                        <button class="is-primary js-modal-continue">Continue</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid__item grid__item--span-3">
+                    <button class="button--block is-huge is-fullwidth has-modal" data-modal-target="#modal-2">Center</button>
+
+                    <div id="modal-2" class="hide" data-modal-center="true">
+                        <div class="modal__content">
+                            <div class="modal__card">
+                                <div class="modal__head">
+                                    <div class="modal__headings">
+                                        <h4>Center</h4>
+                                    </div>
+
+                                    <div class="modal__actions">
+                                        <button type="button" class="button--component js-modal-close"><i class="fas fa-times"></i></button>
+                                    </div>
+                                </div>
+
+                                <div class="modal__body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </div>
+
+                                <div class="modal__foot">
+                                    <div class="modal__buttons">
+                                        <button class="button--flat js-modal-cancel">Cancel</button>
+                                        <button class="is-primary js-modal-continue">Continue</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid__item grid__item--span-3">
+                    <button class="button--block is-huge is-fullwidth has-modal" data-modal-target="#modal-3">Scroll</button>
+
+                    <div id="modal-3" class="hide">
+                        <div class="modal__content">
+                            <div class="modal__card">
+                                <div class="modal__head">
+                                    <div class="modal__headings">
+                                        <h4>Card</h4>
+                                    </div>
+
+                                    <div class="modal__actions">
+                                        <button type="button" class="button--component js-modal-close"><i class="fas fa-times"></i></button>
+                                    </div>
+                                </div>
+
+                                <div class="modal__body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br /><br />
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br /><br />
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br /><br />
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br /><br />
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </div>
+
+                                <div class="modal__foot">
+                                    <div class="modal__buttons">
+                                        <button class="button--flat js-modal-cancel">Cancel</button>
+                                        <button class="is-primary js-modal-continue">Continue</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid__item grid__item--span-3">
+                    <button class="button--block is-huge is-fullwidth has-modal" data-modal-target="#modal-4">Image</button>
+
+                    <div id="modal-4" class="hide" data-modal-center="true">
+                        <div class="modal__content">
+                            <div class="modal__media">
+                                <img src="https://pmcdeadline2.files.wordpress.com/2019/02/walking-dead-feb-19-2019-samantha-morton.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="grid__item grid__item--span-12">
+                    <h6>Sizes</h6>
+
+                    <div class="grid">
+                        <div class="grid__item grid__item--span-3">
+                            <button class="button--block has-modal" data-modal-target="#modal-4">Small</button>
+
+                            <div id="modal-4" class="hide">
+                                <div class="modal__content is-small">
+                                    <div class="modal__head">
+                                        <h4>Heading</h4>
+                                    </div>
+
+                                    <div class="modal__body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br /><br />
+                                    </div>
+
+                                    <div class="modal__foot">
+                                        <div class="modal__buttons">
+                                            <button class="button--flat js-modal-close">Cancel</button>
+                                            <button class="is-primary">Continue</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid__item grid__item--span-3">
+                            <button class="button--block has-modal" data-modal-target="#modal-5">Default</button>
+
+                            <div id="modal-5" class="hide">
+                                <div class="modal__content">
+                                    <div class="modal__head">
+                                        <h4>Heading</h4>
+                                    </div>
+
+                                    <div class="modal__body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br /><br />
+                                    </div>
+
+                                    <div class="modal__foot">
+                                        <div class="modal__buttons">
+                                            <button class="button--flat js-modal-close">Cancel</button>
+                                            <button class="is-primary">Continue</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid__item grid__item--span-3">
+                            <button class="button--block has-modal" data-modal-target="#modal-6">Large</button>
+
+                            <div id="modal-6" class="hide">
+                                <div class="modal__content is-large">
+                                    <div class="modal__head">
+                                        <h4>Heading</h4>
+                                    </div>
+
+                                    <div class="modal__body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br /><br />
+                                    </div>
+
+                                    <div class="modal__foot">
+                                        <div class="modal__buttons">
+                                            <button class="button--flat js-modal-close">Cancel</button>
+                                            <button class="is-primary">Continue</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid__item grid__item--span-3">
+                            <button class="button--block has-modal" data-modal-target="#modal-7">Huge</button>
+
+                            <div id="modal-7" class="hide">
+                                <div class="modal__content is-huge">
+                                    <div class="modal__head">
+                                        <h4>Heading</h4>
+                                    </div>
+
+                                    <div class="modal__body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br /><br />
+                                    </div>
+
+                                    <div class="modal__foot">
+                                        <div class="modal__buttons">
+                                            <button class="button--flat js-modal-close">Cancel</button>
+                                            <button class="is-primary">Continue</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid__item grid__item--span-6">
+                    <h6>Color</h6>
+                    <button class="button--block has-modal" data-modal-target="#modal-8">Primary</button>
+
+                    <div id="modal-8" class="hide">
+                        <div class="modal__content is-primary">
+                            <div class="modal__head">
+                                <h4>Heading</h4>
+                            </div>
+
+                            <div class="modal__body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br /><br />
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br /><br />
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br /><br />
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br /><br />
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+
+                            <div class="modal__foot">
+                                <div class="modal__buttons">
+                                    <button class="button--flat js-modal-close">Cancel</button>
+                                    <button class="is-primary">Continue</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid__item grid__item--span-6">
+                    <h6>Feedback</h6>
+                    <button class="button--block has-modal" data-modal-target="#modal-9">Info</button>
+
+                    <div id="modal-9" class="hide">
+                        <div class="modal__content has-info">
+                            <div class="modal__head">
+                                <h4>Heading</h4>
+                            </div>
+
+                            <div class="modal__body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br /><br />
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br /><br />
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br /><br />
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br /><br />
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+
+                            <div class="modal__foot">
+                                <div class="modal__buttons">
+                                    <button class="button--flat js-modal-close">Cancel</button>
+                                    <button class="has-info">Continue</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p class="is-center-aligned"><a href="#" class="js-smooth-scroll-top">Top</a></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="//unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="../../public/scripts/app.min.js"></script>
+
+    <!-- Juice components -->
+    <script>
+        var smooth_scroll = new SmoothScroll;
+        var modal = new Modal('.has-modal');
+    </script>
+</body>
+</html>
