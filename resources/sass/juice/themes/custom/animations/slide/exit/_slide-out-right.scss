@@ -4,10 +4,16 @@
     JUICE -> THEMES -> CUSTOM -> ANIMATIONS -> SLIDE -> EXIT -> SLIDE OUT RIGHT
     ========================================================================  */
 
-// .slide-out-right {
-//     // Variables
-//     --animation-delay: var(--default-animation-slide-out-delay);
-//     --animation-distance: var(--default-animation-slide-out-distance);
-//     --animation-duration: var(--default-animation-slide-out-duration);
-//     --animation-easing: var(--default-animation-slide-out-easing);
-// }
+// Check if the animations with slide out right should be imported
+@if $import-animations and $import-animation-slide-out-right {
+    .has-animation {
+        // Nested selectors
+        &.slide-out-right {
+            // // Variables
+            // --animation-delay: var(--default-animation-slide-out-delay);
+            // --animation-distance: var(--default-animation-slide-out-distance);
+            // --animation-duration: var(--default-animation-slide-out-duration);
+            // --animation-easing: var(--default-animation-slide-out-easing);
+        }
+    }
+}

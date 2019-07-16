@@ -4,7 +4,22 @@
     JUICE -> THEMES -> CUSTOM -> ELEMENTS -> TYPOGRAPHY -> ABBR
     ========================================================================  */
 
-// abbr {
-//     // Variables
-//     --border-color: var(--feedback-color-info);
-// }
+// Check if the elements with abbr should be imported
+@if $import-elements and $import-element-abbr {
+    abbr {
+        // // Variables
+        // --border-color: var(--feedback-color-info);
+
+        // Check if the abbr color modifiers should be declared
+        @if $abbr-color-modifiers {
+            // Cycle through all of the colors
+            @each $color-name, $color in $colors {
+                // Modifiers: Colors
+                &.is-#{$color-name} {
+                    // // Variables
+                    // --border-color: var(--#{$color-name);
+                }
+            }
+        }
+    }
+}

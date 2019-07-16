@@ -1,0 +1,147 @@
+@charset 'utf-8';
+
+/*  ========================================================================
+    JUICE -> THEMES -> CUSTOM -> SETTINGS -> IMPORTS -> ANIMATIONS
+    ========================================================================  */
+
+// Global
+$import-animations: true;
+
+// Attractors
+$import-animation-flash: true;
+$import-animation-pulse: true;
+$import-animation-shake: true;
+$import-animation-vibrate: true;
+
+// Bounce entrances
+$import-animation-bounce-in-down: true;
+$import-animation-bounce-in-left: true;
+$import-animation-bounce-in-right: true;
+$import-animation-bounce-in-up: true;
+$import-animation-bounce-in: true;
+
+// Bounce exits
+$import-animation-bounce-out-down: true;
+$import-animation-bounce-out-left: true;
+$import-animation-bounce-out-right: true;
+$import-animation-bounce-out-up: true;
+$import-animation-bounce-out: true;
+
+// Fade entrances
+$import-animation-fade-in-down: true;
+$import-animation-fade-in-left: true;
+$import-animation-fade-in-right: true;
+$import-animation-fade-in-up: true;
+$import-animation-fade-in: true;
+
+// Fade exits
+$import-animation-fade-out-down: true;
+$import-animation-fade-out-left: true;
+$import-animation-fade-out-right: true;
+$import-animation-fade-out-up: true;
+$import-animation-fade-out: true;
+
+// Flip entrances
+$import-animation-flip-in-down: true;
+$import-animation-flip-in-left: true;
+$import-animation-flip-in-right: true;
+$import-animation-flip-in-up: true;
+
+// Flip exits
+$import-animation-flip-out-down: true;
+$import-animation-flip-out-left: true;
+$import-animation-flip-out-right: true;
+$import-animation-flip-out-up: true;
+
+// Slide entrances
+$import-animation-slide-in-down: true;
+$import-animation-slide-in-left: true;
+$import-animation-slide-in-right: true;
+$import-animation-slide-in-up: true;
+
+// Slide exits
+$import-animation-slide-out-down: true;
+$import-animation-slide-out-left: true;
+$import-animation-slide-out-right: true;
+$import-animation-slide-out-up: true;
+
+// Zoom entrances
+$import-animation-zoom-in-down: true;
+$import-animation-zoom-in-left: true;
+$import-animation-zoom-in-right: true;
+$import-animation-zoom-in-up: true;
+$import-animation-zoom-in: true;
+
+// Zoom exits
+$import-animation-zoom-out-down: true;
+$import-animation-zoom-out-left: true;
+$import-animation-zoom-out-right: true;
+$import-animation-zoom-out-up: true;
+$import-animation-zoom-out: true;
+
+
+/*  ========================================================================
+    JUICE -> THEMES -> CUSTOM -> SETTINGS -> IMPORTS -> COMPONENTS
+    ========================================================================  */
+
+// Global
+$import-components: true;
+
+// Components
+$import-component-accordion: true;
+$import-component-card: true;
+$import-component-chip: true;
+$import-component-dropdown: true;
+$import-component-modal: true;
+$import-component-notice: true;
+$import-component-panel: true;
+$import-component-popover: true;
+$import-component-tooltip: true;
+
+
+/*  ========================================================================
+    JUICE -> THEMES -> CUSTOM -> SETTINGS -> IMPORTS -> ELEMENTS
+    ========================================================================  */
+
+// Global
+$import-elements: true;
+
+// Elements
+$import-element-abbr: true;
+$import-element-blockquote: true;
+$import-element-body: true;
+$import-element-box: true;
+$import-element-breadcrumb: true;
+$import-element-button: true;
+$import-element-button-group: true;
+$import-element-code: true;
+$import-element-container: true;
+$import-element-custom-checkbox: true;
+$import-element-custom-fieldset: true;
+$import-element-custom-file: true;
+$import-element-custom-password: true;
+$import-element-custom-radio: true;
+$import-element-grid: true;
+$import-element-heading: true;
+$import-element-hero: true;
+$import-element-horizontal-rule: true;
+$import-element-image: true;
+$import-element-input: true;
+$import-element-kbd: true;
+$import-element-label: true;
+$import-element-link: true;
+$import-element-list: true;
+$import-element-mark: true;
+$import-element-media-object: true;
+$import-element-navbar: true;
+$import-element-overlay: true;
+$import-element-pagination: true;
+$import-element-paragraph: true;
+$import-element-pre: true;
+$import-element-samp: true;
+$import-element-select: true;
+$import-element-shield: true;
+$import-element-spinner: true;
+$import-element-table: true;
+$import-element-textarea: true;
+$import-element-var: true;

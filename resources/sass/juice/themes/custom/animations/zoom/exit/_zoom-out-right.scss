@@ -4,11 +4,17 @@
     JUICE -> THEMES -> CUSTOM -> ANIMATIONS -> ZOOM -> ENTRANCE -> ZOOM OUT RIGHT
     ========================================================================  */
 
-// .zoom-out-right {
-//     // Variables
-//     --animation-delay: var(--default-animation-zoom-out-delay);
-//     --animation-distance: var(--default-animation-zoom-out-distance);
-//     --animation-duration: var(--default-animation-zoom-out-duration);
-//     --animation-easing: var(--default-animation-zoom-out-easing);
-//     --animation-scale: var(--default-animation-zoom-out-scale);
-// }
+// Check if the animations with zoom out right should be imported
+@if $import-animations and $import-animation-zoom-out-right {
+    .has-animation {
+        // Nested selectors
+        &.zoom-out-right {
+            // // Variables
+            // --animation-delay: var(--default-animation-zoom-out-delay);
+            // --animation-distance: var(--default-animation-zoom-out-distance);
+            // --animation-duration: var(--default-animation-zoom-out-duration);
+            // --animation-easing: var(--default-animation-zoom-out-easing);
+            // --animation-scale: var(--default-animation-zoom-out-scale);
+        }
+    }
+}

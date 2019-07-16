@@ -4,11 +4,17 @@
     JUICE -> THEMES -> CUSTOM -> ANIMATIONS -> ZOOM -> ENTRANCE -> ZOOM IN RIGHT
     ========================================================================  */
 
-// .zoom-in-right {
-//     // Variables
-//     --animation-delay: var(--default-animation-zoom-in-delay);
-//     --animation-distance: calc(0px - var(--default-animation-zoom-in-distance));
-//     --animation-duration: var(--default-animation-zoom-in-duration);
-//     --animation-easing: var(--default-animation-zoom-in-easing);
-//     --animation-scale: var(--default-animation-zoom-in-scale);
-// }
+// Check if the animations with zoom in right should be imported
+@if $import-animations and $import-animation-zoom-in-right {
+    .has-animation {
+        // Nested selectors
+        &.zoom-in-right {
+            // // Variables
+            // --animation-delay: var(--default-animation-zoom-in-delay);
+            // --animation-distance: calc(0px - var(--default-animation-zoom-in-distance));
+            // --animation-duration: var(--default-animation-zoom-in-duration);
+            // --animation-easing: var(--default-animation-zoom-in-easing);
+            // --animation-scale: var(--default-animation-zoom-in-scale);
+        }
+    }
+}

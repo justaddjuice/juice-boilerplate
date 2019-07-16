@@ -4,6 +4,8 @@
     JUICE -> THEMES -> CUSTOM -> ANIMATIONS -> CORE
     ========================================================================  */
 
-// .has-animation {
-//     //
-// }
+// Check if the animations should be imported
+@if $import-animations {
+    .has-animation {
+    }
+}

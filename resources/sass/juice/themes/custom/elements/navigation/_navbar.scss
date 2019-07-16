@@ -4,32 +4,35 @@
     JUICE -> THEMES -> CUSTOM -> ELEMENTS -> NAVIGATION -> NAVBAR
     ========================================================================  */
 
-// .navbar {
-//     // Variables
-//     --content-spacing: var(--default-content-spacing);
-//     --font-color: inherit;
-//     --font-size: var(--default-font-size);
-//     --element-spacing: var(--default-element-spacing);
-//
-//     // Nested selectors
-//     a {
-//         // Variables
-//         --font-color: var(--default-link-color);
-//
-//         // Pseudo classes
-//         &:hover {
-//             // Variables
-//             --font-color: var(--default-link-color-hover);
-//         }
-//
-//         &:focus {
-//             // Variables
-//             --font-color: var(--default-link-color-focus);
-//         }
-//
-//         &:active {
-//             // Variables
-//             --font-color: var(--default-link-color-active);
-//         }
-//     }
-// }
+// Check if the elements with navbar should be imported
+@if $import-elements and $import-element-navbar {
+    .navbar {
+        // // Variables
+        // --content-spacing: var(--default-content-spacing);
+        // --font-color: inherit;
+        // --font-size: var(--default-font-size);
+        // --element-spacing: var(--default-element-spacing);
+
+        // Nested selectors
+        a {
+            // // Variables
+            // --font-color: var(--default-link-color);
+
+            // Pseudo classes
+            &:hover {
+                // // Variables
+                // --font-color: var(--default-link-color-hover);
+            }
+
+            &:focus {
+                // // Variables
+                // --font-color: var(--default-link-color-focus);
+            }
+
+            &:active {
+                // // Variables
+                // --font-color: var(--default-link-color-active);
+            }
+        }
+    }
+}

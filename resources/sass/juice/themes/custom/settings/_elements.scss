@@ -1,0 +1,210 @@
+@charset 'utf-8';
+
+/*  ========================================================================
+    JUICE -> THEMES -> CUSTOM -> SETTINGS -> ELEMENT -> BADGE
+    ========================================================================  */
+
+// Shield
+$shield-color-modifiers: true;
+$shield-feedback-modifiers: true;
+$shield-size-modifiers: true;
+$shield-size-modifier-breakpoints: true;
+
+
+/*  ========================================================================
+    JUICE -> THEMES -> CUSTOM -> SETTINGS -> ELEMENT -> BUTTON
+    ========================================================================  */
+
+// Button
+$button-color-modifiers: true;
+$button-component-modifier: true;
+$button-feedback-modifiers: true;
+$button-flat-modifier: true;
+$button-icon-modifier: true;
+$button-outline-modifier: true;
+$button-pill-modifier: true;
+$button-round-modifier: true;
+$button-size-modifiers: true;
+$button-size-modifier-breakpoints: true;
+
+// Button group
+$button-group-color-modifiers: true;
+$button-group-component-modifier: true;
+$button-group-feedback-modifiers: true;
+$button-group-flat-modifier: true;
+$button-group-icon-modifier: true;
+$button-group-outline-modifier: true;
+$button-group-pill-modifier: true;
+$button-group-round-modifier: true;
+$button-group-size-modifiers: true;
+$button-group-size-modifier-breakpoints: true;
+
+
+/*  ========================================================================
+    JUICE -> THEMES -> CUSTOM -> SETTINGS -> ELEMENT -> FORM
+    ========================================================================  */
+
+// Label
+$label-feedback-modifiers: true;
+$label-inline-modifier: true;
+$label-size-modifiers: true;
+$label-size-modifier-breakpoints: true;
+
+// Input
+$input-feedback-modifiers: true;
+$input-honeypot-modifier: true;
+$input-pill-modifier: true;
+$input-size-modifiers: true;
+$input-size-modifier-breakpoints: true;
+
+// Select
+$select-feedback-modifiers: true;
+$select-pill-modifier: true;
+$select-size-modifiers: true;
+$select-size-modifier-breakpoints: true;
+
+// Textarea
+$textarea-feedback-modifiers: true;
+$textarea-resize-modifier: true;
+$textarea-scrollbar-modifier: true;
+$textarea-size-modifiers: true;
+$textarea-size-modifier-breakpoints: true;
+
+
+/*  ========================================================================
+    JUICE -> THEMES -> CUSTOM -> SETTINGS -> ELEMENT -> FORM -> CUSTOM
+    ========================================================================  */
+
+// Custom fieldset
+$custom-fieldset-feedback-modifiers: true;
+$custom-fieldset-size-modifiers: true;
+$custom-fieldset-size-modifier-breakpoints: true;
+
+// Custom checkbox
+$custom-checkbox-size-modifiers: true;
+$custom-checkbox-size-modifier-breakpoints: true;
+
+// Custom file
+$custom-file-feedback-modifiers: true;
+$custom-file-size-modifiers: true;
+$custom-file-size-modifier-breakpoints: true;
+
+// Custom radio
+$custom-radio-size-modifiers: true;
+$custom-radio-size-modifier-breakpoints: true;
+
+
+/*  ========================================================================
+    JUICE -> THEMES -> CUSTOM -> SETTINGS -> ELEMENT -> LAYOUT
+    ========================================================================  */
+
+// Box
+$box-size-modifiers: true;
+$box-size-modifier-breakpoints: true;
+
+// Hero
+$hero-color-modifiers: true;
+$hero-feedback-modifiers: true;
+$hero-parallax-modifier: true;
+$hero-viewport-modifiers: true;
+
+// Media objec
+$media-object-reverse-modifiers: true;
+$media-object-seamless-modifiers: true;
+$media-object-size-modifiers: true;
+$media-object-size-modifier-breakpoints: true;
+
+// Table
+$table-border-modifiers: true;
+$table-size-modifiers: true;
+$table-size-modifier-breakpoints: true;
+$table-stripe-modifier: true;
+
+
+/*  ========================================================================
+    JUICE -> THEMES -> CUSTOM -> SETTINGS -> ELEMENT -> MEDIA
+    ========================================================================  */
+
+// Image
+$image-alignment-modifiers: true;
+$image-round-modifier: true;
+$image-size-modifiers: true;
+$image-size-modifier-breakpoints: true;
+
+
+/*  ========================================================================
+    JUICE -> THEMES -> CUSTOM -> SETTINGS -> ELEMENT -> NAVIGATION
+    ========================================================================  */
+
+// Breadcrumb
+$breadcrumb-alignment-modifiers: true;
+$breadcrumb-angle-separator-modifier: true;
+$breadcrumb-arrow-separator-modifier: true;
+$breadcrumb-bullet-separator-modifier: true;
+$breadcrumb-slash-separator-modifier: true;
+
+// Pagination
+$pagination-alignment-modifiers: true;
+$pagination-size-modifiers: true;
+$pagination-size-modifier-breakpoints: true;
+
+
+/*  ========================================================================
+    JUICE -> THEMES -> CUSTOM -> SETTINGS -> ELEMENT -> LOADING
+    ========================================================================  */
+
+// Spinner
+$spinner-dial-modifier: true;
+$spinner-ring-modifier: true;
+$spinner-spiral-modifier: true;
+$spinner-swoosh-modifier: true;
+$spinner-target-modifier: true;
+
+
+/*  ========================================================================
+    JUICE -> THEMES -> CUSTOM -> SETTINGS -> ELEMENT -> TYPOGRAPHY
+    ========================================================================  */
+
+// Abbr
+$abbr-color-modifiers: true;
+
+// Blockquote
+$blockquote-size-modifiers: true;
+$blockquote-size-modifier-breakpoints: true;
+
+// Horizontal rule
+$horizontal-rule-color-modifiers: true;
+
+// List
+$list-clear-modifier: true;
+$list-size-modifiers: true;
+$list-size-modifier-breakpoints: true;
+$list-style-type-modifiers: true;
+
+// Mark
+$mark-size-modifiers: true;
+$mark-size-modifier-breakpoints: true;
+
+// Paragraph
+$paragraph-size-modifiers: true;
+$paragraph-size-modifier-breakpoints: true;
+
+// Code
+$code-size-modifiers: true;
+$code-size-modifier-breakpoints: true;
+
+// Kbd
+$kbd-size-modifiers: true;
+$kbd-size-modifier-breakpoints: true;
+
+// Pre
+$pre-size-modifiers: true;
+$pre-size-modifier-breakpoints: true;
+
+// Samp
+$samp-size-modifiers: true;
+$samp-size-modifier-breakpoints: true;
+
+// Var
+$var-size-modifiers: true;
+$var-size-modifier-breakpoints: true;

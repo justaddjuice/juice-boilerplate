@@ -4,155 +4,155 @@
     JUICE -> THEMES -> CUSTOM -> VARIABLES -> CSS -> DEFAULTS
     ========================================================================  */
 
-// :root {
-//     // Set the typefaces
-//     --primary-typeface: 'Montserrat', Tahoma, sans-serif;
-//     --secondary-typeface: 'Oswald', Verdana, sans-serif;
-//     --monoface-typeface: 'Courier New', Courier, monospace;
-//
-//     // Set the root font size
-//     --root-font-size: 1.4rem;
-//
-//     // Set the default font size
-//     --default-font-size: 1em;
-//     --default-font-size-small: calc(var(--default-font-size) - 0.1em);
-//     --default-font-size-large: calc(var(--default-font-size) + 0.1em);
-//     --default-font-size-huge: calc(var(--default-font-size) + 0.2em);
-//
-//     // Set the default font properties
-//     --default-font-weight: 400;
-//     --default-letter-spacing: 0;
-//     --default-line-height: 2;
-//
-//     // Set the default link color
-//     --default-link-color: var(--color-primary);
-//     --default-link-color-hover: var(--color-primary-darken-2);
-//     --default-link-color-focus: var(--color-primary-darken-4);
-//     --default-link-color-active: var(--color-primary-darken-6);
-//
-//     // Set the default content spacing
-//     --default-content-spacing: 20px;
-//     --default-content-spacing-small: calc(var(--default-content-spacing) / 2);
-//     --default-content-spacing-large: calc(var(--default-content-spacing) * 1.5);
-//     --default-content-spacing-huge: calc(var(--default-content-spacing) * 2);
-//
-//     // Set the default element spacing
-//     --default-element-spacing: 20px;
-//     --default-element-spacing-small: calc(var(--default-element-spacing) / 2);
-//     --default-element-spacing-large: calc(var(--default-element-spacing) * 1.5);
-//     --default-element-spacing-huge: calc(var(--default-element-spacing) * 2);
-//
-//     // Set the default element height
-//     --default-element-height: 40px;
-//     --default-element-height-small: calc(var(--default-element-height) / 1.5);
-//     --default-element-height-large: calc(var(--default-element-height) * 1.25);
-//     --default-element-height-huge: calc(var(--default-element-height) * 1.5);
-//
-//     // Set the default border radius
-//     --default-border-radius-top-left: 5px;
-//     --default-border-radius-top-right: 5px;
-//     --default-border-radius-bottom-right: 5px;
-//     --default-border-radius-bottom-left: 5px;
-//
-//     // Set the default border style
-//     --default-border-style: solid;
-//
-//     // Set the default border widths
-//     --default-border-width-top: 1px;
-//     --default-border-width-right: 1px;
-//     --default-border-width-bottom: 1px;
-//     --default-border-width-left: 1px;
-//     --default-border-width-divider: 1px;
-//
-//     // Set the default box shadow
-//     --default-box-shadow: 1px 4px 21px 0 hsla(0, 0%, 0%, 0.05);
-//
-//     // Set the default accessibility properties
-//     --default-accessibility-focus-width: 3px;
-//     --default-accessibility-focus-color: var(--feedback-color-info-accessibility-focus);
-//
-//     // Set the default animation bounce in properties
-//     --default-animation-bounce-in-delay: 0ms;
-//     --default-animation-bounce-in-distance: 200px;
-//     --default-animation-bounce-in-duration: 1000ms;
-//     --default-animation-bounce-in-easing: #{map-get($easings, 'ease-out-back')};
-//
-//     // Set the default animation bounce out properties
-//     --default-animation-bounce-out-delay: 0ms;
-//     --default-animation-bounce-out-distance: 200px;
-//     --default-animation-bounce-out-duration: 1000ms;
-//     --default-animation-bounce-out-easing: #{map-get($easings, 'ease-in-back')};
-//
-//     // Set the default animation flash properties
-//     --default-animation-flash-delay: 0ms;
-//     --default-animation-flash-duration: 500ms;
-//     --default-animation-flash-easing: #{map-get($easings, 'ease-in-out')};
-//     --default-animation-flash-iteration-count: 2;
-//
-//     // Set the default animation fade in properties
-//     --default-animation-fade-in-delay: 0ms;
-//     --default-animation-fade-in-distance: 60px;
-//     --default-animation-fade-in-duration: 400ms;
-//     --default-animation-fade-in-easing: #{map-get($easings, 'ease')};
-//
-//     // Set the default animation fade out properties
-//     --default-animation-fade-out-delay: 0ms;
-//     --default-animation-fade-out-distance: 60px;
-//     --default-animation-fade-out-duration: 400ms;
-//     --default-animation-fade-out-easing: #{map-get($easings, 'ease')};
-//
-//     // Set the default animation flip in properties
-//     --default-animation-flip-in-delay: 0ms;
-//     --default-animation-flip-in-duration: 600ms;
-//     --default-animation-flip-in-easing: #{map-get($easings, 'ease-out-back')};
-//     --default-animation-flip-in-perspective: 500px;
-//
-//     // Set the default animation flip out properties
-//     --default-animation-flip-out-delay: 0ms;
-//     --default-animation-flip-out-duration: 600ms;
-//     --default-animation-flip-out-easing: #{map-get($easings, 'ease-in-back')};
-//     --default-animation-flip-out-perspective: 500px;
-//
-//     // Set the default animation pulse properties
-//     --default-animation-pulse-delay: 0ms;
-//     --default-animation-pulse-duration: 500ms;
-//     --default-animation-pulse-easing: #{map-get($easings, 'ease-in-out')};
-//     --default-animation-pulse-iteration-count: 5;
-//
-//     // Set the default animation shake properties
-//     --default-animation-shake-delay: 0ms;
-//     --default-animation-shake-duration: 1000ms;
-//     --default-animation-shake-easing: #{map-get($easings, 'ease-in-out')};
-//
-//     // Set the default animation slide in properties
-//     --default-animation-slide-in-delay: 0ms;
-//     --default-animation-slide-in-distance: 60px;
-//     --default-animation-slide-in-duration: 600ms;
-//     --default-animation-slide-in-easing: #{map-get($easings, 'ease')};
-//
-//     // Set the default animation slide out properties
-//     --default-animation-slide-out-delay: 0ms;
-//     --default-animation-slide-out-distance: 60px;
-//     --default-animation-slide-out-duration: 600ms;
-//     --default-animation-slide-out-easing: #{map-get($easings, 'ease')};
-//
-//     // Set the default animation vibrate properties
-//     --default-animation-vibrate-delay: 0ms;
-//     --default-animation-vibrate-duration: 350ms;
-//     --default-animation-vibrate-easing: #{map-get($easings, 'ease-in-out')};
-//     --default-animation-vibrate-iteration-count: 3;
-//
-//     // Set the default animation zoom in properties
-//     --default-animation-zoom-in-delay: 0ms;
-//     --default-animation-zoom-in-distance: 60px;
-//     --default-animation-zoom-in-duration: 400ms;
-//     --default-animation-zoom-in-easing: #{map-get($easings, 'ease')};
-//     --default-animation-zoom-in-scale: 0.6;
-//
-//     // Set the default animation zoom out properties
-//     --default-animation-zoom-out-delay: 0ms;
-//     --default-animation-zoom-out-distance: 60px;
-//     --default-animation-zoom-out-duration: 400ms;
-//     --default-animation-zoom-out-easing: #{map-get($easings, 'ease')};
-//     --default-animation-zoom-out-scale: 0.6;
-// }
+:root {
+    // // Set the typefaces
+    // --primary-typeface: 'Montserrat', Tahoma, sans-serif;
+    // --secondary-typeface: 'Oswald', Verdana, sans-serif;
+    // --monoface-typeface: 'Courier New', Courier, monospace;
+
+    // // Set the root font size
+    // --root-font-size: 1.4rem;
+
+    // // Set the default font size
+    // --default-font-size: 1em;
+    // --default-font-size-small: calc(var(--default-font-size) - 0.1em);
+    // --default-font-size-large: calc(var(--default-font-size) + 0.1em);
+    // --default-font-size-huge: calc(var(--default-font-size) + 0.2em);
+
+    // // Set the default font properties
+    // --default-font-weight: 400;
+    // --default-letter-spacing: 0;
+    // --default-line-height: 2;
+
+    // // Set the default link color
+    // --default-link-color: var(--color-primary);
+    // --default-link-color-hover: var(--color-primary-darken-2);
+    // --default-link-color-focus: var(--color-primary-darken-4);
+    // --default-link-color-active: var(--color-primary-darken-6);
+
+    // // Set the default content spacing
+    // --default-content-spacing: 20px;
+    // --default-content-spacing-small: calc(var(--default-content-spacing) / 2);
+    // --default-content-spacing-large: calc(var(--default-content-spacing) * 1.5);
+    // --default-content-spacing-huge: calc(var(--default-content-spacing) * 2);
+
+    // // Set the default element spacing
+    // --default-element-spacing: 20px;
+    // --default-element-spacing-small: calc(var(--default-element-spacing) / 2);
+    // --default-element-spacing-large: calc(var(--default-element-spacing) * 1.5);
+    // --default-element-spacing-huge: calc(var(--default-element-spacing) * 2);
+
+    // // Set the default element height
+    // --default-element-height: 40px;
+    // --default-element-height-small: calc(var(--default-element-height) / 1.5);
+    // --default-element-height-large: calc(var(--default-element-height) * 1.25);
+    // --default-element-height-huge: calc(var(--default-element-height) * 1.5);
+
+    // // Set the default border radius
+    // --default-border-radius-top-left: 5px;
+    // --default-border-radius-top-right: 5px;
+    // --default-border-radius-bottom-right: 5px;
+    // --default-border-radius-bottom-left: 5px;
+
+    // // Set the default border style
+    // --default-border-style: solid;
+
+    // // Set the default border widths
+    // --default-border-width-top: 1px;
+    // --default-border-width-right: 1px;
+    // --default-border-width-bottom: 1px;
+    // --default-border-width-left: 1px;
+    // --default-border-width-divider: 1px;
+
+    // // Set the default box shadow
+    // --default-box-shadow: 1px 4px 21px 0 hsla(0, 0%, 0%, 0.05);
+
+    // // Set the default accessibility properties
+    // --default-accessibility-focus-width: 3px;
+    // --default-accessibility-focus-color: var(--feedback-color-info-accessibility-focus);
+
+    // // Set the default animation bounce in properties
+    // --default-animation-bounce-in-delay: 0ms;
+    // --default-animation-bounce-in-distance: 200px;
+    // --default-animation-bounce-in-duration: 1000ms;
+    // --default-animation-bounce-in-easing: #{map-get($easings, 'ease-out-back')};
+
+    // // Set the default animation bounce out properties
+    // --default-animation-bounce-out-delay: 0ms;
+    // --default-animation-bounce-out-distance: 200px;
+    // --default-animation-bounce-out-duration: 1000ms;
+    // --default-animation-bounce-out-easing: #{map-get($easings, 'ease-in-back')};
+
+    // // Set the default animation flash properties
+    // --default-animation-flash-delay: 0ms;
+    // --default-animation-flash-duration: 500ms;
+    // --default-animation-flash-easing: #{map-get($easings, 'ease-in-out')};
+    // --default-animation-flash-iteration-count: 2;
+
+    // // Set the default animation fade in properties
+    // --default-animation-fade-in-delay: 0ms;
+    // --default-animation-fade-in-distance: 60px;
+    // --default-animation-fade-in-duration: 400ms;
+    // --default-animation-fade-in-easing: #{map-get($easings, 'ease')};
+
+    // // Set the default animation fade out properties
+    // --default-animation-fade-out-delay: 0ms;
+    // --default-animation-fade-out-distance: 60px;
+    // --default-animation-fade-out-duration: 400ms;
+    // --default-animation-fade-out-easing: #{map-get($easings, 'ease')};
+
+    // // Set the default animation flip in properties
+    // --default-animation-flip-in-delay: 0ms;
+    // --default-animation-flip-in-duration: 600ms;
+    // --default-animation-flip-in-easing: #{map-get($easings, 'ease-out-back')};
+    // --default-animation-flip-in-perspective: 500px;
+
+    // // Set the default animation flip out properties
+    // --default-animation-flip-out-delay: 0ms;
+    // --default-animation-flip-out-duration: 600ms;
+    // --default-animation-flip-out-easing: #{map-get($easings, 'ease-in-back')};
+    // --default-animation-flip-out-perspective: 500px;
+
+    // // Set the default animation pulse properties
+    // --default-animation-pulse-delay: 0ms;
+    // --default-animation-pulse-duration: 500ms;
+    // --default-animation-pulse-easing: #{map-get($easings, 'ease-in-out')};
+    // --default-animation-pulse-iteration-count: 5;
+
+    // // Set the default animation shake properties
+    // --default-animation-shake-delay: 0ms;
+    // --default-animation-shake-duration: 1000ms;
+    // --default-animation-shake-easing: #{map-get($easings, 'ease-in-out')};
+
+    // // Set the default animation slide in properties
+    // --default-animation-slide-in-delay: 0ms;
+    // --default-animation-slide-in-distance: 60px;
+    // --default-animation-slide-in-duration: 600ms;
+    // --default-animation-slide-in-easing: #{map-get($easings, 'ease')};
+
+    // // Set the default animation slide out properties
+    // --default-animation-slide-out-delay: 0ms;
+    // --default-animation-slide-out-distance: 60px;
+    // --default-animation-slide-out-duration: 600ms;
+    // --default-animation-slide-out-easing: #{map-get($easings, 'ease')};
+
+    // // Set the default animation vibrate properties
+    // --default-animation-vibrate-delay: 0ms;
+    // --default-animation-vibrate-duration: 350ms;
+    // --default-animation-vibrate-easing: #{map-get($easings, 'ease-in-out')};
+    // --default-animation-vibrate-iteration-count: 3;
+
+    // // Set the default animation zoom in properties
+    // --default-animation-zoom-in-delay: 0ms;
+    // --default-animation-zoom-in-distance: 60px;
+    // --default-animation-zoom-in-duration: 400ms;
+    // --default-animation-zoom-in-easing: #{map-get($easings, 'ease')};
+    // --default-animation-zoom-in-scale: 0.6;
+
+    // // Set the default animation zoom out properties
+    // --default-animation-zoom-out-delay: 0ms;
+    // --default-animation-zoom-out-distance: 60px;
+    // --default-animation-zoom-out-duration: 400ms;
+    // --default-animation-zoom-out-easing: #{map-get($easings, 'ease')};
+    // --default-animation-zoom-out-scale: 0.6;
+}

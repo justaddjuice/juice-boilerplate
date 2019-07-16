@@ -4,44 +4,47 @@
     JUICE -> THEMES -> CUSTOM -> ELEMENTS -> LAYOUT -> MEDIA OBJECT
     ========================================================================  */
 
-// .media-object {
-//     // Variables
-//     --badge-image-width: 75px;
-//     --badge-image-width-small: 50px;
-//     --badge-image-width-large: 100px;
-//     --badge-image-width-huge: 125px;
-//     --content-spacing: var(--default-content-spacing);
-//     --element-spacing: var(--default-element-spacing);
-//     --font-size: var(--default-font-size);
-//
-//     // Check if the media object size modifiers should be declared
-//     @if $media-object-size-modifiers {
-//         // Cycle through all of the sizes
-//         @each $size in $sizes {
-//             // Modifiers: Sizes
-//             &.is-#{$size} {
-//                 // Variables
-//                 --badge-image-width: var(--badge-image-width-#{$size});
-//                 --content-spacing: var(--default-content-spacing-#{$size});
-//                 --font-size: var(--default-font-size-#{$size});
-//             }
-//
-//             // Check if the media object size modifier breakpoints should be declared
-//             @if $media-object-size-modifier-breakpoints {
-//                 // Cycle through all of the breakpoints
-//                 @each $breakpoint-name, $breakpoint in $breakpoints {
-//                     // Breakpoint
-//                     @include breakpoint($breakpoint-name) {
-//                         // Modifiers: Size
-//                         &.is-#{$size}\@#{$breakpoint-name} {
-//                             // Variables
-//                             --badge-image-width: var(--badge-image-width-#{$size});
-//                             --content-spacing: var(--default-content-spacing-#{$size});
-//                             --font-size: var(--default-font-size-#{$size});
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
+// Check if the elements with media object should be imported
+@if $import-elements and $import-element-media-object {
+    .media-object {
+        // // Variables
+        // --badge-image-width: 75px;
+        // --badge-image-width-small: 50px;
+        // --badge-image-width-large: 100px;
+        // --badge-image-width-huge: 125px;
+        // --content-spacing: var(--default-content-spacing);
+        // --element-spacing: var(--default-element-spacing);
+        // --font-size: var(--default-font-size);
+
+        // Check if the media object size modifiers should be declared
+        @if $media-object-size-modifiers {
+            // Cycle through all of the sizes
+            @each $size in $sizes {
+                // Modifiers: Sizes
+                &.is-#{$size} {
+                    // // Variables
+                    // --badge-image-width: var(--badge-image-width-#{$size});
+                    // --content-spacing: var(--default-content-spacing-#{$size});
+                    // --font-size: var(--default-font-size-#{$size});
+                }
+
+                // Check if the media object size modifier breakpoints should be declared
+                @if $media-object-size-modifier-breakpoints {
+                    // Cycle through all of the breakpoints
+                    @each $breakpoint-name, $breakpoint in $breakpoints {
+                        // Breakpoint
+                        @include breakpoint($breakpoint-name) {
+                            // Modifiers: Size
+                            &.is-#{$size}\@#{$breakpoint-name} {
+                                // // Variables
+                                // --badge-image-width: var(--badge-image-width-#{$size});
+                                // --content-spacing: var(--default-content-spacing-#{$size});
+                                // --font-size: var(--default-font-size-#{$size});
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -4,9 +4,15 @@
     JUICE -> THEMES -> CUSTOM -> ANIMATIONS -> BOUNCE -> ENTRANCE -> BOUNCE IN
     ========================================================================  */
 
-// .bounce-in {
-//     // Variables
-//     --animation-delay: var(--default-animation-bounce-in-delay);
-//     --animation-duration: var(--default-animation-bounce-in-duration);
-//     --animation-easing: var(--default-animation-bounce-in-easing);
-// }
+// Check if the animations with bounce in should be imported
+@if $import-animations and $import-animation-bounce-in {
+    .has-animation {
+        // Nested selectors
+        &.bounce-in {
+            // // Variables
+            // --animation-delay: var(--default-animation-bounce-in-delay);
+            // --animation-duration: var(--default-animation-bounce-in-duration);
+            // --animation-easing: var(--default-animation-bounce-in-easing);
+        }
+    }
+}

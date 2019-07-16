@@ -4,10 +4,25 @@
     JUICE -> THEMES -> CUSTOM -> ELEMENTS -> TYPOGRAPHY -> HORIZONTAL RULE
     ========================================================================  */
 
-// hr {
-//     // Variables
-//     --border-color: hsla(0, 0%, 50%, .15);
-//     --border-style: var(--default-border-style);
-//     --border-width: var(--default-border-width-divider);
-//     --element-spacing: var(--default-element-spacing);
-// }
+// Check if the elements with horizontal rule should be imported
+@if $import-elements and $import-element-horizontal-rule {
+    hr {
+        // // Variables
+        // --border-color: hsla(0, 0%, 50%, .15);
+        // --border-style: var(--default-border-style);
+        // --border-width: var(--default-border-width-divider);
+        // --element-spacing: var(--default-element-spacing);
+
+        // Check if the horizontal rule color modifiers should be declared
+        @if $horizontal-rule-color-modifiers {
+            // Cycle through all of the colors
+            @each $color-name, $color in $colors {
+                // Modifiers: Colors
+                &.is-#{$color-name} {
+                    // // Variables
+                    // --border-color: var(--#{$color-name);
+                }
+            }
+        }
+    }
+}

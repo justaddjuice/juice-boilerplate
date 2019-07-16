@@ -4,10 +4,16 @@
     JUICE -> THEMES -> CUSTOM -> ANIMATIONS -> FLIP -> ENTRANCE -> FLIP IN LEFT
     ========================================================================  */
 
-// .flip-in-left {
-//     // Variables
-//     --animation-delay: var(--default-animation-flip-in-delay);
-//     --animation-duration: var(--default-animation-flip-in-duration);
-//     --animation-easing: var(--default-animation-flip-in-easing);
-//     --animation-perspective: var(--default-animation-flip-in-perspective);
-// }
+// Check if the animations with flip in left should be imported
+@if $import-animations and $import-animation-flip-in-left {
+    .has-animation {
+        // Nested selectors
+        &.flip-in-left {
+            // // Variables
+            // --animation-delay: var(--default-animation-flip-in-delay);
+            // --animation-duration: var(--default-animation-flip-in-duration);
+            // --animation-easing: var(--default-animation-flip-in-easing);
+            // --animation-perspective: var(--default-animation-flip-in-perspective);
+        }
+    }
+}

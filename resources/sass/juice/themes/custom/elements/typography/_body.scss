@@ -4,12 +4,15 @@
     JUICE -> THEMES -> CUSTOM -> ELEMENTS -> TYPOGRAPHY -> BODY
     ========================================================================  */
 
-// body {
-//     // Variables
-//     --font-color: var(--font-color-default);
-//     --font-family: var(--primary-typeface);
-//     --font-size: var(--root-font-size);
-//     --font-weight: var(--default-font-weight);
-//     --letter-spacing: var(--default-letter-spacing);
-//     --line-height: var(--default-line-height);
-// }
+// Check if the elements with body should be imported
+@if $import-elements and $import-element-body {
+    body {
+        // // Variables
+        // --font-color: var(--font-color-default);
+        // --font-family: var(--primary-typeface);
+        // --font-size: var(--root-font-size);
+        // --font-weight: var(--default-font-weight);
+        // --letter-spacing: var(--default-letter-spacing);
+        // --line-height: var(--default-line-height);
+    }
+}

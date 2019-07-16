@@ -4,36 +4,75 @@
     JUICE -> THEMES -> CUSTOM -> ELEMENTS -> NAVIGATION -> BREADCRUMB
     ========================================================================  */
 
-// .breadcrumb {
-//     // Variables
-//     --content-spacing: calc(var(--default-content-spacing) / 2);
-//     --element-spacing: var(--default-element-spacing);
-//     --font-color: inherit;
-//     --font-size: var(--default-font-size);
-//     --separator: '\203A';
-//
-//     // Nested selectors
-//     li {
-//         // Nested selectors
-//         a {
-//             // Variables
-//             --font-color: var(--default-link-color);
-//
-//             // Pseudo classes
-//             &:hover {
-//                 // Variables
-//                 --font-color: var(--default-link-color-hover);
-//             }
-//
-//             &:focus {
-//                 // Variables
-//                 --font-color: var(--default-link-color-focus);
-//             }
-//
-//             &:active {
-//                 // Variables
-//                 --font-color: var(--default-link-color-active);
-//             }
-//         }
-//     }
-// }
+// Check if the elements with breadcrumb should be imported
+@if $import-elements and $import-element-breadcrumb {
+    .breadcrumb {
+        // // Variables
+        // --content-spacing: calc(var(--default-content-spacing) / 2);
+        // --element-spacing: var(--default-element-spacing);
+        // --font-color: inherit;
+        // --font-size: var(--default-font-size);
+        // --separator: '\203A';
+
+        // Check if the breadcrumb angle separator modifier should be declared
+        @if $breadcrumb-angle-separator-modifier {
+            // Modifiers
+            &.breadcrumb--angle {
+                // // Variables
+                // --separator: '\203A';
+            }
+        }
+
+        // Check if the breadcrumb arrow separator modifier should be declared
+        @if $breadcrumb-arrow-separator-modifier {
+            // Modifiers
+            &.breadcrumb--arrow {
+                // // Variables
+                // --separator: '\02192';
+            }
+        }
+
+        // Check if the breadcrumb bullet separator modifier should be declared
+        @if $breadcrumb-bullet-separator-modifier {
+            // Modifiers
+            &.breadcrumb--bullet {
+                // // Variables
+                // --separator: '\02022';
+            }
+        }
+
+        // Check if the breadcrumb slash separator modifier should be declared
+        @if $breadcrumb-slash-separator-modifier {
+            // Modifiers
+            &.breadcrumb--slash {
+                // // Variables
+                // --separator: '\0002f';
+            }
+        }
+
+        // Nested selectors
+        li {
+            // Nested selectors
+            a {
+                // // Variables
+                // --font-color: var(--default-link-color);
+
+                // Pseudo classes
+                &:hover {
+                    // // Variables
+                    // --font-color: var(--default-link-color-hover);
+                }
+
+                &:focus {
+                    // // Variables
+                    // --font-color: var(--default-link-color-focus);
+                }
+
+                &:active {
+                    // // Variables
+                    // --font-color: var(--default-link-color-active);
+                }
+            }
+        }
+    }
+}

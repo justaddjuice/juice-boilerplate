@@ -4,9 +4,15 @@
     JUICE -> THEMES -> CUSTOM -> ANIMATIONS -> ATTRACTORS -> SHAKE
     ========================================================================  */
 
-// .shake {
-//     // Variables
-//     --animation-delay: var(--default-animation-shake-delay);
-//     --animation-duration: var(--default-animation-shake-duration);
-//     --animation-easing: var(--default-animation-shake-easing);
-// }
+// Check if the animations with shake should be imported
+@if $import-animations and $import-animation-shake {
+    .has-animation {
+        // Nested selectors
+        &.shake {
+            // // Variables
+            // --animation-delay: var(--default-animation-shake-delay);
+            // --animation-duration: var(--default-animation-shake-duration);
+            // --animation-easing: var(--default-animation-shake-easing);
+        }
+    }
+}

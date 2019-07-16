@@ -1,9 +1,9 @@
 @charset 'utf-8';
 
 /*  ========================================================================
-    JUICE -> THEMES -> CUSTOM -> COMPONENTS -> COMPONENTS -> PASSWORD REVEAL
+    JUICE -> THEMES -> CUSTOM -> SETTINGS -> ANIMATIONS
     ========================================================================  */
 
-// .has-password-reveal {
-//     //
-// }
+// Animation
+$animation-delay-modifiers: true;
+$animation-duration-modifiers: true;

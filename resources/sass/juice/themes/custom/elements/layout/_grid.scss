@@ -4,7 +4,10 @@
     JUICE -> THEMES -> CUSTOM -> ELEMENTS -> LAYOUT -> GRID
     ========================================================================  */
 
-// .grid {
-//     // Variables
-//     --gutter: calc(var(--default-content-spacing) / 2);
-// }
+// Check if the elements with grid should be imported
+@if $import-elements and $import-element-grid {
+    .grid {
+        // // Variables
+        // --gutter: calc(var(--default-content-spacing) / 2);
+    }
+}

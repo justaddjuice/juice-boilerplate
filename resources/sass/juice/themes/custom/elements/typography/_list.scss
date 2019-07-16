@@ -4,37 +4,40 @@
     JUICE -> THEMES -> CUSTOM -> ELEMENTS -> TYPOGRAPHY -> LIST
     ========================================================================  */
 
-// ul,
-// ol {
-//     // Variables
-//     --element-spacing: var(--default-element-spacing);
-//     --font-size: var(--default-font-size);
-//     --indent-spacing: var(--default-content-spacing);
-//
-//     // Check if the list size modifiers should be declared
-//     @if $list-size-modifiers {
-//         // Cycle through all of the sizes
-//         @each $size in $sizes {
-//             // Modifiers: Sizes
-//             &.is-#{$size} {
-//                 // Variables
-//                 --font-size: var(--default-font-size-#{$size});
-//             }
-//
-//             // Check if the list size modifier breakpoints should be declared
-//             @if $list-size-modifier-breakpoints {
-//                 // Cycle through all of the breakpoints
-//                 @each $breakpoint-name, $breakpoint in $breakpoints {
-//                     // Breakpoint
-//                     @include breakpoint($breakpoint-name) {
-//                         // Modifiers: Size
-//                         &.is-#{$size}\@#{$breakpoint-name} {
-//                             // Variables
-//                             --font-size: var(--default-font-size-#{$size});
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
+// Check if the elements with list should be imported
+@if $import-elements and $import-element-list {
+    ul,
+    ol {
+        // // Variables
+        // --element-spacing: var(--default-element-spacing);
+        // --font-size: var(--default-font-size);
+        // --indent-spacing: var(--default-content-spacing);
+
+        // Check if the list size modifiers should be declared
+        @if $list-size-modifiers {
+            // Cycle through all of the sizes
+            @each $size in $sizes {
+                // Modifiers: Sizes
+                &.is-#{$size} {
+                    // // Variables
+                    // --font-size: var(--default-font-size-#{$size});
+                }
+
+                // Check if the list size modifier breakpoints should be declared
+                @if $list-size-modifier-breakpoints {
+                    // Cycle through all of the breakpoints
+                    @each $breakpoint-name, $breakpoint in $breakpoints {
+                        // Breakpoint
+                        @include breakpoint($breakpoint-name) {
+                            // Modifiers: Size
+                            &.is-#{$size}\@#{$breakpoint-name} {
+                                // // Variables
+                                // --font-size: var(--default-font-size-#{$size});
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

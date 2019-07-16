@@ -4,10 +4,16 @@
     JUICE -> THEMES -> CUSTOM -> ANIMATIONS -> FADE -> ENTRANCE -> FADE IN DOWN
     ========================================================================  */
 
-// .fade-in-down {
-//     // Variables
-//     --animation-delay: var(--default-animation-fade-in-delay);
-//     --animation-distance: calc(0px - var(--default-animation-fade-in-distance));
-//     --animation-duration: var(--default-animation-fade-in-duration);
-//     --animation-easing: var(--default-animation-fade-in-easing);
-// }
+// Check if the animations with fade in down should be imported
+@if $import-animations and $import-animation-fade-in-down {
+    .has-animation {
+        // Nested selectors
+        &.fade-in-down {
+            // // Variables
+            // --animation-delay: var(--default-animation-fade-in-delay);
+            // --animation-distance: calc(0px - var(--default-animation-fade-in-distance));
+            // --animation-duration: var(--default-animation-fade-in-duration);
+            // --animation-easing: var(--default-animation-fade-in-easing);
+        }
+    }
+}

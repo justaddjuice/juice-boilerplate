@@ -1,107 +1,110 @@
 @charset 'utf-8';
 
 /*  ========================================================================
-    JUICE -> THEMES -> CUSTOM -> COMPONENTS -> COMPONENTS -> CHIP
+    JUICE -> THEMES -> CUSTOM -> COMPONENTS -> CHIP
     ========================================================================  */
 
-// .chip {
-//     // Variables
-//     --animation-duration: 300ms;
-//     --background-color: var(--color-white);
-//     --border-color: var(--color-white-darken-3);
-//     --border-radius-bottom-left: var(--default-border-radius-bottom-left);
-//     --border-radius-bottom-right: var(--default-border-radius-bottom-right);
-//     --border-radius-top-left: var(--default-border-radius-top-left);
-//     --border-radius-top-right: var(--default-border-radius-top-right);
-//     --border-style: var(--default-border-style);
-//     --border-width-bottom: var(--default-border-width-bottom);
-//     --border-width-left: var(--default-border-width-left);
-//     --border-width-right: var(--default-border-width-right);
-//     --border-width-top: var(--default-border-width-top);
-//     --content-spacing: calc(var(--default-content-spacing) / 2);
-//     --element-spacing: var(--default-element-spacing);
-//     --font-color: var(--font-color-default);
-//     --font-size: calc(var(--default-font-size) - 0.2em);
-//     --height: var(--default-element-height);
-//
-//     // Check if the chip size modifiers should be declared
-//     @if $chip-size-modifiers {
-//         // Cycle through all of the sizes
-//         @each $size in $sizes {
-//             // Modifiers: Sizes
-//             &.is-#{$size} {
-//                 // Variables
-//                 --content-spacing: calc(var(--default-content-spacing-#{$size}) / 2);
-//                 --font-size: calc(var(--default-font-size-#{$size}) - 0.2em);
-//                 --height: var(--default-element-height-#{$size});
-//             }
-//
-//             // Check if the chip size modifier breakpoints should be declared
-//             @if $chip-size-modifier-breakpoints {
-//                 // Cycle through all of the breakpoints
-//                 @each $breakpoint-name, $breakpoint in $breakpoints {
-//                     // Breakpoint
-//                     @include breakpoint($breakpoint-name) {
-//                         // Modifiers: Size
-//                         &.is-#{$size}\@#{$breakpoint-name} {
-//                             // Variables
-//                             --content-spacing: calc(var(--default-content-spacing-#{$size}) / 2);
-//                             --font-size: calc(var(--default-font-size-#{$size}) - 0.2em);
-//                             --height: var(--default-element-height-#{$size});
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-//
-//     // Check if the chip color modifiers should be declared
-//     @if $chip-color-modifiers {
-//         // Cycle through all of the colors
-//         @each $color-name, $color in $colors {
-//             // Modifiers: Colors
-//             &.is-#{$color-name} {
-//                 // Variables
-//                 --background-color: var(--color-#{$color-name});
-//                 --border-color: var(--color-#{$color-name}-darken-3);
-//                 --font-color: var(--color-#{$color-name}-inverted-text);
-//             }
-//         }
-//     }
-//
-//     // Check if the chip feedback modifiers should be declared
-//     @if $chip-feedback-modifiers {
-//         // Cycle through all of the feedback colors
-//         @each $feedback-name, $color in $feedback-colors {
-//             // Modifiers: Feedback colors
-//             &.has-#{$feedback-name} {
-//                 // Variables
-//                 --background-color: var(--feedback-color-#{$feedback-name});
-//                 --border-color: var(--feedback-color-#{$feedback-name}-darken-3);
-//                 --font-color: var(--feedback-color-#{$feedback-name}-inverted-text);
-//             }
-//         }
-//     }
-//
-//     // Nested selectors
-//     a {
-//         // Variables
-//         --font-color: var(--default-link-color);
-//
-//         // Pseudo classes
-//         &:hover {
-//             // Variables
-//             --font-color: var(--default-link-color-hover);
-//         }
-//
-//         &:focus {
-//             // Variables
-//             --font-color: var(--default-link-color-focus);
-//         }
-//
-//         &:active {
-//             // Variables
-//             --font-color: var(--default-link-color-active);
-//         }
-//     }
-// }
+// Check if the components with chip should be imported
+@if $import-components and $import-component-chip {
+    .chip {
+        // // Variables
+        // --animation-duration: 300ms;
+        // --background-color: var(--color-white);
+        // --border-color: var(--color-white-darken-3);
+        // --border-radius-bottom-left: var(--default-border-radius-bottom-left);
+        // --border-radius-bottom-right: var(--default-border-radius-bottom-right);
+        // --border-radius-top-left: var(--default-border-radius-top-left);
+        // --border-radius-top-right: var(--default-border-radius-top-right);
+        // --border-style: var(--default-border-style);
+        // --border-width-bottom: var(--default-border-width-bottom);
+        // --border-width-left: var(--default-border-width-left);
+        // --border-width-right: var(--default-border-width-right);
+        // --border-width-top: var(--default-border-width-top);
+        // --content-spacing: calc(var(--default-content-spacing) / 2);
+        // --element-spacing: var(--default-element-spacing);
+        // --font-color: var(--font-color-default);
+        // --font-size: calc(var(--default-font-size) - 0.2em);
+        // --height: var(--default-element-height);
+
+        // Check if the chip size modifiers should be declared
+        @if $chip-size-modifiers {
+            // Cycle through all of the sizes
+            @each $size in $sizes {
+                // Modifiers: Sizes
+                &.is-#{$size} {
+                    // // Variables
+                    // --content-spacing: calc(var(--default-content-spacing-#{$size}) / 2);
+                    // --font-size: calc(var(--default-font-size-#{$size}) - 0.2em);
+                    // --height: var(--default-element-height-#{$size});
+                }
+
+                // Check if the chip size modifier breakpoints should be declared
+                @if $chip-size-modifier-breakpoints {
+                    // Cycle through all of the breakpoints
+                    @each $breakpoint-name, $breakpoint in $breakpoints {
+                        // Breakpoint
+                        @include breakpoint($breakpoint-name) {
+                            // Modifiers: Size
+                            &.is-#{$size}\@#{$breakpoint-name} {
+                                // // Variables
+                                // --content-spacing: calc(var(--default-content-spacing-#{$size}) / 2);
+                                // --font-size: calc(var(--default-font-size-#{$size}) - 0.2em);
+                                // --height: var(--default-element-height-#{$size});
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // Check if the chip color modifiers should be declared
+        @if $chip-color-modifiers {
+            // Cycle through all of the colors
+            @each $color-name, $color in $colors {
+                // Modifiers: Colors
+                &.is-#{$color-name} {
+                    // // Variables
+                    // --background-color: var(--color-#{$color-name});
+                    // --border-color: var(--color-#{$color-name}-darken-3);
+                    // --font-color: var(--color-#{$color-name}-inverted-text);
+                }
+            }
+        }
+
+        // Check if the chip feedback modifiers should be declared
+        @if $chip-feedback-modifiers {
+            // Cycle through all of the feedback colors
+            @each $feedback-name, $color in $feedback-colors {
+                // Modifiers: Feedback colors
+                &.has-#{$feedback-name} {
+                    // // Variables
+                    // --background-color: var(--feedback-color-#{$feedback-name});
+                    // --border-color: var(--feedback-color-#{$feedback-name}-darken-3);
+                    // --font-color: var(--feedback-color-#{$feedback-name}-inverted-text);
+                }
+            }
+        }
+
+        // Nested selectors
+        a {
+            // // Variables
+            // --font-color: var(--default-link-color);
+
+            // Pseudo classes
+            &:hover {
+                // // Variables
+                // --font-color: var(--default-link-color-hover);
+            }
+
+            &:focus {
+                // // Variables
+                // --font-color: var(--default-link-color-focus);
+            }
+
+            &:active {
+                // // Variables
+                // --font-color: var(--default-link-color-active);
+            }
+        }
+    }
+}

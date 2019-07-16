@@ -4,9 +4,15 @@
     JUICE -> THEMES -> CUSTOM -> ANIMATIONS -> BOUNCE -> EXIT -> BOUNCE OUT
     ========================================================================  */
 
-// .bounce-out {
-//     // Variables
-//     --animation-delay: var(--default-animation-bounce-out-delay);
-//     --animation-duration: var(--default-animation-bounce-out-duration);
-//     --animation-easing: var(--default-animation-bounce-out-easing);
-// }
+// Check if the animations with bounce out should be imported
+@if $import-animations and $import-animation-bounce-out {
+    .has-animation {
+        // Nested selectors
+        &.bounce-out {
+            // // Variables
+            // --animation-delay: var(--default-animation-bounce-out-delay);
+            // --animation-duration: var(--default-animation-bounce-out-duration);
+            // --animation-easing: var(--default-animation-bounce-out-easing);
+        }
+    }
+}

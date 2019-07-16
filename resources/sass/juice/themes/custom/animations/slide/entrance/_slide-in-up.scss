@@ -4,10 +4,16 @@
     JUICE -> THEMES -> CUSTOM -> ANIMATIONS -> SLIDE -> ENTRANCE -> SLIDE IN UP
     ========================================================================  */
 
-// .slide-in-up {
-//     // Variables
-//     --animation-delay: var(--default-animation-slide-in-delay);
-//     --animation-distance: var(--default-animation-slide-in-distance);
-//     --animation-duration: var(--default-animation-slide-in-duration);
-//     --animation-easing: var(--default-animation-slide-in-easing);
-// }
+// Check if the animations with slide in up should be imported
+@if $import-animations and $import-animation-slide-in-up {
+    .has-animation {
+        // Nested selectors
+        &.slide-in-up {
+            // // Variables
+            // --animation-delay: var(--default-animation-slide-in-delay);
+            // --animation-distance: var(--default-animation-slide-in-distance);
+            // --animation-duration: var(--default-animation-slide-in-duration);
+            // --animation-easing: var(--default-animation-slide-in-easing);
+        }
+    }
+}

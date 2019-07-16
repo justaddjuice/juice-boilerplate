@@ -1,0 +1,16 @@
+@charset 'utf-8';
+
+/*  ========================================================================
+    JUICE -> THEMES -> CUSTOM -> ELEMENTS -> LOADING -> SPINNER
+    ========================================================================  */
+
+// Check if the elements with spinner should be imported
+@if $import-elements and $import-element-spinner {
+    .spinner {
+        // // Variables
+        // --animation-duration: 1000ms;
+        // --color: var(--color-charcoal);
+        // --color-alt: var(--color-charcoal-lighten-10);
+        // --element-size: 40px;
+    }
+}

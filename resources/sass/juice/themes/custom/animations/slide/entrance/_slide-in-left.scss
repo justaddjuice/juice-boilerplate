@@ -4,10 +4,16 @@
     JUICE -> THEMES -> CUSTOM -> ANIMATIONS -> SLIDE -> ENTRANCE -> SLIDE IN LEFT
     ========================================================================  */
 
-// .slide-in-left {
-//     // Variables
-//     --animation-delay: var(--default-animation-slide-in-delay);
-//     --animation-distance: var(--default-animation-slide-in-distance);
-//     --animation-duration: var(--default-animation-slide-in-duration);
-//     --animation-easing: var(--default-animation-slide-in-easing);
-// }
+// Check if the animations with slide in left should be imported
+@if $import-animations and $import-animation-slide-in-left {
+    .has-animation {
+        // Nested selectors
+        &.slide-in-left {
+            // // Variables
+            // --animation-delay: var(--default-animation-slide-in-delay);
+            // --animation-distance: var(--default-animation-slide-in-distance);
+            // --animation-duration: var(--default-animation-slide-in-duration);
+            // --animation-easing: var(--default-animation-slide-in-easing);
+        }
+    }
+}

@@ -4,8 +4,11 @@
     JUICE -> THEMES -> CUSTOM -> ELEMENTS -> LAYOUT -> CONTAINER
     ========================================================================  */
 
-// .container {
-//     // Variables
-//     --gutter: var(--default-content-spacing);
-//     --max-width: 1200px;
-// }
+// Check if the elements with container should be imported
+@if $import-elements and $import-element-container {
+    .container {
+        // // Variables
+        // --gutter: var(--default-content-spacing);
+        // --max-width: 1200px;
+    }
+}

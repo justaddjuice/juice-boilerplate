@@ -4,61 +4,66 @@
     JUICE -> THEMES -> CUSTOM -> ELEMENTS -> LAYOUT -> HERO
     ========================================================================  */
 
-// .hero {
-//     // Variables
-//     --background-color: var(--color-charcoal);
-//     --background-position: center;
-//     --background-repeat: no-repeat;
-//     --background-size: cover;
-//     --content-spacing: calc(var(--default-content-spacing) * 2);
-//     --element-spacing: var(--default-element-spacing);
-//     --font-color: var(--color-charcoal-inverted-text);
-//     --font-size: var(--default-font-size);
-//
-//     // Check if the hero color modifiers should be declared
-//     @if $hero-color-modifiers {
-//         // Cycle through all of the colors
-//         @each $color-name, $color in $colors {
-//             // Modifiers: Colors
-//             &.is-#{$color-name} {
-//                 // Variables
-//                 --background-color: var(--color-#{$color-name});
-//                 --font-color: var(--color-#{$color-name}-inverted-text);
-//             }
-//         }
-//     }
-//
-//     // Check if the hero feedback modifiers should be declared
-//     @if $hero-feedback-modifiers {
-//         // Cycle through all of the feedback colors
-//         @each $feedback-name, $color in $feedback-colors {
-//             // Modifiers: Feedback colors
-//             &.has-#{$feedback-name} {
-//                 // Variables
-//                 --background-color: var(--feedback-color-#{$feedback-name});
-//                 --font-color: var(--feedback-color-#{$feedback-name}-inverted-text);
-//             }
-//         }
-//     }
-//
-//     a {
-//         // Variables
-//         --font-color: var(--color-white);
-//
-//         // Pseudo classes
-//         &:hover {
-//             // Variables
-//             --font-color: var(--color-white-darken-2);
-//         }
-//
-//         &:focus {
-//             // Variables
-//             --font-color: var(--color-white-darken-4);
-//         }
-//
-//         &:active {
-//             // Variables
-//             --font-color: var(--color-white-darken-6);
-//         }
-//     }
-// }
+// Check if the elements with hero should be imported
+@if $import-elements and $import-element-hero {
+    .hero {
+        // // Variables
+        // --background-color: var(--color-charcoal);
+        // --background-position: center;
+        // --background-repeat: no-repeat;
+        // --background-size: cover;
+        // --content-spacing: calc(var(--default-content-spacing) * 2);
+        // --element-spacing: var(--default-element-spacing);
+        // --font-color: var(--color-charcoal-inverted-text);
+        // --font-size: var(--default-font-size);
+
+        // Check if the hero color modifiers should be declared
+        @if $hero-color-modifiers {
+            // Cycle through all of the colors
+            @each $color-name, $color in $colors {
+                // Modifiers: Colors
+                &.is-#{$color-name} {
+                    // // Variables
+                    // --background-color: var(--color-#{$color-name});
+                    // --font-color: var(--color-#{$color-name}-inverted-text);
+                }
+            }
+        }
+
+        // Check if the hero feedback modifiers should be declared
+        @if $hero-feedback-modifiers {
+            // Cycle through all of the feedback colors
+            @each $feedback-name, $color in $feedback-colors {
+                // Modifiers: Feedback colors
+                &.has-#{$feedback-name} {
+                    // // Variables
+                    // --background-color: var(--feedback-color-#{$feedback-name});
+                    // --font-color: var(--feedback-color-#{$feedback-name}-inverted-text);
+                }
+            }
+        }
+
+
+        // Nested selectors
+        a {
+            // // Variables
+            // --font-color: var(--color-white);
+
+            // Pseudo classes
+            &:hover {
+                // // Variables
+                // --font-color: var(--color-white-darken-2);
+            }
+
+            &:focus {
+                // // Variables
+                // --font-color: var(--color-white-darken-4);
+            }
+
+            &:active {
+                // // Variables
+                // --font-color: var(--color-white-darken-6);
+            }
+        }
+    }
+}

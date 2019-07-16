@@ -4,9 +4,15 @@
     JUICE -> THEMES -> CUSTOM -> ANIMATIONS -> FADE -> EXIT -> FADE OUT
     ========================================================================  */
 
-// .fade-out {
-//     // Variables
-//     --animation-delay: var(--default-animation-fade-out-delay);
-//     --animation-duration: var(--default-animation-fade-out-duration);
-//     --animation-easing: var(--default-animation-fade-out-easing);
-// }
+// Check if the animations with fade out should be imported
+@if $import-animations and $import-animation-fade-out {
+    .has-animation {
+        // Nested selectors
+        &.fade-out {
+            // // Variables
+            // --animation-delay: var(--default-animation-fade-out-delay);
+            // --animation-duration: var(--default-animation-fade-out-duration);
+            // --animation-easing: var(--default-animation-fade-out-easing);
+        }
+    }
+}

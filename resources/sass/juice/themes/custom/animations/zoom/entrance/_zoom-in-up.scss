@@ -4,11 +4,17 @@
     JUICE -> THEMES -> CUSTOM -> ANIMATIONS -> ZOOM -> ENTRANCE -> ZOOM IN UP
     ========================================================================  */
 
-// .zoom-in-up {
-//     // Variables
-//     --animation-delay: var(--default-animation-zoom-in-delay);
-//     --animation-distance: var(--default-animation-zoom-in-distance);
-//     --animation-duration: var(--default-animation-zoom-in-duration);
-//     --animation-easing: var(--default-animation-zoom-in-easing);
-//     --animation-scale: var(--default-animation-zoom-in-scale);
-// }
+// Check if the animations with zoom in up should be imported
+@if $import-animations and $import-animation-zoom-in-up {
+    .has-animation {
+        // Nested selectors
+        &.zoom-in-up {
+            // // Variables
+            // --animation-delay: var(--default-animation-zoom-in-delay);
+            // --animation-distance: var(--default-animation-zoom-in-distance);
+            // --animation-duration: var(--default-animation-zoom-in-duration);
+            // --animation-easing: var(--default-animation-zoom-in-easing);
+            // --animation-scale: var(--default-animation-zoom-in-scale);
+        }
+    }
+}

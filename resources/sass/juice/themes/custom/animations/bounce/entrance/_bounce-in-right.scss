@@ -4,10 +4,16 @@
     JUICE -> THEMES -> CUSTOM -> ANIMATIONS -> BOUNCE -> ENTRANCE -> BOUNCE IN RIGHT
     ========================================================================  */
 
-// .bounce-in-right {
-//     // Variables
-//     --animation-delay: var(--default-animation-bounce-in-delay);
-//     --animation-distance: var(--default-animation-bounce-in-distance);
-//     --animation-duration: var(--default-animation-bounce-in-duration);
-//     --animation-easing: var(--default-animation-bounce-in-easing);
-// }
+// Check if the animations with bounce in right should be imported
+@if $import-animations and $import-animation-bounce-in-right {
+    .has-animation {
+        // Nested selectors
+        &.bounce-in-right {
+            // // Variables
+            // --animation-delay: var(--default-animation-bounce-in-delay);
+            // --animation-distance: var(--default-animation-bounce-in-distance);
+            // --animation-duration: var(--default-animation-bounce-in-duration);
+            // --animation-easing: var(--default-animation-bounce-in-easing);
+        }
+    }
+}

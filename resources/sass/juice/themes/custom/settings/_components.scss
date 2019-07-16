@@ -1,0 +1,60 @@
+@charset 'utf-8';
+
+/*  ========================================================================
+    JUICE -> THEMES -> CUSTOM -> SETTINGS -> COMPONENTS
+    ========================================================================  */
+
+// Accordion
+$accordion-color-modifiers: true;
+$accordion-size-modifiers: true;
+$accordion-size-modifier-breakpoints: true;
+$accordion-spaced-modifier: true;
+
+// Card
+$card-size-modifiers: true;
+$card-size-modifier-breakpoints: true;
+
+// Chip
+$chip-color-modifiers: true;
+$chip-feedback-modifiers: true;
+$chip-pill-modifier: true;
+$chip-size-modifiers: true;
+$chip-size-modifier-breakpoints: true;
+
+// Dropdown
+$dropdown-alignment-modifiers: true;
+$dropdown-megamenu-modifier: true;
+$dropdown-size-modifiers: true;
+$dropdown-size-modifier-breakpoints: true;
+
+// Panel
+$modal-alignment-modifier: true;
+$modal-color-modifiers: true;
+$modal-feedback-modifiers: true;
+$modal-size-modifiers: true;
+$modal-size-modifier-breakpoints: true;
+
+// Notice
+$notice-feedback-modifiers: true;
+$notice-size-modifiers: true;
+$notice-size-modifier-breakpoints: true;
+
+// Panel
+$panel-color-modifiers: true;
+$panel-feedback-modifiers: true;
+$panel-size-modifiers: true;
+$panel-size-modifier-breakpoints: true;
+
+// Popover
+$popover-alignment-modifiers: true;
+$popover-color-modifiers: true;
+$popover-feedback-modifiers: true;
+$popover-size-modifiers: true;
+$popover-size-modifier-breakpoints: true;
+
+// Tooltip
+$tooltip-alignment-modifiers: true;
+$tooltip-color-modifiers: true;
+$tooltip-feedback-modifiers: true;
+$tooltip-size-modifiers: true;
+$tooltip-size-modifier-breakpoints: true;

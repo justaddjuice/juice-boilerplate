@@ -4,61 +4,64 @@
     JUICE -> THEMES -> CUSTOM -> ELEMENTS -> FORM -> CUSTOM -> CHECKBOX
     ========================================================================  */
 
-// .custom-checkbox {
-//     // Variables
-//     --accessibility-focus-width: var(--default-accessibility-focus-width);
-//     --accessibility-focus-color: var(--default-accessibility-focus-color);
-//     --background-color: var(--color-white);
-//     --border-color: var(--color-white-darken-6);
-//     --border-width-bottom: var(--default-border-width-bottom);
-//     --border-width-left: var(--default-border-width-left);
-//     --border-width-right: var(--default-border-width-right);
-//     --border-width-top: var(--default-border-width-top);
-//     --checked-color: var(--color-primary);
-//     --content-spacing: calc(var(--default-content-spacing) / 2);
-//     --element-spacing: var(--default-element-spacing);
-//     --height: calc(var(--default-element-height) / 2.5);
-//
-//     // Pseudo classes
-//     &:hover {
-//         // Nested selectors
-//         div {
-//             // Pseudo elements
-//             &::before {
-//                 // Vairiables
-//                 --border-color: var(--color-white-darken-9);
-//             }
-//         }
-//     }
-//
-//     // Check if the custom checkbox size modifiers should be declared
-//     @if $custom-checkbox-size-modifiers {
-//         // Cycle through all of the sizes
-//         @each $size in $sizes {
-//             // Modifiers: Sizes
-//             &.is-#{$size} {
-//                 // Variables
-//                 --font-size: var(--default-font-size-#{$size});
-//                 --height: calc(var(--default-element-height-#{$size}) / 2.5);
-//                 --content-spacing: calc(var(--default-content-spacing-#{$size}) / 1.5);
-//             }
-//
-//             // Check if the button size modifier breakpoints should be declared
-//             @if $button-size-modifier-breakpoints {
-//                 // Cycle through all of the breakpoints
-//                 @each $breakpoint-name, $breakpoint in $breakpoints {
-//                     // Breakpoint
-//                     @include breakpoint($breakpoint-name) {
-//                         // Modifiers: Size
-//                         &.is-#{$size}\@#{$breakpoint-name} {
-//                             // Variables
-//                             --font-size: var(--default-font-size-#{$size});
-//                             --height: var(--default-element-height-#{$size});
-//                             --content-spacing: calc(var(--default-content-spacing-#{$size}) / 1.5);
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
+// Check if the elements with custom checkbox should be imported
+@if $import-elements and $import-element-custom-checkbox {
+    .custom-checkbox {
+        // // Variables
+        // --accessibility-focus-width: var(--default-accessibility-focus-width);
+        // --accessibility-focus-color: var(--default-accessibility-focus-color);
+        // --background-color: var(--color-white);
+        // --border-color: var(--color-white-darken-6);
+        // --border-width-bottom: var(--default-border-width-bottom);
+        // --border-width-left: var(--default-border-width-left);
+        // --border-width-right: var(--default-border-width-right);
+        // --border-width-top: var(--default-border-width-top);
+        // --checked-color: var(--color-primary);
+        // --content-spacing: calc(var(--default-content-spacing) / 2);
+        // --element-spacing: var(--default-element-spacing);
+        // --height: calc(var(--default-element-height) / 2.5);
+
+        // Pseudo classes
+        &:hover {
+            // Nested selectors
+            div {
+                // Pseudo elements
+                &::before {
+                    // // Variables
+                    // --border-color: var(--color-white-darken-9);
+                }
+            }
+        }
+
+        // Check if the custom checkbox size modifiers should be declared
+        @if $custom-checkbox-size-modifiers {
+            // Cycle through all of the sizes
+            @each $size in $sizes {
+                // Modifiers: Sizes
+                &.is-#{$size} {
+                    // // Variables
+                    // --font-size: var(--default-font-size-#{$size});
+                    // --height: calc(var(--default-element-height-#{$size}) / 2.5);
+                    // --content-spacing: calc(var(--default-content-spacing-#{$size}) / 1.5);
+                }
+
+                // Check if the button size modifier breakpoints should be declared
+                @if $button-size-modifier-breakpoints {
+                    // Cycle through all of the breakpoints
+                    @each $breakpoint-name, $breakpoint in $breakpoints {
+                        // Breakpoint
+                        @include breakpoint($breakpoint-name) {
+                            // Modifiers: Size
+                            &.is-#{$size}\@#{$breakpoint-name} {
+                                // // Variables
+                                // --font-size: var(--default-font-size-#{$size});
+                                // --height: var(--default-element-height-#{$size});
+                                // --content-spacing: calc(var(--default-content-spacing-#{$size}) / 1.5);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

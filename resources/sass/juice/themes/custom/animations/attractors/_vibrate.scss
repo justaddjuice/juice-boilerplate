@@ -4,10 +4,16 @@
     JUICE -> THEMES -> CUSTOM -> ANIMATIONS -> ATTRACTORS -> VIBRATE
     ========================================================================  */
 
-// .vibrate {
-//     // Variables
-//     --animation-delay: var(--default-animation-vibrate-delay);
-//     --animation-duration: var(--default-animation-vibrate-duration);
-//     --animation-easing: var(--default-animation-vibrate-easing);
-//     --animation-iteration-count: var(--default-animation-vibrate-iteration-count);
-// }
+// Check if the animations with vibrate should be imported
+@if $import-animations and $import-animation-vibrate {
+    .has-animation {
+        // Nested selectors
+        &.vibrate {
+            // // Variables
+            // --animation-delay: var(--default-animation-vibrate-delay);
+            // --animation-duration: var(--default-animation-vibrate-duration);
+            // --animation-easing: var(--default-animation-vibrate-easing);
+            // --animation-iteration-count: var(--default-animation-vibrate-iteration-count);
+        }
+    }
+}

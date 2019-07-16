@@ -4,10 +4,16 @@
     JUICE -> THEMES -> CUSTOM -> ANIMATIONS -> ATTRACTORS -> PULSE
     ========================================================================  */
 
-// .pulse {
-//     // Variables
-//     --animation-delay: var(--default-animation-pulse-delay);
-//     --animation-duration: var(--default-animation-pulse-duration);
-//     --animation-easing: var(--default-animation-pulse-easing);
-//     --animation-iteration-count: var(--default-animation-pulse-iteration-count);
-// }
+// Check if the animations with pulse should be imported
+@if $import-animations and $import-animation-pulse {
+    .has-animation {
+        // Nested selectors
+        &.pulse {
+            // // Variables
+            // --animation-delay: var(--default-animation-pulse-delay);
+            // --animation-duration: var(--default-animation-pulse-duration);
+            // --animation-easing: var(--default-animation-pulse-easing);
+            // --animation-iteration-count: var(--default-animation-pulse-iteration-count);
+        }
+    }
+}

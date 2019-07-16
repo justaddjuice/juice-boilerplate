@@ -4,9 +4,15 @@
     JUICE -> THEMES -> CUSTOM -> ANIMATIONS -> FADE -> ENTRANCE -> FADE IN
     ========================================================================  */
 
-// .fade-in {
-//     // Variables
-//     --animation-delay: var(--default-animation-fade-in-delay);
-//     --animation-duration: var(--default-animation-fade-in-duration);
-//     --animation-easing: var(--default-animation-fade-in-easing);
-// }
+// Check if the animations with fade in should be imported
+@if $import-animations and $import-animation-fade-in {
+    .has-animation {
+        // Nested selectors
+        &.fade-in {
+            // // Variables
+            // --animation-delay: var(--default-animation-fade-in-delay);
+            // --animation-duration: var(--default-animation-fade-in-duration);
+            // --animation-easing: var(--default-animation-fade-in-easing);
+        }
+    }
+}

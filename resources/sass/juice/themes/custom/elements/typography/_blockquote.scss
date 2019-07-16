@@ -4,77 +4,81 @@
     JUICE -> THEMES -> CUSTOM -> ELEMENTS -> TYPOGRAPHY -> BLOCKQUOTE
     ========================================================================  */
 
-// blockquote {
-//     // Variables
-//     --background-color: var(--color-white-darken-2);
-//     --border-color: var(--color-white-darken-5);
-//     --border-radius-bottom-left: 0;
-//     --border-radius-bottom-right: var(--default-border-radius-bottom-right);
-//     --border-radius-top-left: 0;
-//     --border-radius-top-right: var(--default-border-radius-top-right);
-//     --border-style: var(--default-border-style);
-//     --border-width-bottom: 0;
-//     --border-width-left: 5px;
-//     --border-width-right: 0;
-//     --border-width-top: 0;
-//     --content-spacing: var(--default-content-spacing);
-//     --element-spacing: var(--default-element-spacing);
-//     --font-color: var(--color-white-inverted-text);
-//     --font-size: calc(var(--default-font-size) + 0.2em);
-//
-//     // Pseudo classes
-//     &:hover {
-//         --border-color: var(--color-primary);
-//     }
-//
-//     // Check if the blockquote size modifiers should be declared
-//     @if $blockquote-size-modifiers {
-//         // Cycle through all of the sizes
-//         @each $size in $sizes {
-//             // Modifiers: Sizes
-//             &.is-#{$size} {
-//                 // Variables
-//                 --font-size: calc(var(--default-font-size-#{$size}) + 0.2em);
-//                 --content-spacing: var(--default-content-spacing-#{$size});
-//             }
-//
-//             // Check if the blockquote size modifier breakpoints should be declared
-//             @if $blockquote-size-modifier-breakpoints {
-//                 // Cycle through all of the breakpoints
-//                 @each $breakpoint-name, $breakpoint in $breakpoints {
-//                     // Breakpoint
-//                     @include breakpoint($breakpoint-name) {
-//                         // Modifiers: Size
-//                         &.is-#{$size}\@#{$breakpoint-name} {
-//                             // Variables
-//                             --font-size: calc(var(--default-font-size-#{$size}) + 0.2em);
-//                             --content-spacing: var(--default-content-spacing-#{$size});
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-//
-//     // Nested selectors
-//     a {
-//         // Variables
-//         --font-color: var(--default-link-color);
-//
-//         // Pseudo classes
-//         &:hover {
-//             // Variables
-//             --font-color: var(--default-link-color-hover);
-//         }
-//
-//         &:focus {
-//             // Variables
-//             --font-color: var(--default-link-color-focus);
-//         }
-//
-//         &:active {
-//             // Variables
-//             --font-color: var(--default-link-color-active);
-//         }
-//     }
-// }
+// Check if the elements with blockquote should be imported
+@if $import-elements and $import-element-blockquote {
+    blockquote {
+        // // Variables
+        // --background-color: var(--color-white-darken-2);
+        // --border-color: var(--color-white-darken-5);
+        // --border-radius-bottom-left: 0;
+        // --border-radius-bottom-right: var(--default-border-radius-bottom-right);
+        // --border-radius-top-left: 0;
+        // --border-radius-top-right: var(--default-border-radius-top-right);
+        // --border-style: var(--default-border-style);
+        // --border-width-bottom: 0;
+        // --border-width-left: 5px;
+        // --border-width-right: 0;
+        // --border-width-top: 0;
+        // --content-spacing: var(--default-content-spacing);
+        // --element-spacing: var(--default-element-spacing);
+        // --font-color: var(--color-white-inverted-text);
+        // --font-size: calc(var(--default-font-size) + 0.2em);
+
+        // Pseudo classes
+        &:hover {
+            // // Variables
+            // --border-color: var(--color-primary);
+        }
+
+        // Check if the blockquote size modifiers should be declared
+        @if $blockquote-size-modifiers {
+            // Cycle through all of the sizes
+            @each $size in $sizes {
+                // Modifiers: Sizes
+                &.is-#{$size} {
+                    // // Variables
+                    // --font-size: calc(var(--default-font-size-#{$size}) + 0.2em);
+                    // --content-spacing: var(--default-content-spacing-#{$size});
+                }
+
+                // Check if the blockquote size modifier breakpoints should be declared
+                @if $blockquote-size-modifier-breakpoints {
+                    // Cycle through all of the breakpoints
+                    @each $breakpoint-name, $breakpoint in $breakpoints {
+                        // Breakpoint
+                        @include breakpoint($breakpoint-name) {
+                            // Modifiers: Size
+                            &.is-#{$size}\@#{$breakpoint-name} {
+                                // // Variables
+                                // --font-size: calc(var(--default-font-size-#{$size}) + 0.2em);
+                                // --content-spacing: var(--default-content-spacing-#{$size});
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // Nested selectors
+        a {
+            // // Variables
+            // --font-color: var(--default-link-color);
+
+            // Pseudo classes
+            &:hover {
+                // // Variables
+                // --font-color: var(--default-link-color-hover);
+            }
+
+            &:focus {
+                // // Variables
+                // --font-color: var(--default-link-color-focus);
+            }
+
+            &:active {
+                // // Variables
+                // --font-color: var(--default-link-color-active);
+            }
+        }
+    }
+}

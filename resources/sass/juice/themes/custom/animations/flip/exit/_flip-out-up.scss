@@ -4,10 +4,16 @@
     JUICE -> THEMES -> CUSTOM -> ANIMATIONS -> FLIP -> EXIT -> FLIP OUT UP
     ========================================================================  */
 
-// .flip-out-up {
-//     // Variables
-//     --animation-delay: var(--default-animation-flip-out-delay);
-//     --animation-duration: var(--default-animation-flip-out-duration);
-//     --animation-easing: var(--default-animation-flip-out-easing);
-//     --animation-perspective: var(--default-animation-flip-in-perspective);
-// }
+// Check if the animations with flip out up should be imported
+@if $import-animations and $import-animation-flip-out-up {
+    .has-animation {
+        // Nested selectors
+        &.flip-out-up {
+            // // Variables
+            // --animation-delay: var(--default-animation-flip-out-delay);
+            // --animation-duration: var(--default-animation-flip-out-duration);
+            // --animation-easing: var(--default-animation-flip-out-easing);
+            // --animation-perspective: var(--default-animation-flip-in-perspective);
+        }
+    }
+}

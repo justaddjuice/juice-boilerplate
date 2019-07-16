@@ -4,10 +4,16 @@
     JUICE -> THEMES -> CUSTOM -> ANIMATIONS -> ZOOM -> ENTRANCE -> ZOOM OUT
     ========================================================================  */
 
-// .zoom-out {
-//     // Variables
-//     --animation-delay: var(--default-animation-zoom-out-delay);
-//     --animation-duration: var(--default-animation-zoom-out-duration);
-//     --animation-easing: var(--default-animation-zoom-out-easing);
-//     --animation-scale: var(--default-animation-zoom-out-scale);
-// }
+// Check if the animations with zoom out should be imported
+@if $import-animations and $import-animation-zoom-out {
+    .has-animation {
+        // Nested selectors
+        &.zoom-out {
+            // // Variables
+            // --animation-delay: var(--default-animation-zoom-out-delay);
+            // --animation-duration: var(--default-animation-zoom-out-duration);
+            // --animation-easing: var(--default-animation-zoom-out-easing);
+            // --animation-scale: var(--default-animation-zoom-out-scale);
+        }
+    }
+}

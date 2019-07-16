@@ -4,10 +4,16 @@
     JUICE -> THEMES -> CUSTOM -> ANIMATIONS -> BOUNCE -> EXIT -> BOUNCE OUT LEFT
     ========================================================================  */
 
-// .bounce-out-left {
-//     // Variables
-//     --animation-delay: var(--default-animation-bounce-out-delay);
-//     --animation-distance: var(--default-animation-bounce-out-distance);
-//     --animation-duration: var(--default-animation-bounce-out-duration);
-//     --animation-easing: var(--default-animation-bounce-out-easing);
-// }
+// Check if the animations with bounce out left should be imported
+@if $import-animations and $import-animation-bounce-out-left {
+    .has-animation {
+        // Nested selectors
+        &.bounce-out-left {
+            // // Variables
+            // --animation-delay: var(--default-animation-bounce-out-delay);
+            // --animation-distance: var(--default-animation-bounce-out-distance);
+            // --animation-duration: var(--default-animation-bounce-out-duration);
+            // --animation-easing: var(--default-animation-bounce-out-easing);
+        }
+    }
+}

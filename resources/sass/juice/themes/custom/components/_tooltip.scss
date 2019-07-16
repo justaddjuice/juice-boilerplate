@@ -1,76 +1,79 @@
 @charset 'utf-8';
 
 /*  ========================================================================
-    JUICE -> THEMES -> CUSTOM -> COMPONENTS -> COMPONENTS -> TOOLTIP
+    JUICE -> THEMES -> CUSTOM -> COMPONENTS -> TOOLTIP
     ========================================================================  */
 
-// .tooltip {
-//     // Variables
-//     --animation-duration: 300ms;
-//     --arrow-size: 6px;
-//     --background-color: var(--color-charcoal);
-//     --border-radius-bottom-left: var(--default-border-radius-bottom-left);
-//     --border-radius-bottom-right: var(--default-border-radius-bottom-right);
-//     --border-radius-top-left: var(--default-border-radius-top-left);
-//     --border-radius-top-right: var(--default-border-radius-top-right);
-//     --font-color: var(--color-charcoal-inverted-text);
-//     --font-family: 'Trebuchet', sans-serif;
-//     --font-size: calc(var(--default-font-size) - 0.2em);
-//     --offset: 2px;
-//     --max-width: 200px;
-//     --opacity: 0.9;
-//     --padding: 6px 10px;
-//
-//     // Check if the tooltip size modifiers should be declared
-//     @if $tooltip-size-modifiers {
-//         // Cycle through all of the sizes
-//         @each $size in $sizes {
-//             // Modifiers: Sizes
-//             &.is-#{$size} {
-//                 // Variables
-//                 --font-size: calc(var(--default-font-size-#{$size}) - 0.2em);
-//             }
-//
-//             // Check if the tooltip size modifier breakpoints should be declared
-//             @if $tooltip-size-modifier-breakpoints {
-//                 // Cycle through all of the breakpoints
-//                 @each $breakpoint-name, $breakpoint in $breakpoints {
-//                     // Breakpoint
-//                     @include breakpoint($breakpoint-name) {
-//                         // Modifiers: Size
-//                         &.is-#{$size}\@#{$breakpoint-name} {
-//                             // Variables
-//                             --font-size: calc(var(--default-font-size-#{$size}) - 0.2em);
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-//
-//     // Check if the tooltip color modifiers should be declared
-//     @if $tooltip-color-modifiers {
-//         // Cycle through all of the colors
-//         @each $color-name, $color in $colors {
-//             // Modifiers: Colors
-//             &.is-#{$color-name} {
-//                 // Variables
-//                 --background-color: var(--color-#{$color-name});
-//                 --font-color: var(--color-#{$color-name}-inverted-text);
-//             }
-//         }
-//     }
-//
-//     // Check if the tooltip feedback modifiers should be declared
-//     @if $tooltip-feedback-modifiers {
-//         // Cycle through all of the feedback colors
-//         @each $feedbcak-name, $color in $feedback-colors {
-//             // Modifiers: Feedback colors
-//             &.has-#{$feedbcak-name} {
-//                 // Variables
-//                 --background-color: var(--feedback-color-#{$feedbcak-name});
-//                 --font-color: var(--feedback-color-#{$feedbcak-name}-inverted-text);
-//             }
-//         }
-//     }
-// }
+// Check if the components with tooltip should be imported
+@if $import-components and $import-component-tooltip {
+    .tooltip {
+        // // Variables
+        // --animation-duration: 300ms;
+        // --arrow-size: 6px;
+        // --background-color: var(--color-charcoal);
+        // --border-radius-bottom-left: var(--default-border-radius-bottom-left);
+        // --border-radius-bottom-right: var(--default-border-radius-bottom-right);
+        // --border-radius-top-left: var(--default-border-radius-top-left);
+        // --border-radius-top-right: var(--default-border-radius-top-right);
+        // --font-color: var(--color-charcoal-inverted-text);
+        // --font-family: 'Trebuchet', sans-serif;
+        // --font-size: calc(var(--default-font-size) - 0.2em);
+        // --offset: 2px;
+        // --max-width: 200px;
+        // --opacity: 0.9;
+        // --padding: 6px 10px;
+
+        // Check if the tooltip size modifiers should be declared
+        @if $tooltip-size-modifiers {
+            // Cycle through all of the sizes
+            @each $size in $sizes {
+                // Modifiers: Sizes
+                &.is-#{$size} {
+                    // // Variables
+                    // --font-size: calc(var(--default-font-size-#{$size}) - 0.2em);
+                }
+
+                // Check if the tooltip size modifier breakpoints should be declared
+                @if $tooltip-size-modifier-breakpoints {
+                    // Cycle through all of the breakpoints
+                    @each $breakpoint-name, $breakpoint in $breakpoints {
+                        // Breakpoint
+                        @include breakpoint($breakpoint-name) {
+                            // Modifiers: Size
+                            &.is-#{$size}\@#{$breakpoint-name} {
+                                // // Variables
+                                // --font-size: calc(var(--default-font-size-#{$size}) - 0.2em);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // Check if the tooltip color modifiers should be declared
+        @if $tooltip-color-modifiers {
+            // Cycle through all of the colors
+            @each $color-name, $color in $colors {
+                // Modifiers: Colors
+                &.is-#{$color-name} {
+                    // // Variables
+                    // --background-color: var(--color-#{$color-name});
+                    // --font-color: var(--color-#{$color-name}-inverted-text);
+                }
+            }
+        }
+
+        // Check if the tooltip feedback modifiers should be declared
+        @if $tooltip-feedback-modifiers {
+            // Cycle through all of the feedback colors
+            @each $feedbcak-name, $color in $feedback-colors {
+                // Modifiers: Feedback colors
+                &.has-#{$feedbcak-name} {
+                    // // Variables
+                    // --background-color: var(--feedback-color-#{$feedbcak-name});
+                    // --font-color: var(--feedback-color-#{$feedbcak-name}-inverted-text);
+                }
+            }
+        }
+    }
+}

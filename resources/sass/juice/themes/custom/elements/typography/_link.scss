@@ -4,23 +4,26 @@
     JUICE -> THEMES -> CUSTOM -> ELEMENTS -> TYPOGRAPHY -> LINK
     ========================================================================  */
 
-// a {
-//     // Variables
-//     --font-color: var(--default-link-color);
-//
-//     // Pseudo classes
-//     &:hover {
-//         // Variables
-//         --font-color: var(--default-link-color-hover);
-//     }
-//
-//     &:focus {
-//         // Variables
-//         --font-color: var(--default-link-color-focus);
-//     }
-//
-//     &:active {
-//         // Variables
-//         --font-color: var(--default-link-color-active);
-//     }
-// }
+// Check if the elements with link should be imported
+@if $import-elements and $import-element-link {
+    a {
+        // // Variables
+        // --font-color: var(--default-link-color);
+
+        // Pseudo classes
+        &:hover {
+            // // Variables
+            // --font-color: var(--default-link-color-hover);
+        }
+
+        &:focus {
+            // // Variables
+            // --font-color: var(--default-link-color-focus);
+        }
+
+        &:active {
+            // // Variables
+            // --font-color: var(--default-link-color-active);
+        }
+    }
+}

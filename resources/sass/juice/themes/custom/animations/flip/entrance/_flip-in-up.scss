@@ -4,10 +4,16 @@
     JUICE -> THEMES -> CUSTOM -> ANIMATIONS -> FLIP -> ENTRANCE -> FLIP IN UP
     ========================================================================  */
 
-// .flip-in-up {
-//     // Variables
-//     --animation-delay: var(--default-animation-flip-in-delay);
-//     --animation-duration: var(--default-animation-flip-in-duration);
-//     --animation-easing: var(--default-animation-flip-in-easing);
-//     --animation-perspective: var(--default-animation-flip-in-perspective);
-// }
+// Check if the animations with flip in up should be imported
+@if $import-animations and $import-animation-flip-in-up {
+    .has-animation {
+        // Nested selectors
+        &.flip-in-up {
+            // // Variables
+            // --animation-delay: var(--default-animation-flip-in-delay);
+            // --animation-duration: var(--default-animation-flip-in-duration);
+            // --animation-easing: var(--default-animation-flip-in-easing);
+            // --animation-perspective: var(--default-animation-flip-in-perspective);
+        }
+    }
+}

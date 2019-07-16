@@ -4,12 +4,15 @@
     JUICE -> THEMES -> CUSTOM -> ELEMENTS -> LAYOUT -> OVERLAY
     ========================================================================  */
 
-// .has-overlay {
-//     // Nested selectors
-//     .overlay {
-//         // Variables
-//         --animation-duration: 200ms;
-//         --background-color: hsla(0, 0%, 0%, 0.75);
-//         --font-color: var(--color-black-inverted-text);
-//     }
-// }
+// Check if the elements with overlay should be imported
+@if $import-elements and $import-element-overlay {
+    .has-overlay {
+        // Nested selectors
+        .overlay {
+            // // Variables
+            // --animation-duration: 200ms;
+            // --background-color: hsla(0, 0%, 0%, 0.75);
+            // --font-color: var(--color-black-inverted-text);
+        }
+    }
+}

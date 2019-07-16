@@ -4,10 +4,16 @@
     JUICE -> THEMES -> CUSTOM -> ANIMATIONS -> BOUNCE -> EXIT -> BOUNCE OUT DOWN
     ========================================================================  */
 
-// .bounce-out-down {
-//     // Variables
-//     --animation-delay: var(--default-animation-bounce-out-delay);
-//     --animation-distance: var(--default-animation-bounce-out-distance);
-//     --animation-duration: var(--default-animation-bounce-out-duration);
-//     --animation-easing: var(--default-animation-bounce-out-easing);
-// }
+// Check if the animations with bounce out down should be imported
+@if $import-animations and $import-animation-bounce-out-down {
+    .has-animation {
+        // Nested selectors
+        &.bounce-out-down {
+            // // Variables
+            // --animation-delay: var(--default-animation-bounce-out-delay);
+            // --animation-distance: var(--default-animation-bounce-out-distance);
+            // --animation-duration: var(--default-animation-bounce-out-duration);
+            // --animation-easing: var(--default-animation-bounce-out-easing);
+        }
+    }
+}
