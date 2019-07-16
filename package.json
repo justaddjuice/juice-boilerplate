@@ -13,7 +13,7 @@
         "gulp-rename": "^1.4.0",
         "gulp-sass": "^4.0.2",
         "gulp-uglify": "^3.0.2",
-        "just-add-juice": "^0.19.2-beta"
+        "just-add-juice": "^0.22.0-beta"
     },
     "dependencies": {
         "velocity-animate": "^1.5.2"
