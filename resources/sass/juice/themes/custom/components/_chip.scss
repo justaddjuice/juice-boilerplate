@@ -86,7 +86,7 @@
         }
 
         // Nested selectors
-        a {
+        a:not(.button) {
             // // Variables
             // --font-color: var(--default-link-color);
 

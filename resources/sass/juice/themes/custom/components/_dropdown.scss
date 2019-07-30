@@ -26,11 +26,10 @@
             // --border-width-right: var(--default-border-width-right);
             // --border-width-top: var(--default-border-width-top);
             // --box-shadow: var(--default-box-shadow);
-            // --content-spacing: var(--default-content-spacing);
+            // --content-spacing: calc(var(--default-content-spacing) / 1.5);
             // --font-color: var(--font-color-default);
             // --font-size: var(--default-font-size);
-            // --max-width: 300px;
-            // --min-width: 200px;
+            // --min-width: 300px;
             // --offset: 10px;
 
             // Check if the dropdown size modifiers should be declared
@@ -40,7 +39,7 @@
                     // Modifiers: Sizes
                     &.is-#{$size} {
                         // // Variables
-                        // --content-spacing: var(--default-content-spacing-#{$size});
+                        // --content-spacing: calc(var(--default-content-spacing-#{$size}) / 1.5);
                         // --font-size: var(--default-font-size-#{$size});
                     }
 
@@ -53,7 +52,7 @@
                                 // Modifiers: Size
                                 &.is-#{$size}\@#{$breakpoint-name} {
                                     // // Variables
-                                    // --content-spacing: var(--default-content-spacing-#{$size});
+                                    // --content-spacing: calc(var(--default-content-spacing-#{$size}) / 1.5);
                                     // --font-size: var(--default-font-size-#{$size});
                                 }
                             }
@@ -65,7 +64,7 @@
             // Nested selectors
             .dropdown__content {
                 // Nested selectors
-                a {
+                a:not(.button) {
                     // // Variables
                     // --font-color: var(--default-link-color);
 
@@ -84,7 +83,9 @@
                         // // Variables
                         // --font-color: var(--default-link-color-active);
                     }
+                }
 
+                a {
                     // Modifiers
                     &.dropdown__item {
                         // // Variables

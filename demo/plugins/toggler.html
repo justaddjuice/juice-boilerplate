@@ -9,7 +9,7 @@
     <meta name="author" content="" />
 
     <!-- Page title -->
-    <title>Juice - Components: Remover</title>
+    <title>Juice - Plugins: Toggler</title>
 
     <!-- Webfonts and icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
@@ -29,22 +29,22 @@
     <!-- Main -->
     <main>
         <div class="container">
-            <h1>Remover</h1>
+            <h1>Toggler</h1>
             <hr />
             <ul class="breadcrumb">
                 <li><a href="../../index.html">Juice</a></li>
-                <li><a href="../components/index.html">Components</a></li>
-                <li>Remover</li>
+                <li><a href="../plugins/index.html">Plugins</a></li>
+                <li>Toggler</li>
             </ul>
             <hr class="has-huge-element-spacing" />
 
             <div class="grid">
                 <div class="grid__item grid__item--span-12 grid__item--span-6@tablet-up">
-                    <button class="button--block has-removable" data-remover-targets="#removable-item-1">
-                        Animated Remove
+                    <button class="button--block has-toggable" data-toggler-targets="#toggable-item-1">
+                        Animated Toggle
                     </button>
 
-                    <div id="removable-item-1" class="box">
+                    <div id="toggable-item-1" class="box" style="display: none;">
                         <h6>Heading</h6>
                         <hr />
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -52,11 +52,11 @@
                 </div>
 
                 <div class="grid__item grid__item--span-12 grid__item--span-6@tablet-up">
-                    <button class="button--block has-removable" data-remover-targets="#removable-item-2" data-remover-slide="true">
-                        Slide Remove
+                    <button class="button--block has-toggable" data-toggler-targets="#toggable-item-2" data-toggler-slide="true">
+                        Slide Toggle
                     </button>
 
-                    <div id="removable-item-2" class="box">
+                    <div id="toggable-item-2" class="box">
                         <h6>Heading</h6>
                         <hr />
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -78,7 +78,7 @@
     <!-- Juice components -->
     <script>
         var smooth_scroll = new SmoothScroll;
-        var remover = new Remover('.has-removable');
+        var toggler = new Toggler('.has-toggable');
     </script>
 </body>
 </html>

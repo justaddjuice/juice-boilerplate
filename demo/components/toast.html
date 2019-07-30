@@ -1,0 +1,127 @@
+<!doctype html>
+<html class="has-no-js has-no-touch" lang="en">
+<head>
+    <!-- Meta data -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <!-- Page title -->
+    <title>Juice - Components: Toast</title>
+
+    <!-- Webfonts and icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Oswald">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="../../public/css/app.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <p>&nbsp;</p>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <div class="container">
+            <h1>Toast</h1>
+            <hr />
+            <ul class="breadcrumb">
+                <li><a href="../../index.html">Juice</a></li>
+                <li><a href="../components/index.html">Components</a></li>
+                <li>Toast</li>
+            </ul>
+            <hr class="has-huge-element-spacing" />
+
+            <div class="button-group is-fullwidth">
+                <button type="button" class="is-fullwidth is-primary is-huge js-show-toast">Default</button>
+                <button type="button" class="is-fullwidth is-primary is-huge js-show-toast-info">Info</button>
+                <button type="button" class="is-fullwidth is-primary is-huge js-show-toast-success">Success</button>
+                <button type="button" class="is-fullwidth is-primary is-huge js-show-toast-warning">Warning</button>
+                <button type="button" class="is-fullwidth is-primary is-huge js-show-toast-error">Error</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer style="margin-bottom: 2000px;">
+        <p class="is-center-aligned"><a href="#" class="js-smooth-scroll-top">Top</a></p>
+    </footer>
+
+    <div id="toast-group-one" class="toast-group"></div>
+
+    <!-- Scripts -->
+    <script src="//unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="../../public/scripts/app.min.js"></script>
+
+    <!-- Juice components -->
+    <script>
+        var smooth_scroll = new SmoothScroll;
+
+        var $toast = document.querySelector('.js-show-toast');
+        var $toast_info = document.querySelector('.js-show-toast-info');
+        var $toast_success = document.querySelector('.js-show-toast-success');
+        var $toast_warning = document.querySelector('.js-show-toast-warning');
+        var $toast_error = document.querySelector('.js-show-toast-error');
+
+        $toast.addEventListener('click', function() {
+            var toast_default = new Toast({
+                text: 'This is a default toast.',
+
+                callbackAction: function() {
+                    console.log('Default Toast: callbackAction');
+                }
+            });
+        });
+
+        $toast_info.addEventListener('click', function() {
+            var toast_info = new Toast({
+                feedback: 'info',
+                text: 'This toast contains information.',
+
+                callbackAction: function() {
+                    console.log('Info Toast: callbackAction');
+                }
+            });
+        });
+
+        $toast_success.addEventListener('click', function() {
+            var toast_success = new Toast({
+                feedback: 'success',
+                text: 'This toast contains a success message.',
+
+                callbackAction: function() {
+                    console.log('Success Toast: callbackAction');
+                }
+            });
+        });
+
+        $toast_warning.addEventListener('click', function() {
+            var toast_warning = new Toast({
+                feedback: 'warning',
+                text: 'This toast contains a warning message.',
+
+                callbackAction: function() {
+                    console.log('Warning Toast: callbackAction');
+                }
+            });
+        });
+
+        $toast_error.addEventListener('click', function() {
+            var toast_error = new Toast({
+                feedback: 'error',
+                text: 'This toast contains an error message.',
+
+                callbackAction: function() {
+                    console.log('Error Toast: callbackAction');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -4,250 +4,250 @@
     JUICE -> THEMES -> CUSTOM -> VARIABLES -> CSS -> COLORS
     ========================================================================  */
 
-// :root {
-//     // Cycle through all of the colors
-//     @each $color-name, $color in $colors {
-//         // Set the color
-//         --color-#{$color-name}: #{$color};
-//
-//         // Check if the color is a type of color
-//         @if type_of($color) == 'color' {
-//             // Set the hue, saturation, lightness and alpha
-//             $hue: hue($color);
-//             $saturation: saturation($color);
-//             $lightness: lightness($color);
-//             $alpha: alpha($color);
-//
-//             // Cycle through all of the variations
-//             @each $variation, $amount in $variations {
-//                 // Check if the variation contains the lighten string
-//                 @if str-index($variation, 'lighten') != null {
-//                     // Set the color variation
-//                     --color-#{$color-name}-#{$variation}: hsla(#{$hue}, #{$saturation}, #{$lightness + $amount}, #{$alpha});
-//                 }
-//
-//                 // Check if the variation contains the darken string
-//                 @if str-index($variation, 'darken') != null {
-//                     // Set the color variation
-//                     --color-#{$color-name}-#{$variation}: hsla(#{$hue}, #{$saturation}, #{$lightness - $amount}, #{$alpha});
-//                 }
-//             }
-//
-//             // Set the accessibility focus color
-//             --color-#{$color-name}-accessibility-focus: hsla(#{$hue}, #{$saturation}, #{$lightness}, 0.5);
-//
-//             // Cycle through all of the variations
-//             @each $variation, $amount in $variations {
-//                 // Check if the variation contains the lighten string
-//                 @if str-index($variation, 'lighten') != null {
-//                     // Set the accessibility focus variation color
-//                     --color-#{$color-name}-accessibility-focus-#{$variation}: hsla(#{$hue}, #{$saturation}, #{$lightness + $amount}, 0.5);
-//                 }
-//
-//                 // Check if the variation contains the darken string
-//                 @if str-index($variation, 'darken') != null {
-//                     // Set the accessibility focus variation color
-//                     --color-#{$color-name}-accessibility-focus-#{$variation}: hsla(#{$hue}, #{$saturation}, #{$lightness - $amount}, 0.5);
-//                 }
-//             }
-//
-//             // Set the perceived red, green and blue lightness
-//             $red: red($color) * 0.2126;
-//             $green: green($color) * 0.7152;
-//             $blue: blue($color) * 0.0722;
-//
-//             // Set the red, green and blue total
-//             $rgb_total: $red + $green + $blue;
-//
-//             // Set the perceived lightness
-//             $perceived-lightness: $rgb_total / 255;
-//
-//             // Calculate the srgb lightness
-//             $srgb_lightness: ($perceived-lightness - 0.75) * -10000000;
-//
-//             // Set the light and dark font colors
-//             $font_color_light: map-get($font-colors, 'light');
-//             $font_color_dark: map-get($font-colors, 'dark');
-//
-//             // Check if the light and dark font colors are a type of color
-//             @if type_of($font_color_light) == 'color' and type_of($font_color_dark) == 'color' {
-//                 // Check if the srgb lightness is over 50
-//                 @if $srgb_lightness >= 50 {
-//                     // Set the inverted text color
-//                     --color-#{$color-name}-inverted-text: #{$font_color_light};
-//
-//                     // Set the text hue, saturation, lightness and alpha
-//                     $text-hue: hue($font_color_light);
-//                     $text-saturation: saturation($font_color_light);
-//                     $text-lightness: lightness($font_color_light);
-//                     $text-alpha: alpha($font_color_light);
-//
-//                     // Cycle through all of the variations
-//                     @each $variation, $amount in $variations {
-//                         // Check if the variation contains the darken string
-//                         @if str-index($variation, 'darken') != null {
-//                             // Set the inverted text variation color
-//                             --color-#{$color-name}-inverted-text-#{$variation}: hsla(#{$text-hue}, 0%, #{$text-lightness - $amount}, #{$text-alpha});
-//                         }
-//                     }
-//                 } @else {
-//                     // Set the inverted text color
-//                     --color-#{$color-name}-inverted-text: #{$font_color_dark};
-//
-//                     // Set the text hue, saturation, lightness and alpha
-//                     $text-hue: hue($font_color_dark);
-//                     $text-saturation: saturation($font_color_dark);
-//                     $text-lightness: lightness($font_color_dark);
-//                     $text-alpha: alpha($font_color_dark);
-//
-//                     // Cycle through all of the variations
-//                     @each $variation, $amount in $variations {
-//                         // Check if the variation contains the lighten string
-//                         @if str-index($variation, 'lighten') != null {
-//                             // Set the inverted text variation color
-//                             --color-#{$color-name}-inverted-text-#{$variation}: hsla(#{$text-hue}, 0%, #{$text-lightness + $amount}, #{$text-alpha});
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-//
-//     // Cycle through all of the font colors
-//     @each $font-name, $color in $font-colors {
-//         // Set the color
-//         --font-color-#{$font-name}: #{$color};
-//
-//         // Check if the color is a type of color
-//         @if type_of($color) == 'color' {
-//             // Set the hue, saturation, lightness and alpha
-//             $hue: hue($color);
-//             $saturation: saturation($color);
-//             $lightness: lightness($color);
-//             $alpha: alpha($color);
-//
-//             // Cycle through all of the variations
-//             @each $variation, $amount in $variations {
-//                 // Check if the variation contains the lighten string
-//                 @if str-index($variation, 'lighten') != null {
-//                     // Set the color variation
-//                     --font-color-#{$font-name}-#{$variation}: hsla(#{$hue}, #{$saturation}, #{$lightness + $amount}, #{$alpha});
-//                 }
-//
-//                 // Check if the variation contains the darken string
-//                 @if str-index($variation, 'darken') != null {
-//                     // Set the color variation
-//                     --font-color-#{$font-name}-#{$variation}: hsla(#{$hue}, #{$saturation}, #{$lightness - $amount}, #{$alpha});
-//                 }
-//             }
-//         }
-//     }
-//
-//     // Cycle through all of the feedback colors
-//     @each $feedback-name, $color in $feedback-colors {
-//         // Set the color
-//         --feedback-color-#{$feedback-name}: #{$color};
-//
-//         // Check if the color is a type of color
-//         @if type_of($color) == 'color' {
-//             // Set the hue, saturation, lightness and alpha
-//             $hue: hue($color);
-//             $saturation: saturation($color);
-//             $lightness: lightness($color);
-//             $alpha: alpha($color);
-//
-//             // Cycle through all of the variations
-//             @each $variation, $amount in $variations {
-//                 // Check if the variation contains the lighten string
-//                 @if str-index($variation, 'lighten') != null {
-//                     // Set the color variation
-//                     --feedback-color-#{$feedback-name}-#{$variation}: hsla(#{$hue}, #{$saturation}, #{$lightness + $amount}, #{$alpha});
-//                 }
-//
-//                 // Check if the variation contains the darken string
-//                 @if str-index($variation, 'darken') != null {
-//                     // Set the color variation
-//                     --feedback-color-#{$feedback-name}-#{$variation}: hsla(#{$hue}, #{$saturation}, #{$lightness - $amount}, #{$alpha});
-//                 }
-//             }
-//
-//             // Set the accessibility focus color
-//             --feedback-color-#{$feedback-name}-accessibility-focus: hsla(#{$hue}, #{$saturation}, #{$lightness}, 0.5);
-//
-//             // Cycle through all of the variations
-//             @each $variation, $amount in $variations {
-//                 // Check if the variation contains the lighten string
-//                 @if str-index($variation, 'lighten') != null {
-//                     // Set the accessibility focus variation color
-//                     --feedback-color-#{$feedback-name}-accessibility-focus-#{$variation}: hsla(#{$hue}, #{$saturation}, #{$lightness + $amount}, 0.5);
-//                 }
-//
-//                 // Check if the variation contains the darken string
-//                 @if str-index($variation, 'darken') != null {
-//                     // Set the accessibility focus variation color
-//                     --feedback-color-#{$feedback-name}-accessibility-focus-#{$variation}: hsla(#{$hue}, #{$saturation}, #{$lightness - $amount}, 0.5);
-//                 }
-//             }
-//
-//             // Set the perceived red, green and blue lightness
-//             $red: red($color) * 0.2126;
-//             $green: green($color) * 0.7152;
-//             $blue: blue($color) * 0.0722;
-//
-//             // Set the red, green and blue total
-//             $rgb_total: $red + $green + $blue;
-//
-//             // Set the perceived lightness
-//             $perceived-lightness: $rgb_total / 255;
-//
-//             // Calculate the srgb lightness
-//             $srgb_lightness: ($perceived-lightness - 0.75) * -10000000;
-//
-//             // Set the light and dark font colors
-//             $font_color_light: map-get($font-colors, 'light');
-//             $font_color_dark: map-get($font-colors, 'dark');
-//
-//             // Check if the light and dark font colors are a type of color
-//             @if type_of($font_color_light) == 'color' and type_of($font_color_dark) == 'color' {
-//                 // Check if the srgb lightness is over 50
-//                 @if $srgb_lightness >= 50 {
-//                     // Set the inverted text color
-//                     --feedback-color-#{$feedback-name}-inverted-text: #{$font_color_light};
-//
-//                     // Set the text hue, saturation, lightness and alpha
-//                     $text-hue: hue($font_color_light);
-//                     $text-saturation: saturation($font_color_light);
-//                     $text-lightness: lightness($font_color_light);
-//                     $text-alpha: alpha($font_color_light);
-//
-//                     // Cycle through all of the variations
-//                     @each $variation, $amount in $variations {
-//                         // Check if the variation contains the darken string
-//                         @if str-index($variation, 'darken') != null {
-//                             // Set the inverted text variation color
-//                             --feedback-color-#{$feedback-name}-inverted-text-#{$variation}: hsla(#{$text-hue}, 0%, #{$text-lightness - $amount}, #{$text-alpha});
-//                         }
-//                     }
-//                 } @else {
-//                     // Set the inverted text color
-//                     --feedback-color-#{$feedback-name}-inverted-text: #{$font_color_dark};
-//
-//                     // Set the text hue, saturation, lightness and alpha
-//                     $text-hue: hue($font_color_dark);
-//                     $text-saturation: saturation($font_color_dark);
-//                     $text-lightness: lightness($font_color_dark);
-//                     $text-alpha: alpha($font_color_dark);
-//
-//                     // Cycle through all of the variations
-//                     @each $variation, $amount in $variations {
-//                         // Check if the variation contains the lighten string
-//                         @if str-index($variation, 'lighten') != null {
-//                             // Set the inverted text variation color
-//                             --feedback-color-#{$feedback-name}-inverted-text-#{$variation}: hsla(#{$text-hue}, 0%, #{$text-lightness + $amount}, #{$text-alpha});
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
+:root {
+    // // Cycle through all of the colors
+    // @each $color-name, $color in $colors {
+    //     // Set the color
+    //     --color-#{$color-name}: #{$color};
+    //
+    //     // Check if the color is a type of color
+    //     @if type_of($color) == 'color' {
+    //         // Set the hue, saturation, lightness and alpha
+    //         $hue: hue($color);
+    //         $saturation: saturation($color);
+    //         $lightness: lightness($color);
+    //         $alpha: alpha($color);
+    //
+    //         // Cycle through all of the variations
+    //         @each $variation, $amount in $variations {
+    //             // Check if the variation contains the lighten string
+    //             @if str-index($variation, 'lighten') != null {
+    //                 // Set the color variation
+    //                 --color-#{$color-name}-#{$variation}: hsla(#{$hue}, #{$saturation}, #{$lightness + $amount}, #{$alpha});
+    //             }
+    //
+    //             // Check if the variation contains the darken string
+    //             @if str-index($variation, 'darken') != null {
+    //                 // Set the color variation
+    //                 --color-#{$color-name}-#{$variation}: hsla(#{$hue}, #{$saturation}, #{$lightness - $amount}, #{$alpha});
+    //             }
+    //         }
+    //
+    //         // Set the accessibility focus color
+    //         --color-#{$color-name}-accessibility-focus: hsla(#{$hue}, #{$saturation}, #{$lightness}, 0.5);
+    //
+    //         // Cycle through all of the variations
+    //         @each $variation, $amount in $variations {
+    //             // Check if the variation contains the lighten string
+    //             @if str-index($variation, 'lighten') != null {
+    //                 // Set the accessibility focus variation color
+    //                 --color-#{$color-name}-accessibility-focus-#{$variation}: hsla(#{$hue}, #{$saturation}, #{$lightness + $amount}, 0.5);
+    //             }
+    //
+    //             // Check if the variation contains the darken string
+    //             @if str-index($variation, 'darken') != null {
+    //                 // Set the accessibility focus variation color
+    //                 --color-#{$color-name}-accessibility-focus-#{$variation}: hsla(#{$hue}, #{$saturation}, #{$lightness - $amount}, 0.5);
+    //             }
+    //         }
+    //
+    //         // Set the perceived red, green and blue lightness
+    //         $red: red($color) * 0.2126;
+    //         $green: green($color) * 0.7152;
+    //         $blue: blue($color) * 0.0722;
+    //
+    //         // Set the red, green and blue total
+    //         $rgb_total: $red + $green + $blue;
+    //
+    //         // Set the perceived lightness
+    //         $perceived-lightness: $rgb_total / 255;
+    //
+    //         // Calculate the srgb lightness
+    //         $srgb_lightness: ($perceived-lightness - 0.75) * -10000000;
+    //
+    //         // Set the light and dark font colors
+    //         $font_color_light: map-get($font-colors, 'light');
+    //         $font_color_dark: map-get($font-colors, 'dark');
+    //
+    //         // Check if the light and dark font colors are a type of color
+    //         @if type_of($font_color_light) == 'color' and type_of($font_color_dark) == 'color' {
+    //             // Check if the srgb lightness is over 50
+    //             @if $srgb_lightness >= 50 {
+    //                 // Set the inverted text color
+    //                 --color-#{$color-name}-inverted-text: #{$font_color_light};
+    //
+    //                 // Set the text hue, saturation, lightness and alpha
+    //                 $text-hue: hue($font_color_light);
+    //                 $text-saturation: saturation($font_color_light);
+    //                 $text-lightness: lightness($font_color_light);
+    //                 $text-alpha: alpha($font_color_light);
+    //
+    //                 // Cycle through all of the variations
+    //                 @each $variation, $amount in $variations {
+    //                     // Check if the variation contains the darken string
+    //                     @if str-index($variation, 'darken') != null {
+    //                         // Set the inverted text variation color
+    //                         --color-#{$color-name}-inverted-text-#{$variation}: hsla(#{$text-hue}, 0%, #{$text-lightness - $amount}, #{$text-alpha});
+    //                     }
+    //                 }
+    //             } @else {
+    //                 // Set the inverted text color
+    //                 --color-#{$color-name}-inverted-text: #{$font_color_dark};
+    //
+    //                 // Set the text hue, saturation, lightness and alpha
+    //                 $text-hue: hue($font_color_dark);
+    //                 $text-saturation: saturation($font_color_dark);
+    //                 $text-lightness: lightness($font_color_dark);
+    //                 $text-alpha: alpha($font_color_dark);
+    //
+    //                 // Cycle through all of the variations
+    //                 @each $variation, $amount in $variations {
+    //                     // Check if the variation contains the lighten string
+    //                     @if str-index($variation, 'lighten') != null {
+    //                         // Set the inverted text variation color
+    //                         --color-#{$color-name}-inverted-text-#{$variation}: hsla(#{$text-hue}, 0%, #{$text-lightness + $amount}, #{$text-alpha});
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    //
+    // // Cycle through all of the font colors
+    // @each $font-name, $color in $font-colors {
+    //     // Set the color
+    //     --font-color-#{$font-name}: #{$color};
+    //
+    //     // Check if the color is a type of color
+    //     @if type_of($color) == 'color' {
+    //         // Set the hue, saturation, lightness and alpha
+    //         $hue: hue($color);
+    //         $saturation: saturation($color);
+    //         $lightness: lightness($color);
+    //         $alpha: alpha($color);
+    //
+    //         // Cycle through all of the variations
+    //         @each $variation, $amount in $variations {
+    //             // Check if the variation contains the lighten string
+    //             @if str-index($variation, 'lighten') != null {
+    //                 // Set the color variation
+    //                 --font-color-#{$font-name}-#{$variation}: hsla(#{$hue}, #{$saturation}, #{$lightness + $amount}, #{$alpha});
+    //             }
+    //
+    //             // Check if the variation contains the darken string
+    //             @if str-index($variation, 'darken') != null {
+    //                 // Set the color variation
+    //                 --font-color-#{$font-name}-#{$variation}: hsla(#{$hue}, #{$saturation}, #{$lightness - $amount}, #{$alpha});
+    //             }
+    //         }
+    //     }
+    // }
+    //
+    // // Cycle through all of the feedback colors
+    // @each $feedback-name, $color in $feedback-colors {
+    //     // Set the color
+    //     --feedback-color-#{$feedback-name}: #{$color};
+    //
+    //     // Check if the color is a type of color
+    //     @if type_of($color) == 'color' {
+    //         // Set the hue, saturation, lightness and alpha
+    //         $hue: hue($color);
+    //         $saturation: saturation($color);
+    //         $lightness: lightness($color);
+    //         $alpha: alpha($color);
+    //
+    //         // Cycle through all of the variations
+    //         @each $variation, $amount in $variations {
+    //             // Check if the variation contains the lighten string
+    //             @if str-index($variation, 'lighten') != null {
+    //                 // Set the color variation
+    //                 --feedback-color-#{$feedback-name}-#{$variation}: hsla(#{$hue}, #{$saturation}, #{$lightness + $amount}, #{$alpha});
+    //             }
+    //
+    //             // Check if the variation contains the darken string
+    //             @if str-index($variation, 'darken') != null {
+    //                 // Set the color variation
+    //                 --feedback-color-#{$feedback-name}-#{$variation}: hsla(#{$hue}, #{$saturation}, #{$lightness - $amount}, #{$alpha});
+    //             }
+    //         }
+    //
+    //         // Set the accessibility focus color
+    //         --feedback-color-#{$feedback-name}-accessibility-focus: hsla(#{$hue}, #{$saturation}, #{$lightness}, 0.5);
+    //
+    //         // Cycle through all of the variations
+    //         @each $variation, $amount in $variations {
+    //             // Check if the variation contains the lighten string
+    //             @if str-index($variation, 'lighten') != null {
+    //                 // Set the accessibility focus variation color
+    //                 --feedback-color-#{$feedback-name}-accessibility-focus-#{$variation}: hsla(#{$hue}, #{$saturation}, #{$lightness + $amount}, 0.5);
+    //             }
+    //
+    //             // Check if the variation contains the darken string
+    //             @if str-index($variation, 'darken') != null {
+    //                 // Set the accessibility focus variation color
+    //                 --feedback-color-#{$feedback-name}-accessibility-focus-#{$variation}: hsla(#{$hue}, #{$saturation}, #{$lightness - $amount}, 0.5);
+    //             }
+    //         }
+    //
+    //         // Set the perceived red, green and blue lightness
+    //         $red: red($color) * 0.2126;
+    //         $green: green($color) * 0.7152;
+    //         $blue: blue($color) * 0.0722;
+    //
+    //         // Set the red, green and blue total
+    //         $rgb_total: $red + $green + $blue;
+    //
+    //         // Set the perceived lightness
+    //         $perceived-lightness: $rgb_total / 255;
+    //
+    //         // Calculate the srgb lightness
+    //         $srgb_lightness: ($perceived-lightness - 0.75) * -10000000;
+    //
+    //         // Set the light and dark font colors
+    //         $font_color_light: map-get($font-colors, 'light');
+    //         $font_color_dark: map-get($font-colors, 'dark');
+    //
+    //         // Check if the light and dark font colors are a type of color
+    //         @if type_of($font_color_light) == 'color' and type_of($font_color_dark) == 'color' {
+    //             // Check if the srgb lightness is over 50
+    //             @if $srgb_lightness >= 50 {
+    //                 // Set the inverted text color
+    //                 --feedback-color-#{$feedback-name}-inverted-text: #{$font_color_light};
+    //
+    //                 // Set the text hue, saturation, lightness and alpha
+    //                 $text-hue: hue($font_color_light);
+    //                 $text-saturation: saturation($font_color_light);
+    //                 $text-lightness: lightness($font_color_light);
+    //                 $text-alpha: alpha($font_color_light);
+    //
+    //                 // Cycle through all of the variations
+    //                 @each $variation, $amount in $variations {
+    //                     // Check if the variation contains the darken string
+    //                     @if str-index($variation, 'darken') != null {
+    //                         // Set the inverted text variation color
+    //                         --feedback-color-#{$feedback-name}-inverted-text-#{$variation}: hsla(#{$text-hue}, 0%, #{$text-lightness - $amount}, #{$text-alpha});
+    //                     }
+    //                 }
+    //             } @else {
+    //                 // Set the inverted text color
+    //                 --feedback-color-#{$feedback-name}-inverted-text: #{$font_color_dark};
+    //
+    //                 // Set the text hue, saturation, lightness and alpha
+    //                 $text-hue: hue($font_color_dark);
+    //                 $text-saturation: saturation($font_color_dark);
+    //                 $text-lightness: lightness($font_color_dark);
+    //                 $text-alpha: alpha($font_color_dark);
+    //
+    //                 // Cycle through all of the variations
+    //                 @each $variation, $amount in $variations {
+    //                     // Check if the variation contains the lighten string
+    //                     @if str-index($variation, 'lighten') != null {
+    //                         // Set the inverted text variation color
+    //                         --feedback-color-#{$feedback-name}-inverted-text-#{$variation}: hsla(#{$text-hue}, 0%, #{$text-lightness + $amount}, #{$text-alpha});
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+}

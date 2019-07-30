@@ -1,9 +1,22 @@
+# July 30, 2019 (Juice v0.23.1-beta)
+
+### Updated
+- Updated demo pages
+- Updated build directory
+- Updated theme files and directory structure to match latest version of juice
+- Updated package
+    - Updated devDependencies just-add-juice version to 0.23.1-beta
+
+
+-----
+
+
 # July 16, 2019 (Juice v0.22.0-beta)
 
 ### Updated
 - Updated demo pages
 - Updated build directory
-- Updated theme file and directory structure to match latest version of juice
+- Updated theme files and directory structure to match latest version of juice
 - Updated package
     - Updated devDependencies just-add-juice version to 0.22.0-beta
 
@@ -16,7 +29,7 @@
 ### Updated
 - Added demo pages
 - Updated build directory
-- Updated theme file and directory structure to match latest version of juice
+- Updated theme files and directory structure to match latest version of juice
 - Updated package
     - Updated dependencies to latest versions
     - Updated devDependencies just-add-juice version to 0.19.2-beta

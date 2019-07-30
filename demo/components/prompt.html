@@ -1,0 +1,84 @@
+<!doctype html>
+<html class="has-no-js has-no-touch" lang="en">
+<head>
+    <!-- Meta data -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <!-- Page title -->
+    <title>Juice - Components: Prompt</title>
+
+    <!-- Webfonts and icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Oswald">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="../../public/css/app.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header><p>&nbsp;</p></header>
+
+    <!-- Main -->
+    <main>
+        <div class="container">
+            <h1>Prompt</h1>
+            <hr />
+            <ul class="breadcrumb">
+                <li><a href="../../index.html">Juice</a></li>
+                <li><a href="../components/index.html">Components</a></li>
+                <li>Prompt</li>
+            </ul>
+            <hr class="has-huge-element-spacing" />
+
+            <button class="button--block is-huge is-fullwidth js-trigger-dialog-prompt">Prompt</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p class="is-center-aligned"><a href="#" class="scroll-to-top">Top</a></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="//unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="../../public/scripts/app.min.js"></script>
+
+    <!-- Juice components -->
+    <script>
+        var $prompt = document.querySelector('.js-trigger-dialog-prompt');
+        
+        $prompt.addEventListener('click', function() {
+            var prompt = new Prompt({
+                heading: '<h4>Prompt</h4>',
+                text: "Please type the word 'Google' to visit their website:",
+                promptInputRegexPattern: /Google/g,
+                callbackCancel: () => {
+                    prompt.close();
+                },
+                callbackContinue: function($input, validates) {
+                    if (validates) {
+                        window.location.href = 'http://google.com';
+                    } else {
+                        $input.focus();
+                        $input.classList.remove('has-animated');
+                        $input.classList.add('is-animating', 'has-error', 'has-animation', 'shake');
+
+                        $input.addEventListener('animationend', (event) => {
+                            $input.classList.remove('is-animating', 'has-animation', 'shake');
+                            $input.classList.add('has-animated');
+                        }, {
+                            once: true
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

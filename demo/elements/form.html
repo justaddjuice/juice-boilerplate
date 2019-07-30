@@ -191,40 +191,40 @@
                     <div class="grid">
                         <div class="grid__item grid__item--span-12 grid__item--span-6@desktop-up">
 
-                            <label for="form-control-input-addon-left">Left</label>
-                            <div class="form-control">
+                            <label for="custom-fieldset-input-addon-left">Left</label>
+                            <div class="custom-fieldset">
                                 <button type="button" class="button--icon is-white is-static js-prevent-default"><i class="fas fa-user"></i></button>
-                                <input type="text" id="form-control-input-addon-left" class="form-control__spotlight" placeholder="Username" />
+                                <input type="text" id="custom-fieldset-input-addon-left" class="custom-fieldset__spotlight" placeholder="Username" />
                             </div>
                         </div>
 
                         <div class="grid__item grid__item--span-12 grid__item--span-6@desktop-up">
-                            <label for="form-control-input-addon-right">Right</label>
-                            <div class="form-control">
-                                <input type="text" id="form-control-input-addon-right" class="form-control__spotlight" placeholder="Search for a product..." />
+                            <label for="custom-fieldset-input-addon-right">Right</label>
+                            <div class="custom-fieldset">
+                                <input type="text" id="custom-fieldset-input-addon-right" class="custom-fieldset__spotlight" placeholder="Search for a product..." />
                                 <button type="button" class="is-primary js-prevent-default">Go</button>
                             </div>
                         </div>
 
                         <div class="grid__item grid__item--span-12 grid__item--span-6@desktop-up">
-                            <label for="form-control-input-addon-both">Both</label>
-                            <div class="form-control">
+                            <label for="custom-fieldset-input-addon-both">Both</label>
+                            <div class="custom-fieldset">
                                 <select>
                                     <option>£</option>
                                     <option>$</option>
                                 </select>
-                                <input type="text" id="form-control-input-addon-both" class="form-control__spotlight" placeholder="Amount..." />
+                                <input type="text" id="custom-fieldset-input-addon-both" class="custom-fieldset__spotlight" placeholder="Amount..." />
                                 <button type="button" class="is-primary js-prevent-default">Deposit</button>
                             </div>
                         </div>
 
                         <div class="grid__item grid__item--span-12 grid__item--span-6@desktop-up">
-                            <label for="form-control-password-toggle">Password</label>
-                            <div class="form-control has-password-reveal">
-                                <input type="password" id="password-form-control" class="form-control__spotlight" placeholder="Password..." />
-                                <button type="button" class="button--icon is-white js-password-reveal-trigger">
-                                    <i class="password-reveal__icon far fa-eye fa-fw"></i>
-                                    <i class="password-reveal__icon far fa-eye-slash fa-fw"></i>
+                            <label for="custom-fieldset-password-toggle">Password</label>
+                            <div class="custom-fieldset custom-password">
+                                <input type="password" id="password-custom-fieldset" class="custom-fieldset__spotlight" placeholder="Password..." />
+                                <button type="button" class="button--icon is-white js-custom-password-trigger">
+                                    <i class="custom-password__icon far fa-eye fa-fw"></i>
+                                    <i class="custom-password__icon far fa-eye-slash fa-fw"></i>
                                 </button>
                             </div>
                         </div>
@@ -247,7 +247,7 @@
     <script>
         var smooth_scroll = new SmoothScroll;
         var custom_file = new CustomFile('.custom-file');
-        var password_reveal = new PasswordReveal('.has-password-reveal');
+        var custom_password = new CustomPassword('.custom-password');
     </script>
 </body>
 </html>
