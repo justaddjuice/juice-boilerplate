@@ -124,6 +124,36 @@
                             }
                         }
                     }
+
+                    #{$button} {
+                        // // Variables
+                        // --accessibility-focus-color: var(--feedback-color-#{$feedback-name}-accessibility-focus);
+                        // --background-color: var(--feedback-color-#{$feedback-name});
+                        // --border-color: var(--feedback-color-#{$feedback-name}-darken-3);
+                        // --font-color: var(--feedback-color-#{$feedback-name}-inverted-text);
+
+                        // Pseudo classes
+                        &:hover {
+                            // // Variables
+                            // --background-color: var(--feedback-color-#{$feedback-name}-lighten-1);
+                            // --border-color: var(--feedback-color-#{$feedback-name}-darken-6);
+                            // --font-color: var(--feedback-color-#{$feedback-name}-inverted-text);
+                        }
+
+                        &:focus {
+                            // // Variables
+                            // --background-color: var(--feedback-color-#{$feedback-name}-lighten-1);
+                            // --border-color: var(--feedback-color-#{$feedback-name}-darken-6);
+                            // --font-color: var(--feedback-color-#{$feedback-name}-inverted-text);
+                        }
+
+                        &:active {
+                            // // Variables
+                            // --background-color: var(--feedback-color-#{$feedback-name}-darken-1);
+                            // --border-color: var(--feedback-color-#{$feedback-name}-darken-8);
+                            // --font-color: var(--feedback-color-#{$feedback-name}-inverted-text);
+                        }
+                    }
                 }
             }
         }
