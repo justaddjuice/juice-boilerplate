@@ -19,16 +19,16 @@
 
 
 /*  ========================================================================
-    JUICE -> VARIABLES
+    JUICE -> VARIABLES -> SASS
     ========================================================================  */
 
 // Import
-@import 'just-add-juice/resources/sass/variables/all';
-@import 'themes/custom/variables/all';
+@import 'just-add-juice/resources/sass/variables/sass/all';
+@import 'themes/custom/variables/sass/all';
 
 
 /*  ========================================================================
-    JUICE -> MERGE
+    JUICE -> MERGE -> SASS
     ========================================================================  */
 
 // Merge the custom breakpoints with the juice breakpoints
@@ -48,6 +48,15 @@ $stack-indexes: map-merge($stack-indexes, $custom-stack-indexes);
 
 // Merge the custom easings with the juice easings
 $custom-easings: map-merge($easings, $custom-easings);
+
+
+/*  ========================================================================
+    JUICE -> VARIABLES -> CSS
+    ========================================================================  */
+
+// Import
+@import 'just-add-juice/resources/sass/variables/css/all';
+@import 'themes/custom/variables/css/all';
 
 
 /*  ========================================================================
