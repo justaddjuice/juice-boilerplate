@@ -1,3 +1,16 @@
+# August 16, 2019 (Juice v0.24.0-beta)
+
+### Updated
+- Updated build directory
+- Updated theme files and directory structure to match latest version of juice
+- Updated package
+    - Updated devDependencies just-add-juice version to 0.23.1-beta
+- Fixed juice import order
+
+
+-----
+
+
 # July 30, 2019 (Juice v0.23.1-beta)
 
 ### Updated
